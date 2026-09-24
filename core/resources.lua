@@ -1,4 +1,4 @@
--- ClawOS core/resources.lua
+-- Loom OS core/resources.lua
 -- Per-App resource registry with fail-safe teardown and callback guards.
 
 local errors = require("core.errors")

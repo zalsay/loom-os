@@ -1,4 +1,4 @@
--- ClawOS system/async/espclaw_jobs.lua
+-- Loom OS system/async/espclaw_jobs.lua
 -- Thin system wrapper around ESP-Claw cap_lua async job capabilities.
 
 local errors = require("system.net.errors")

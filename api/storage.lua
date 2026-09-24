@@ -1,4 +1,4 @@
--- ClawOS api/storage.lua
+-- Loom OS api/storage.lua
 -- App-private storage sandbox over ESP-Claw's official storage module.
 
 local storage = require("storage")

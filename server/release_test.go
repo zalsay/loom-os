@@ -12,8 +12,8 @@ import (
 
 func fixtureManifest(version, channel, minBootstrap string) Manifest {
 	return Manifest{
-		Schema: 1, Product: "clawos", Board: "esp-mosaico", Channel: channel,
-		Version: version, ReleaseID: "clawos:esp-mosaico:" + version,
+		Schema: 1, Product: "loom-os", Board: "esp-mosaico", Channel: channel,
+		Version: version, ReleaseID: "loom-os:esp-mosaico:" + version,
 		Entry: "main.lua", MinBootstrap: minBootstrap,
 		Files: []ReleaseFile{{
 			Path: "main.lua",
@@ -140,11 +140,11 @@ func TestHTTPContractAndFileWhitelist(t *testing.T) {
 		status int
 		want string
 	}{
-		{"/v1/clawos/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0&bootstrap=0.1.0", 200, "\"version\":\"0.1.1\""},
-		{"/v1/clawos/releases/latest?board=esp-mosaico&channel=stable&current=0.1.1&bootstrap=0.1.0", 204, ""},
-		{"/v1/clawos/releases/latest?board=esp-mosaico&channel=stable&current=bad&bootstrap=0.1.0", 400, "invalid ClawOS version"},
-		{"/v1/clawos/releases/latest?board=esp-mosaico&board=other&channel=stable&current=0.1.0&bootstrap=0.1.0", 400, "required"},
-		{"/v1/clawos/releases/latest?board=other&channel=stable&current=0.1.0&bootstrap=0.1.0", 404, "unsupported board"},
+		{"/v1/loom-os/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0&bootstrap=0.1.0", 200, "\"version\":\"0.1.1\""},
+		{"/v1/loom-os/releases/latest?board=esp-mosaico&channel=stable&current=0.1.1&bootstrap=0.1.0", 204, ""},
+		{"/v1/loom-os/releases/latest?board=esp-mosaico&channel=stable&current=bad&bootstrap=0.1.0", 400, "invalid Loom OS version"},
+		{"/v1/loom-os/releases/latest?board=esp-mosaico&board=other&channel=stable&current=0.1.0&bootstrap=0.1.0", 400, "required"},
+		{"/v1/loom-os/releases/latest?board=other&channel=stable&current=0.1.0&bootstrap=0.1.0", 404, "unsupported board"},
 		{"/files/esp-mosaico/0.1.1/main.lua", 200, "return {}\n"},
 		{"/files/esp-mosaico/0.1.1/secret.lua", 404, "not found"},
 		{"/files/esp-mosaico/0.1.1/%2e%2e/main.lua", 404, "not found"},

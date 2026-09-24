@@ -1,4 +1,4 @@
--- ClawOS provision/runtime_files.lua
+-- Loom OS provision/runtime_files.lua
 -- Runtime files copied into the integration candidate 0.1.1 release.
 
 

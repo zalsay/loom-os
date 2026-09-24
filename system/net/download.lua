@@ -1,4 +1,4 @@
-﻿-- ClawOS system/net/download.lua
+﻿-- Loom OS system/net/download.lua
 -- File download helper with size verification only.
 
 

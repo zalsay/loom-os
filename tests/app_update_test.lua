@@ -63,8 +63,8 @@ local updater = app_update.new(backend)
 
 local pkg_100 = {
     manifest = {
-        schema = 1, api = "0.1", min_clawos = "0.1.0",
-        id = "org.clawos.demo",
+        schema = 1, api = "0.1", min_loom_os = "0.1.0",
+        id = "org.loom-os.demo",
         name = "Demo",
         version = "1.0.0",
         entry = "main.lua"
@@ -76,18 +76,18 @@ local pkg_100 = {
 
 
 assert(updater.install(pkg_100))
-assert(states["org.clawos.demo"].pending_version == "1.0.0")
+assert(states["org.loom-os.demo"].pending_version == "1.0.0")
 
 
-assert(updater.confirm("org.clawos.demo", "1.0.0"))
-assert(states["org.clawos.demo"].active_version == "1.0.0")
-assert(states["org.clawos.demo"].pending_version == nil)
+assert(updater.confirm("org.loom-os.demo", "1.0.0"))
+assert(states["org.loom-os.demo"].active_version == "1.0.0")
+assert(states["org.loom-os.demo"].pending_version == nil)
 
 
 local pkg_110 = {
     manifest = {
-        schema = 1, api = "0.1", min_clawos = "0.1.0",
-        id = "org.clawos.demo",
+        schema = 1, api = "0.1", min_loom_os = "0.1.0",
+        id = "org.loom-os.demo",
         name = "Demo",
         version = "1.1.0",
         entry = "main.lua"
@@ -99,12 +99,12 @@ local pkg_110 = {
 
 
 assert(updater.install(pkg_110))
-assert(states["org.clawos.demo"].pending_version == "1.1.0")
+assert(states["org.loom-os.demo"].pending_version == "1.1.0")
 
 
-assert(updater.rollback("org.clawos.demo") == "1.0.0")
-assert(states["org.clawos.demo"].active_version == "1.0.0")
-assert(states["org.clawos.demo"].pending_version == nil)
+assert(updater.rollback("org.loom-os.demo") == "1.0.0")
+assert(states["org.loom-os.demo"].active_version == "1.0.0")
+assert(states["org.loom-os.demo"].pending_version == nil)
 
 
 print("app_update_test: PASS")

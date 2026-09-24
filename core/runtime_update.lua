@@ -1,5 +1,5 @@
-﻿-- ClawOS core/runtime_update.lua
--- Transactional ClawOS Runtime updater. Updates DATA files only.
+﻿-- Loom OS core/runtime_update.lua
+-- Transactional Loom OS Runtime updater. Updates DATA files only.
 
 
 local storage = require("storage")
@@ -60,7 +60,7 @@ end
 local function roots()
     local data, err = invoke("get_root_dir")
     if not data then return nil, err end
-    local root = storage.join_path(data, "clawos-runtime")
+    local root = storage.join_path(data, "loom-os-runtime")
     return {
         data = data,
         root = root,
@@ -123,7 +123,7 @@ local function validate_release(release)
 
     local parsed, version_err = runtime_version.validate_manifest(release)
     if not parsed then
-        return nil, errors.new("E_VERSION", "invalid ClawOS release manifest", {
+        return nil, errors.new("E_VERSION", "invalid Loom OS release manifest", {
             version = release.version,
             cause = version_err,
         })
@@ -334,7 +334,7 @@ function M.install(release, backend, on_progress)
     if not state_ok then return nil, state_write_err end
 
 
-    runtime_control.request_restart("clawos_update:" .. release.version)
+    runtime_control.request_restart("loom_os_update:" .. release.version)
     return true
 end
 

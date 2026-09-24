@@ -1,4 +1,4 @@
--- ClawOS Phase 6 sensor/notification core tests (no hardware required).
+-- Loom OS Phase 6 sensor/notification core tests (no hardware required).
 
 local sensors = require("core.sensors")
 local sensor_api = require("api.sensor")
@@ -17,7 +17,7 @@ assert(sensors.register("environment", {
 
 local app = {
     manifest = {
-        id = "org.clawos.phase6-test",
+        id = "org.loom-os.phase6-test",
         permissions = {
             sensor = { "environment" },
             notification = true,
@@ -40,4 +40,4 @@ assert(notify.dismiss(id))
 actions = notifications.drain_actions()
 assert(#actions == 1 and actions[1].type == "dismiss")
 
-print("ClawOS Phase 6 registry test: PASS")
+print("Loom OS Phase 6 registry test: PASS")

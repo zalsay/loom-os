@@ -12,7 +12,7 @@
 
 
         lv.label(root, {
-            text = "Hello ClawOS",
+            text = "Hello Loom OS",
             text_color = "#ffffff",
         })
 

@@ -1,4 +1,4 @@
-﻿-- ClawOS boards/mosaico.lua
+﻿-- Loom OS boards/mosaico.lua
 -- ESP-Mosaico V1.0 board policy and hardware metadata.
 
 

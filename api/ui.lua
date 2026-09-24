@@ -1,4 +1,4 @@
--- ClawOS api/ui.lua
+-- Loom OS api/ui.lua
 -- Minimal safe LVGL proxy for v0.1 foreground Apps.
 
 local errors = require("core.errors")
@@ -58,7 +58,7 @@ local function make_lv_proxy(lvgl)
         if type(ctor) == "function" then
             proxy[name] = function(parent, opts)
                 if parent == nil then
-                    error("ClawOS App widgets require an App-owned parent", 2)
+                    error("Loom OS App widgets require an App-owned parent", 2)
                 end
                 return ctor(parent, opts)
             end

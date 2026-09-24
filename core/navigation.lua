@@ -1,4 +1,4 @@
-﻿-- ClawOS core/navigation.lua
+﻿-- Loom OS core/navigation.lua
 -- Queued navigation avoids destroying an App inside its own LVGL callback.
 
 

@@ -1,4 +1,4 @@
--- Private drafts under DATA/clawos/authoring; never scanned as runnable Apps.
+-- Private drafts under DATA/loom-os/authoring; never scanned as runnable Apps.
 local storage = require("storage")
 local json = require("json")
 local paths = require("core.paths")

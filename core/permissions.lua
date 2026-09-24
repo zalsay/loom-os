@@ -1,4 +1,4 @@
--- ClawOS core/permissions.lua
+-- Loom OS core/permissions.lua
 -- Manifest-backed capability authorization.
 
 local errors = require("core.errors")

@@ -1,4 +1,4 @@
--- ClawOS main.lua
+-- Loom OS main.lua
 -- Mosaico v0.1 runtime entry. Loaded by bootstrap.lua from a versioned release.
 
 
@@ -45,7 +45,7 @@ end
 
 
 local paths, err = paths_mod.resolve()
-assert(paths, err and err.message or "failed to resolve ClawOS paths")
+assert(paths, err and err.message or "failed to resolve Loom OS paths")
 assert(paths_mod.ensure_layout(paths))
 
 
@@ -84,7 +84,7 @@ local ui, ui_err = ui_runtime.init({
     expected_height = board_adapter.display.height,
     require_touch = true,
 })
-assert(ui, ui_err and ui_err.message or "ClawOS UI init failed")
+assert(ui, ui_err and ui_err.message or "Loom OS UI init failed")
 
 
 
@@ -95,7 +95,7 @@ local nav = nav_api.new()
 
 
 local function show_launcher()
-    ui_runtime.set_title("ClawOS")
+    ui_runtime.set_title("Loom OS")
     launcher.show(ui, apps.list(), nav)
 end
 
@@ -109,7 +109,7 @@ for _, record in ipairs(apps.list()) do
             if service.autostart == true then
                 local started, start_err = service_runner.start_app(record, service.id)
                 if not started then
-                    print("ClawOS service start failed:", record.id, service.id,
+                    print("Loom OS service start failed:", record.id, service.id,
                         start_err and start_err.message or "unknown error")
                 end
             end
@@ -187,7 +187,7 @@ ui_runtime.process_events(0)
 
 
 local confirm_ok, confirm_err = runtime_update.confirm_boot(boot_context)
-assert(confirm_ok, confirm_err and confirm_err.message or "failed to confirm ClawOS runtime boot")
+assert(confirm_ok, confirm_err and confirm_err.message or "failed to confirm Loom OS runtime boot")
 
 
 
@@ -204,7 +204,7 @@ local ok, loop_err = xpcall(function()
         local _, timer_failures = timers.tick()
         if timer_failures and #timer_failures > 0 then
             for _, timer_err in ipairs(timer_failures) do
-                print("ClawOS timer error:", timer_err.message)
+                print("Loom OS timer error:", timer_err.message)
             end
         end
 
@@ -219,7 +219,7 @@ local ok, loop_err = xpcall(function()
         -- The UI state only observes pending_version and requests soft restart.
         local update_ready, update_err = update_async.poll(boot_context.version)
         if update_ready == nil and update_err then
-            print("ClawOS update poll error:", update_err.message or update_err)
+            print("Loom OS update poll error:", update_err.message or update_err)
         end
     end
 end, function(e)

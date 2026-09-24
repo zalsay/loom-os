@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "api": "0.1",
-  "id": "org.clawos.hardware-diagnostics",
+  "id": "org.loom-os.hardware-diagnostics",
   "name": "Hardware Diagnostics",
   "version": "0.1.0",
   "entry": "main.lua",
-  "min_clawos": "0.1.0",
+  "min_loom_os": "0.1.0",
   "permissions": { "sensor": ["imu", "magnetometer.left", "magnetometer.right"] }
 }

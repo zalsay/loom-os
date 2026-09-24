@@ -1,4 +1,4 @@
--- ClawOS core/errors.lua
+-- Loom OS core/errors.lua
 -- Stable error objects shared by the v0.1 core and App API wrappers.
 
 local M = {}

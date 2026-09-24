@@ -1,4 +1,4 @@
--- ClawOS Phase 1 device-side seed + scan test.
+-- Loom OS Phase 1 device-side seed + scan test.
 -- Creates one valid App and one invalid path-traversal App in DATA storage,
 -- then runs apps.scan() and checks isolation behavior.
 
@@ -26,43 +26,43 @@ local function write_app(app_id, manifest, main_lua)
     end
 end
 
-write_app("org.clawos.hello", {
+write_app("org.loom-os.hello", {
     schema = 1,
     api = "0.1",
-    id = "org.clawos.hello",
+    id = "org.loom-os.hello",
     name = "Hello",
     version = "0.1.0",
     entry = "main.lua",
-    min_clawos = "0.1.0",
+    min_loom_os = "0.1.0",
     permissions = {},
 }, [[
 return {
     on_create = function(ctx, args)
-        print("Hello ClawOS")
+        print("Hello Loom OS")
     end,
 }
 ]])
 
-write_app("org.clawos.invalid-path", {
+write_app("org.loom-os.invalid-path", {
     schema = 1,
     api = "0.1",
-    id = "org.clawos.invalid-path",
+    id = "org.loom-os.invalid-path",
     name = "Invalid Path Fixture",
     version = "0.1.0",
     entry = "../main.lua",
-    min_clawos = "0.1.0",
+    min_loom_os = "0.1.0",
     permissions = {},
 }, nil)
 
 local result, scan_err = apps.scan()
 assert(result, scan_err and scan_err.message or "apps.scan failed")
 
-local hello = result.apps["org.clawos.hello"]
+local hello = result.apps["org.loom-os.hello"]
 assert(hello and hello.enabled, "T01 failed: Hello App was not discovered")
 
 local found_invalid = false
 for _, record in ipairs(result.invalid) do
-    if record.source_name == "org.clawos.invalid-path" then
+    if record.source_name == "org.loom-os.invalid-path" then
         found_invalid = true
         assert(record.error, "T02/T04 failed: invalid App has no error")
         assert(record.error.code == "E_INVALID_ARG", "T04 failed: expected E_INVALID_ARG")

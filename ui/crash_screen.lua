@@ -1,4 +1,4 @@
--- ClawOS ui/crash_screen.lua
+-- Loom OS ui/crash_screen.lua
 
 local M = {}
 

@@ -1,4 +1,4 @@
--- ClawOS system/net/adapters/espclaw_http.lua
+-- Loom OS system/net/adapters/espclaw_http.lua
 -- Adapter for ESP-Claw's registered http_request Capability.
 
 local errors = require("system.net.errors")
@@ -21,7 +21,7 @@ local function invoke(capability, name, args)
         return a, b
     end
 
-    -- Defensive compatibility aliases. Current ClawOS code does not depend on
+    -- Defensive compatibility aliases. Current Loom OS code does not depend on
     -- these names, but keeping the adapter tolerant makes upstream refactors
     -- less disruptive.
     for _, key in ipairs({"invoke", "execute", "run"}) do

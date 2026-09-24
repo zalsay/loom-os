@@ -1,4 +1,4 @@
-﻿-- ClawOS core/ui_runtime.lua
+﻿-- Loom OS core/ui_runtime.lua
 -- Owns the single LVGL runtime, root screen, App layer and system bar.
 
 
@@ -151,7 +151,7 @@ function M.init(options)
 
 
     local title = lvgl.label(system_bar, {
-        text = "ClawOS",
+        text = "Loom OS",
         align = "left_mid",
         x = 8,
         text_color = "#ffffff",
@@ -194,7 +194,7 @@ end
 
 function M.set_title(text)
     if state.title and state.title:is_valid() then
-        state.title:set_text(text or "ClawOS")
+        state.title:set_text(text or "Loom OS")
     end
 end
 

@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "api": "0.1",
-  "id": "org.clawos.sandbox",
+  "id": "org.loom-os.sandbox",
   "name": "Sandbox Fixture",
   "version": "0.1.0",
   "entry": "main.lua",
-  "min_clawos": "0.1.0",
+  "min_loom_os": "0.1.0",
   "permissions": {
     "gpio": { "pins": [10] },
     "sensor": ["environment"]

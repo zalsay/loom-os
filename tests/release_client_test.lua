@@ -6,17 +6,17 @@ local client = require("update.release_client")
 local function release(version, channel, board, min_bootstrap)
     return {
         schema = 1,
-        product = "clawos",
+        product = "loom-os",
         board = board or "esp-mosaico",
         channel = channel or "stable",
         version = version,
-        release_id = "clawos:" .. (board or "esp-mosaico") .. ":" .. version,
+        release_id = "loom-os:" .. (board or "esp-mosaico") .. ":" .. version,
         entry = "main.lua",
         min_bootstrap = min_bootstrap or "0.1.0",
         files = {
             {
                 path = "main.lua",
-                url = "https://updates.example.com/clawos/" .. version .. "/main.lua",
+                url = "https://updates.example.com/files/esp-mosaico/" .. version .. "/main.lua",
                 size = 100,
             },
         },
@@ -29,7 +29,7 @@ local mode = "no_update"
 
 http.set_adapter({
     request = function(options)
-        assert(options.url:match("^https://updates%.example%.com/v1/clawos/releases/latest"))
+        assert(options.url:match("^https://updates%.example%.com/v1/loom%-os/releases/latest"))
         assert(options.url:find("bootstrap=0.1.0", 1, true))
         if mode == "no_update" then
             return { status = 204, body = "" }

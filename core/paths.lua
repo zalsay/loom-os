@@ -1,5 +1,5 @@
--- ClawOS core/paths.lua
--- Resolves writable ClawOS paths from ESP-Claw's storage DATA root.
+-- Loom OS core/paths.lua
+-- Resolves writable Loom OS paths from ESP-Claw's storage DATA root.
 
 
 local storage = require("storage")
@@ -49,18 +49,18 @@ function M.resolve()
     end
 
 
-    local clawos = storage.join_path(root, "clawos")
+    local loom_os = storage.join_path(root, "loom-os")
     local result = {
         data_root = root,
-        root = clawos,
-        apps = storage.join_path(clawos, "apps"),
-        appdata = storage.join_path(clawos, "appdata"),
-        app_staging = storage.join_path(clawos, "app-staging"),
-        authoring = storage.join_path(clawos, "authoring"),
-        cache = storage.join_path(clawos, "cache"),
-        logs = storage.join_path(clawos, "logs"),
-        state = storage.join_path(clawos, "state"),
-        versions = storage.join_path(clawos, "versions"),
+        root = loom_os,
+        apps = storage.join_path(loom_os, "apps"),
+        appdata = storage.join_path(loom_os, "appdata"),
+        app_staging = storage.join_path(loom_os, "app-staging"),
+        authoring = storage.join_path(loom_os, "authoring"),
+        cache = storage.join_path(loom_os, "cache"),
+        logs = storage.join_path(loom_os, "logs"),
+        state = storage.join_path(loom_os, "state"),
+        versions = storage.join_path(loom_os, "versions"),
     }
     return result
 end

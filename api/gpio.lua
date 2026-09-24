@@ -1,4 +1,4 @@
--- ClawOS api/gpio.lua
+-- Loom OS api/gpio.lua
 -- Permission-aware GPIO wrapper over ESP-Claw lua_driver_gpio.
 
 local gpio = require("gpio")

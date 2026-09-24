@@ -1,5 +1,5 @@
-﻿-- ClawOS core/runtime_version.lua
--- Canonical ClawOS Runtime version parser/comparator.
+﻿-- Loom OS core/runtime_version.lua
+-- Canonical Loom OS Runtime version parser/comparator.
 -- The server and device MUST follow the same rules.
 
 
@@ -149,8 +149,8 @@ function M.validate_manifest(release)
     if release.schema ~= 1 then
         return nil, "release schema must be 1"
     end
-    if release.product ~= "clawos" then
-        return nil, "product must be clawos"
+    if release.product ~= "loom-os" then
+        return nil, "product must be loom-os"
     end
     if type(release.board) ~= "string" or release.board == "" then
         return nil, "board is required"

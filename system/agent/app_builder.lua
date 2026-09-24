@@ -1,7 +1,7 @@
 -- Uses a verified structured-output provider; no placeholder success response.
 local errors = require("core.errors")
 local M = {}
-local RULES = "Return a JSON ClawOS App draft. Use only catalog APIs and no native modules, os, io, debug, package, load, dofile or loadfile."
+local RULES = "Return a JSON Loom OS App draft. Use only catalog APIs and no native modules, os, io, debug, package, load, dofile or loadfile."
 function M.new(provider, catalog)
     local self = {}
     function self.generate_app(input)

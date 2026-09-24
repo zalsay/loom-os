@@ -1,4 +1,4 @@
--- ClawOS system/net/errors.lua
+-- Loom OS system/net/errors.lua
 -- Stable error objects shared by HTTP, download and WebSocket helpers.
 
 local M = {}

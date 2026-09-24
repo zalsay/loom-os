@@ -1,4 +1,4 @@
--- ClawOS system/net/http_client.lua
+-- Loom OS system/net/http_client.lua
 -- Stable HTTP facade. The default adapter uses ESP-Claw's capability bridge.
 
 local json = require("json")

@@ -1,9 +1,9 @@
--- ClawOS system/net/adapters/espclaw_websocket.lua
+-- Loom OS system/net/adapters/espclaw_websocket.lua
 -- Deliberately not auto-enabled.
 --
 -- ESP-Claw currently uses esp_websocket_client internally (for example Web Chat
 -- and IM integrations), but the current public Lua module catalog does not
--- expose a generic WebSocket client. ClawOS keeps this backend boundary so a
+-- expose a generic WebSocket client. Loom OS keeps this backend boundary so a
 -- future native binding can be added without changing system/net/websocket_client.lua.
 
 local errors = require("system.net.errors")

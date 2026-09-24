@@ -1,4 +1,4 @@
--- ClawOS system/net/websocket_client.lua
+-- Loom OS system/net/websocket_client.lua
 -- Stable WebSocket facade. Wire protocol is supplied by a backend adapter.
 
 local json = require("json")

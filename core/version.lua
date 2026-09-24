@@ -1,8 +1,8 @@
--- ClawOS core/version.lua
+-- Loom OS core/version.lua
 -- Single source of truth for the runtime and App API version.
 
 return {
-    clawos = "0.1.1",
+    loom_os = "0.1.1",
     app_api = "0.1",
     manifest_schema = 1,
 }

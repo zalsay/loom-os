@@ -1,12 +1,12 @@
 ﻿{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "ClawOS Runtime Release Manifest v1",
+  "title": "Loom OS Runtime Release Manifest v1",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema","product","board","channel","version","release_id","entry","min_bootstrap","files"],
   "properties": {
     "schema": { "const": 1 },
-    "product": { "const": "clawos" },
+    "product": { "const": "loom-os" },
     "board": {
       "type": "string",
       "minLength": 1,
@@ -23,7 +23,7 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 128,
-      "pattern": "^clawos:[a-z0-9][a-z0-9-]*:(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-(dev|beta|rc)\\.([1-9][0-9]*))?$"
+      "pattern": "^loom-os:[a-z0-9][a-z0-9-]*:(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-(dev|beta|rc)\\.([1-9][0-9]*))?$"
     },
     "entry": { "const": "main.lua" },
     "min_bootstrap": {

@@ -1,4 +1,4 @@
--- ClawOS Phase 2 core test.
+-- Loom OS Phase 2 core test.
 -- Covers ResourceRegistry, permissions, sandbox restrictions and Service ctx isolation.
 
 local storage = require("storage")
@@ -17,7 +17,7 @@ local function ensure_dir(path)
     if not storage.exists(path) then storage.mkdir(path) end
 end
 
-local app_dir = storage.join_path(paths.apps, "org.clawos.sandbox")
+local app_dir = storage.join_path(paths.apps, "org.loom-os.sandbox")
 local lib_dir = storage.join_path(app_dir, "lib")
 ensure_dir(app_dir)
 ensure_dir(lib_dir)
@@ -25,11 +25,11 @@ ensure_dir(lib_dir)
 storage.write_file(storage.join_path(app_dir, "manifest.json"), json.encode({
     schema = 1,
     api = "0.1",
-    id = "org.clawos.sandbox",
+    id = "org.loom-os.sandbox",
     name = "Sandbox Fixture",
     version = "0.1.0",
     entry = "main.lua",
-    min_clawos = "0.1.0",
+    min_loom_os = "0.1.0",
     permissions = {
         gpio = { pins = {10} },
         sensor = {"environment"},
@@ -53,13 +53,13 @@ return {
         assert(debug == nil)
         local mutate_ok = pcall(function() math.pi = 0 end)
         assert(not mutate_ok)
-        assert(greeting.text("ClawOS") == "Hello ClawOS")
+        assert(greeting.text("Loom OS") == "Hello Loom OS")
     end,
 }
 ]])
 
 local scan = assert(apps.scan())
-local record = assert(scan.apps["org.clawos.sandbox"], "Sandbox fixture missing")
+local record = assert(scan.apps["org.loom-os.sandbox"], "Sandbox fixture missing")
 record.data_dir = storage.join_path(paths.appdata, record.id)
 record.assets_dir = storage.join_path(record.dir, "assets")
 

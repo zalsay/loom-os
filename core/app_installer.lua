@@ -24,8 +24,8 @@ function M.validate_manifest(manifest)
         return fail("E_APP_ENTRY", "invalid Lua entry path")
     end
     if manifest.schema ~= 1 or manifest.api ~= "0.1" or type(manifest.name) ~= "string"
-        or manifest.name == "" or type(manifest.min_clawos) ~= "string" then
-        return fail("E_APP_MANIFEST", "schema, api, name and min_clawos are required")
+        or manifest.name == "" or type(manifest.min_loom_os) ~= "string" then
+        return fail("E_APP_MANIFEST", "schema, api, name and min_loom_os are required")
     end
     if manifest.permissions ~= nil and type(manifest.permissions) ~= "table" then
         return fail("E_APP_MANIFEST", "permissions must be an object")

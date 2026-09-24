@@ -1,4 +1,4 @@
--- ClawOS Phase 5 device-side non-destructive test.
+-- Loom OS Phase 5 device-side non-destructive test.
 -- Tests managed timers and permission-before-hardware behavior.
 
 local timers = require("core.timers")
@@ -13,7 +13,7 @@ assert(timers.set_clock(function() return now end))
 local registry = assert(resources.new(5001))
 local app = {
     manifest = {
-        id = "org.clawos.phase5-test",
+        id = "org.loom-os.phase5-test",
         permissions = {},
     }
 }
@@ -45,4 +45,4 @@ assert(err and err.code == "E_PERMISSION")
 registry2:release_all()
 
 timers.reset_clock()
-print("ClawOS Phase 5 core API test: PASS")
+print("Loom OS Phase 5 core API test: PASS")

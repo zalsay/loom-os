@@ -1,4 +1,4 @@
-﻿-- ClawOS tests/runtime_ota_device_start.lua
+﻿-- Loom OS tests/runtime_ota_device_start.lua
 -- Real-device server/download/staging smoke test.
 -- Run in a system Lua State, preferably through ESP-Claw async execution.
 
@@ -53,4 +53,4 @@ assert(after.active_version == state.active_version, "active_version changed bef
 
 
 print("runtime_ota_device_start: PASS pending=" .. release.version)
-print("The running ClawOS main loop will observe pending_version and soft-restart through bootstrap.")
+print("The running Loom OS main loop will observe pending_version and soft-restart through bootstrap.")

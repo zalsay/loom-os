@@ -2,7 +2,7 @@ return {
     on_create = function(ctx)
         local root, lv = ctx.ui.root, ctx.ui.lv
         root:set_flex({ flow = "column", main = "start", cross = "start" })
-        lv.label(root, { text = "ClawOS Diagnostics" })
+        lv.label(root, { text = "Loom OS Diagnostics" })
         local info = ctx.system.info()
         lv.label(root, { text = "Board: " .. tostring(info.board or "unknown") })
         local display = info.display or {}

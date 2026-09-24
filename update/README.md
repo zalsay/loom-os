@@ -1,4 +1,4 @@
-﻿# ClawOS Runtime OTA P0
+﻿# Loom OS Runtime OTA P0
 
 
 
@@ -31,7 +31,7 @@
 
 
 
-This updates **ClawOS itself** (Lua/LVGL runtime files), not ESP-IDF / ESP-Claw firmware.
+This updates **Loom OS itself** (Lua/LVGL runtime files), not ESP-IDF / ESP-Claw firmware.
 
 
 
@@ -64,7 +64,7 @@ This updates **ClawOS itself** (Lua/LVGL runtime files), not ESP-IDF / ESP-Claw 
 
 
 
-ESP-Claw keeps running as the host runtime. ClawOS releases live entirely in the writable DATA root, which ESP-Claw exposes through `storage.get_root_dir()`.
+ESP-Claw keeps running as the host runtime. Loom OS releases live entirely in the writable DATA root, which ESP-Claw exposes through `storage.get_root_dir()`.
 
 
 
@@ -132,8 +132,8 @@ ESP-Claw keeps running as the host runtime. ClawOS releases live entirely in the
 
 ```text
 <DATA_ROOT>/
-├── clawos/                       # Apps + appdata + logs; NOT replaced by ClawOS OTA
-└── clawos-runtime/
+├── loom-os/                       # Apps + appdata + logs; NOT replaced by Loom OS OTA
+└── loom-os-runtime/
     ├── state.json
     ├── releases/
     │   ├── 0.1.0/
@@ -177,7 +177,7 @@ ESP-Claw keeps running as the host runtime. ClawOS releases live entirely in the
 
 
 
-A stable `bootstrap.lua` sits outside the versioned release directory and is not replaced by normal ClawOS updates.
+A stable `bootstrap.lua` sits outside the versioned release directory and is not replaced by normal Loom OS updates.
 
 
 
@@ -287,7 +287,7 @@ rename staging/0.1.1 -> releases/0.1.1
         ↓
 state.pending_version = 0.1.1
         ↓
-soft restart ClawOS
+soft restart Loom OS
         ↓
 bootstrap loads 0.1.1
         ↓
@@ -363,7 +363,7 @@ If the candidate throws before `confirm_boot()`, bootstrap clears the pending ca
 
 
 
-No ESP32 reboot is required for normal ClawOS updates. A board reboot is optional and does not change firmware slots.
+No ESP32 reboot is required for normal Loom OS updates. A board reboot is optional and does not change firmware slots.
 
 
 
@@ -570,7 +570,7 @@ The critical rule is that `active_version` is not changed until the new runtime 
 
 
 
-The candidate ClawOS should call `core.runtime_update.confirm_boot(boot_context)` only after:
+The candidate Loom OS should call `core.runtime_update.confirm_boot(boot_context)` only after:
 
 
 
@@ -880,7 +880,7 @@ The install routine SHOULD run in an ESP-Claw asynchronous Lua job or another sy
 
 
 
-ESP-Claw already separates read-only SYSTEM from writable DATA and supports runtime Lua/file workflows, so this design does not require ESP-IDF application OTA for normal ClawOS fixes or features.
+ESP-Claw already separates read-only SYSTEM from writable DATA and supports runtime Lua/file workflows, so this design does not require ESP-IDF application OTA for normal Loom OS fixes or features.
 
 
 
@@ -946,7 +946,7 @@ ESP-Claw already separates read-only SYSTEM from writable DATA and supports runt
 
 
 
-ClawOS Runtime OTA updates:
+Loom OS Runtime OTA updates:
 
 
 
@@ -984,7 +984,7 @@ ClawOS Runtime OTA updates:
 - `api/`
 - `ui/`
 - `boards/`
-- system Lua services belonging to ClawOS
+- system Lua services belonging to Loom OS
 
 
 
@@ -1088,7 +1088,7 @@ It does not update:
 
 
 
-If a future ClawOS feature requires a new native ESP-Claw Lua module, that dependency is a firmware compatibility requirement and cannot be solved by ClawOS Runtime OTA alone.
+If a future Loom OS feature requires a new native ESP-Claw Lua module, that dependency is a firmware compatibility requirement and cannot be solved by Loom OS Runtime OTA alone.
 
 
 
@@ -1156,12 +1156,12 @@ If a future ClawOS feature requires a new native ESP-Claw Lua module, that depen
 
 - C01: install a new release without modifying the active release.
 - C02: Lua syntax failure never sets `pending_version`.
-- C03: download failure leaves active ClawOS untouched.
+- C03: download failure leaves active Loom OS untouched.
 - C04: new release soft-restarts without rebooting ESP32.
 - C05: candidate crash before confirmation returns to previous release.
 - C06: healthy candidate confirms and becomes active.
-- C07: Apps/appdata survive ClawOS update.
-- C08: normal App sandbox cannot write `clawos-runtime/`.
+- C07: Apps/appdata survive Loom OS update.
+- C08: normal App sandbox cannot write `loom-os-runtime/`.
 - C09: update progress can be surfaced by system UI.
 - C10: HTTPS, version-policy, or declared-size validation failure blocks activation.
 
@@ -1320,7 +1320,7 @@ The LVGL main Lua State performs no HTTP download or release-file validation.
 
 
 
-The async job uses the exclusive group `clawos-runtime-update`; v0.1 allows only one Runtime OTA job at a time.
+The async job uses the exclusive group `loom-os-runtime-update`; v0.1 allows only one Runtime OTA job at a time.
 
 
 
@@ -1406,13 +1406,13 @@ Before testing Runtime OTA on a clean device:
 
 
 1. install stable `bootstrap.lua` outside the versioned release directory;
-2. copy the current ClawOS source tree to a temporary DATA directory;
+2. copy the current Loom OS source tree to a temporary DATA directory;
 3. run `provision/install_initial.lua` with `args.source_root`;
 4. run `tests/runtime_provision_check.lua`;
-5. start ClawOS through `bootstrap.lua`.
+5. start Loom OS through `bootstrap.lua`.
 
 
 The provisioning script stages and validates the full Runtime before creating `releases/0.1.0` and `state.json`.
 
 
-For a real `0.1.0 -> 0.1.1` test, `tests/runtime_ota_device_start.lua` performs the server query and installation in a system Lua State. Persisted `pending_version` is authoritative; the foreground ClawOS loop will request soft restart even if its in-memory update job object does not exist.
+For a real `0.1.0 -> 0.1.1` test, `tests/runtime_ota_device_start.lua` performs the server query and installation in a system Lua State. Persisted `pending_version` is authoritative; the foreground Loom OS loop will request soft restart even if its in-memory update job object does not exist.

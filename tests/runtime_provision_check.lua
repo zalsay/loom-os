@@ -1,4 +1,4 @@
--- ClawOS tests/runtime_provision_check.lua
+-- Loom OS tests/runtime_provision_check.lua
 -- Read-only verification after initial 0.1.1 provisioning.
 
 
@@ -9,7 +9,7 @@ local files = require("provision.runtime_files")
 
 local expected = (args and args.expected_version) or "0.1.1"
 local data_root = assert(storage.get_root_dir())
-local runtime_root = storage.join_path(data_root, "clawos-runtime")
+local runtime_root = storage.join_path(data_root, "loom-os-runtime")
 local state_path = storage.join_path(runtime_root, "state.json")
 local release_dir = storage.join_path(storage.join_path(runtime_root, "releases"), expected)
 

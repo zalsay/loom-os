@@ -56,11 +56,11 @@ check(layout, layout_err)
 local function pkg(id, version, source, extra, permissions, services)
     local files = { { path = "main.lua", content = source } }
     for _, f in ipairs(extra or {}) do files[#files + 1] = f end
-    return { manifest = { schema = 1, api = "0.1", min_clawos = "0.1.0", id = id,
+    return { manifest = { schema = 1, api = "0.1", min_loom_os = "0.1.0", id = id,
         name = "Test App", version = version, entry = "main.lua",
         permissions = permissions or {}, services = services }, files = files }
 end
-local id = "org.clawos.integration"
+local id = "org.loom-os.integration"
 local service_file = { path = "services/monitor.lua", content = [[return {
   on_start = function(ctx)
     assert(ctx.ui == nil and ctx.nav == nil)
@@ -119,15 +119,15 @@ assert(not require("core.service_runner").exists(id .. ":monitor"))
 assert(backend.read_state(id).active_version == "1.0.2")
 
 local provider = { generate_app = function()
-    return { operation="create", manifest = {schema=1,api="0.1",min_clawos="0.1.0",
-        id="org.clawos.generated",name="Generated",version="1.0.0",entry="main.lua",permissions={}},
+    return { operation="create", manifest = {schema=1,api="0.1",min_loom_os="0.1.0",
+        id="org.loom-os.generated",name="Generated",version="1.0.0",entry="main.lua",permissions={}},
         files={{path="main.lua",content="return { on_create=function(ctx) end }"}} }
 end }
 local author = require("core.creator_runtime").new(provider)
 local draft = check(author.create({prompt="demo"}))
 assert(draft.report.ok)
 local installed = check(author.install(draft.draft_id, {permissions={}}))
-assert(installed.pending and backend.read_state("org.clawos.generated").pending_version == "1.0.0")
+assert(installed.pending and backend.read_state("org.loom-os.generated").pending_version == "1.0.0")
 local forbidden = require("core.app_validator").new({
     lua_check=function() return true end, api_check=function() return true end,
     board_check=function() return true end,

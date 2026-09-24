@@ -1,4 +1,4 @@
--- ClawOS ui/launcher.lua
+-- Loom OS ui/launcher.lua
 -- Minimal scrollable Launcher for Phase 3/4.
 
 local M = {}

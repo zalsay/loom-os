@@ -1,4 +1,4 @@
--- ClawOS api/nav.lua
+-- Loom OS api/nav.lua
 
 local navigation = require("core.navigation")
 

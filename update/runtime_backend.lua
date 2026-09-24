@@ -1,4 +1,4 @@
--- ClawOS update/runtime_backend.lua
+-- Loom OS update/runtime_backend.lua
 -- System-only Runtime OTA transport based on system.net.download.
 
 local download = require("system.net.download")

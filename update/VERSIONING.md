@@ -1,7 +1,7 @@
-﻿# ClawOS Runtime Versioning Specification v1
+﻿# Loom OS Runtime Versioning Specification v1
 
 
-This file is the canonical server-side version-number policy for ClawOS Runtime releases. Device-side validation in `core/runtime_version.lua` MUST implement the same rules.
+This file is the canonical server-side version-number policy for Loom OS Runtime releases. Device-side validation in `core/runtime_version.lua` MUST implement the same rules.
 
 
 ## 1. Canonical format
@@ -134,7 +134,7 @@ Do not compare version strings lexically.
 ## 4. Meaning of MAJOR / MINOR / PATCH
 
 
-Before ClawOS 1.0:
+Before Loom OS 1.0:
 
 
 - PATCH: bug fix only, no intentional public API break.
@@ -142,7 +142,7 @@ Before ClawOS 1.0:
 - MAJOR remains 0 until the Runtime/App API is declared stable.
 
 
-After ClawOS 1.0:
+After Loom OS 1.0:
 
 
 - PATCH: backward-compatible bug fix.
@@ -196,7 +196,7 @@ Canonical format:
 
 
 ```text
-clawos:<board>:<version>
+loom-os:<board>:<version>
 ```
 
 
@@ -204,8 +204,8 @@ Example:
 
 
 ```text
-clawos:esp-mosaico:0.1.1
-clawos:esp-mosaico:0.2.0-beta.1
+loom-os:esp-mosaico:0.1.1
+loom-os:esp-mosaico:0.2.0-beta.1
 ```
 
 
@@ -226,11 +226,11 @@ Required:
 ```json
 {
   "schema": 1,
-  "product": "clawos",
+  "product": "loom-os",
   "board": "esp-mosaico",
   "channel": "stable",
   "version": "0.1.1",
-  "release_id": "clawos:esp-mosaico:0.1.1",
+  "release_id": "loom-os:esp-mosaico:0.1.1",
   "min_bootstrap": "0.1.0"
 }
 ```
@@ -246,7 +246,7 @@ Recommended query:
 
 
 ```text
-GET /v1/clawos/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0
+GET /v1/loom-os/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0
 ```
 
 

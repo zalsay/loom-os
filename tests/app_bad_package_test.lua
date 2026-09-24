@@ -3,7 +3,7 @@ local installer = require("core.app_installer")
 
 local ok = installer.validate_package({
     manifest = {
-        id = "org.clawos.bad",
+        id = "org.loom-os.bad",
         version = "1.0.0",
         entry = "../escape.lua"
     },

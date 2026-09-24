@@ -1,4 +1,4 @@
-﻿-- ClawOS core/board.lua
+﻿-- Loom OS core/board.lua
 local board_manager = require("board_manager")
 local errors = require("core.errors")
 
@@ -11,7 +11,7 @@ local KNOWN = { mosaico = "boards.mosaico" }
 function M.load(id)
     local module_name = KNOWN[id]
     if not module_name then
-        return nil, errors.new("E_NOT_FOUND", "unknown ClawOS board adapter", {board=id})
+        return nil, errors.new("E_NOT_FOUND", "unknown Loom OS board adapter", {board=id})
     end
     local ok, adapter = pcall(require, module_name)
     if not ok then
@@ -44,7 +44,7 @@ function M.detect()
             end
         end
     end
-    return nil, errors.new("E_UNSUPPORTED", "no ClawOS board adapter matched current board", {
+    return nil, errors.new("E_UNSUPPORTED", "no Loom OS board adapter matched current board", {
         name=info.name, chip=info.chip, version=info.version
     })
 end

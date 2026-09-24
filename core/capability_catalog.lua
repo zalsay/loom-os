@@ -17,7 +17,7 @@ function M.current(board)
         permissions[#permissions + 1] = "agent"
     end
     return {
-        runtime_version = version.clawos,
+        runtime_version = version.loom_os,
         board = board or "mosaico",
         apis = apis,
         sensors = sensor_ids,

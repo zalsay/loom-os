@@ -1,4 +1,4 @@
-﻿# ClawOS Runtime Release Server API v1
+﻿# Loom OS Runtime Release Server API v1
 
 
 
@@ -19,7 +19,7 @@ Version syntax and publication rules are defined only by `VERSIONING.md`.
 
 
 ```text
-GET /v1/clawos/releases/latest
+GET /v1/loom-os/releases/latest
 ```
 
 
@@ -46,7 +46,7 @@ Example:
 
 
 ```text
-GET /v1/clawos/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0&bootstrap=0.1.0
+GET /v1/loom-os/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0&bootstrap=0.1.0
 ```
 
 
@@ -67,7 +67,7 @@ For a valid request, the server:
 
 
 
-1. selects product `clawos`;
+1. selects product `loom-os`;
 2. selects the requested board;
 3. selects the requested channel;
 4. rejects releases incompatible with the supplied bootstrap version;
@@ -114,17 +114,17 @@ The response body is the release manifest itself, not an envelope:
 ```json
 {
   "schema": 1,
-  "product": "clawos",
+  "product": "loom-os",
   "board": "esp-mosaico",
   "channel": "stable",
   "version": "0.1.1",
-  "release_id": "clawos:esp-mosaico:0.1.1",
+  "release_id": "loom-os:esp-mosaico:0.1.1",
   "entry": "main.lua",
   "min_bootstrap": "0.1.0",
   "files": [
     {
       "path": "main.lua",
-      "url": "https://updates.example.com/clawos/0.1.1/main.lua",
+      "url": "https://updates.example.com/files/esp-mosaico/0.1.1/main.lua",
       "size": 5563
     }
   ]
@@ -170,7 +170,7 @@ Recommended status codes:
 
 
 
-ClawOS treats non-2xx responses as errors.
+Loom OS treats non-2xx responses as errors.
 
 
 
@@ -197,7 +197,7 @@ In addition:
 
 
 
-- `release_id == clawos:<board>:<version>`;
+- `release_id == loom-os:<board>:<version>`;
 - all file URLs use HTTPS;
 - each file declares its exact byte size;
 - `main.lua` is present;
@@ -206,7 +206,7 @@ In addition:
 
 
 
-ClawOS v0.1 intentionally does not require per-file hash fields.
+Loom OS v0.1 intentionally does not require per-file hash fields.
 
 
 
@@ -255,7 +255,7 @@ ESP-Claw async Lua job
    ↓
 update.release_client.latest()
    ↓
-GET /v1/clawos/releases/latest
+GET /v1/loom-os/releases/latest
    ↓
 200 manifest / 204 no update
    ↓
@@ -276,7 +276,7 @@ The minimal P0 server implementation is stored under:
 
 
 ```text
-ClawOS/server/
+loom-os/server/
 ├── main.go
 ├── release.go
 ├── publish.go
@@ -289,10 +289,10 @@ ClawOS/server/
 Behavior implemented:
 
 
-- strict ClawOS version parsing and numeric ordering;
+- strict Loom OS version parsing and numeric ordering;
 - immutable version directories;
 - bootstrap compatibility filtering;
-- `GET /v1/clawos/releases/latest`;
+- `GET /v1/loom-os/releases/latest`;
 - HTTP 200 with a strict manifest when an update is available;
 - HTTP 204 when no compatible newer release exists;
 - static release-file download from manifest-listed paths only;
@@ -300,7 +300,7 @@ Behavior implemented:
 - refusal to overwrite an existing published version.
 
 
-The reference service is intentionally standard-library-only and should be placed behind HTTPS termination in production. ClawOS v0.1 intentionally does not add accounts, databases, signatures, hashes, dashboards, or admin APIs.
+The reference service is intentionally standard-library-only and should be placed behind HTTPS termination in production. Loom OS v0.1 intentionally does not add accounts, databases, signatures, hashes, dashboards, or admin APIs.
 
 
 Go unit tests cover numeric version ordering, prerelease ordering, invalid version rejection, manifest validation, latest selection, and bootstrap compatibility filtering.

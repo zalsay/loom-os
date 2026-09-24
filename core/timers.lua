@@ -1,5 +1,5 @@
--- ClawOS core/timers.lua
--- Cooperative timer scheduler driven by the ClawOS main loop.
+-- Loom OS core/timers.lua
+-- Cooperative timer scheduler driven by the Loom OS main loop.
 
 local errors = require("core.errors")
 

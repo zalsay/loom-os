@@ -1,12 +1,12 @@
-# ClawOS OTA 发布服务
+# Loom OS OTA 发布服务
 
-这是 ClawOS Runtime OTA v1 的 Go 参考实现，仅依赖 Go 标准库。运行和构建需要 Go 1.22 或更新版本。
+这是 Loom OS Runtime OTA v1 的 Go 参考实现，仅依赖 Go 标准库。运行和构建需要 Go 1.22 或更新版本。
 
 ## 功能
 
-- 按 ClawOS 版本规则解析和排序版本，区分 stable、rc、beta、dev；
+- 按 Loom OS 版本规则解析和排序版本，区分 stable、rc、beta、dev；
 - 按开发板和渠道挑选比当前版本更新、且符合 bootstrap 版本要求的发布；
-- `GET /v1/clawos/releases/latest`：有更新时返回 `200` 和清单，无更新时返回 `204`；
+- `GET /v1/loom-os/releases/latest`：有更新时返回 `200` 和清单，无更新时返回 `204`；
 - `GET /files/<board>/<version>/<path>`：只提供发布清单列出的文件；
 - 发布时计算文件实际大小和 HTTPS URL，以临时目录写入后发布，拒绝覆盖已有版本。
 
@@ -23,7 +23,7 @@
 
 ```text
 release-data/
-└── clawos/
+└── loom-os/
     └── esp-mosaico/
         └── 0.1.1/
             ├── manifest.json
@@ -49,7 +49,7 @@ go build -o release-server .
 ```bash
 go run . publish \
   -store-root ./release-data \
-  -source-root ./clawos-0.1.1 \
+  -source-root ./loom-os-0.1.1 \
   -manifest ./release-manifest.json \
   -public-base-url https://updates.example.com
 ```
@@ -62,12 +62,12 @@ go run . publish \
 go run . serve -root ./release-data -host 127.0.0.1 -port 8080
 ```
 
-也可以运行构建后的 `./release-server serve ...`；`CLAWOS_RELEASE_ROOT` 可设置默认发布目录。生产环境应在反向代理上提供 HTTPS，设备端默认拒绝普通 HTTP。
+也可以运行构建后的 `./release-server serve ...`；`LOOM_OS_RELEASE_ROOT` 可设置默认发布目录。生产环境应在反向代理上提供 HTTPS，设备端默认拒绝普通 HTTP。
 
 设备查询示例：
 
 ```text
-GET /v1/clawos/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0&bootstrap=0.1.0
+GET /v1/loom-os/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0&bootstrap=0.1.0
 ```
 
 版本优先级以 [`update/VERSIONING.md`](../update/VERSIONING.md) 为准；接口结构见 [`update/SERVER_API.md`](../update/SERVER_API.md)。

@@ -1,5 +1,5 @@
-﻿-- ClawOS core/runtime_control.lua
--- Coordinates a soft restart of ClawOS without rebooting ESP-Claw/ESP32.
+﻿-- Loom OS core/runtime_control.lua
+-- Coordinates a soft restart of Loom OS without rebooting ESP-Claw/ESP32.
 
 
 local M = {}

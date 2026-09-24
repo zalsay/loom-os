@@ -1,4 +1,4 @@
--- ClawOS provision/install_initial.lua
+-- Loom OS provision/install_initial.lua
 -- One-time provisioning of immutable Runtime release 0.1.1.
 -- Run as a system script, not from an App sandbox.
 
@@ -14,7 +14,7 @@ assert(type(source_root) == "string" and source_root ~= "", "args.source_root is
 
 
 local data_root = assert(storage.get_root_dir())
-local runtime_root = storage.join_path(data_root, "clawos-runtime")
+local runtime_root = storage.join_path(data_root, "loom-os-runtime")
 local releases_root = storage.join_path(runtime_root, "releases")
 local staging_root = storage.join_path(runtime_root, "staging")
 local staging_dir = storage.join_path(staging_root, "provision-" .. VERSION)
@@ -79,7 +79,7 @@ mkdir(staging_dir)
 
 for index, relative in ipairs(files) do
     copy_file(relative)
-    print(string.format("CLAWOS_PROVISION_COPY %d/%d %s", index, #files, relative))
+    print(string.format("LOOM_OS_PROVISION_COPY %d/%d %s", index, #files, relative))
 end
 
 
@@ -117,5 +117,5 @@ local state_rename_ok, state_rename_result = pcall(storage.rename, state_tmp, st
 assert(state_rename_ok and state_rename_result ~= false, "failed to activate Runtime state")
 
 
-print("CLAWOS_PROVISION_READY " .. VERSION)
-print("Run the stable bootstrap.lua to start ClawOS from releases/" .. VERSION)
+print("LOOM_OS_PROVISION_READY " .. VERSION)
+print("Run the stable bootstrap.lua to start Loom OS from releases/" .. VERSION)

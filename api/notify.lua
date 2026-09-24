@@ -1,4 +1,4 @@
--- ClawOS api/notify.lua
+-- Loom OS api/notify.lua
 -- Permission-aware notification API; UI remains system-owned.
 
 local errors = require("core.errors")

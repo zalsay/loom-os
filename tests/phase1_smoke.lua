@@ -1,4 +1,4 @@
--- ClawOS Phase 1 smoke test.
+-- Loom OS Phase 1 smoke test.
 -- Assumes core/ is visible on package.path and ESP-Claw storage/json modules exist.
 
 local apps = require("core.apps")
@@ -8,7 +8,7 @@ if not result then
     error(string.format("scan failed: %s: %s", err.code or "?", err.message or "?"))
 end
 
-print("ClawOS Phase 1 scan complete")
+print("Loom OS Phase 1 scan complete")
 print("DATA_ROOT:", result.paths.data_root)
 print("APPS_ROOT:", result.paths.apps)
 

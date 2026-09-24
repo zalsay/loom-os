@@ -1,21 +1,21 @@
 ﻿{
   "schema": 1,
-  "product": "clawos",
+  "product": "loom-os",
   "board": "esp-mosaico",
   "channel": "stable",
   "version": "0.1.1",
-  "release_id": "clawos:esp-mosaico:0.1.1",
+  "release_id": "loom-os:esp-mosaico:0.1.1",
   "entry": "main.lua",
   "min_bootstrap": "0.1.0",
   "files": [
-    {"path":"main.lua","url":"https://updates.example.com/clawos/0.1.1/main.lua","size":5563},
-    {"path":"core/runtime_update.lua","url":"https://updates.example.com/clawos/0.1.1/core/runtime_update.lua","size":12301},
-    {"path":"core/runtime_version.lua","url":"https://updates.example.com/clawos/0.1.1/core/runtime_version.lua","size":5083},
-    {"path":"core/update_async.lua","url":"https://updates.example.com/clawos/0.1.1/core/update_async.lua","size":8019},
-    {"path":"system/async/espclaw_jobs.lua","url":"https://updates.example.com/clawos/0.1.1/system/async/espclaw_jobs.lua","size":4208},
-    {"path":"system/net/download.lua","url":"https://updates.example.com/clawos/0.1.1/system/net/download.lua","size":2498},
-    {"path":"update/release_client.lua","url":"https://updates.example.com/clawos/0.1.1/update/release_client.lua","size":4877},
-    {"path":"update/async_install_worker.lua","url":"https://updates.example.com/clawos/0.1.1/update/async_install_worker.lua","size":2693},
-    {"path":"update/runtime_backend.lua","url":"https://updates.example.com/clawos/0.1.1/update/runtime_backend.lua","size":188}
+    {"path":"main.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/main.lua","size":5563},
+    {"path":"core/runtime_update.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/core/runtime_update.lua","size":12301},
+    {"path":"core/runtime_version.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/core/runtime_version.lua","size":5083},
+    {"path":"core/update_async.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/core/update_async.lua","size":8019},
+    {"path":"system/async/espclaw_jobs.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/system/async/espclaw_jobs.lua","size":4208},
+    {"path":"system/net/download.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/system/net/download.lua","size":2498},
+    {"path":"update/release_client.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/update/release_client.lua","size":4877},
+    {"path":"update/async_install_worker.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/update/async_install_worker.lua","size":2693},
+    {"path":"update/runtime_backend.lua","url":"https://updates.example.com/files/esp-mosaico/0.1.1/update/runtime_backend.lua","size":188}
   ]
 }

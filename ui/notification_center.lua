@@ -1,4 +1,4 @@
--- ClawOS ui/notification_center.lua
+-- Loom OS ui/notification_center.lua
 -- Minimal system-owned notification banner renderer.
 
 local notifications = require("core.notifications")
@@ -30,7 +30,7 @@ local function show(ui_state, item)
     root:set_flex({ flow = "column", main = "start", cross = "start" })
 
     lv.label(root, {
-        text = item.title or "ClawOS",
+        text = item.title or "Loom OS",
         text_color = "#ffffff",
     })
     lv.label(root, {

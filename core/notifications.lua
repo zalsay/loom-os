@@ -1,4 +1,4 @@
--- ClawOS core/notifications.lua
+-- Loom OS core/notifications.lua
 -- Data/command queue for system-owned notifications.
 
 local errors = require("core.errors")
@@ -27,7 +27,7 @@ function M.show(options, source_app_id)
     local item = {
         id = id,
         source_app_id = source_app_id,
-        title = options.title or source_app_id or "ClawOS",
+        title = options.title or source_app_id or "Loom OS",
         message = options.message,
         level = level,
     }

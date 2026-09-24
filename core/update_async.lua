@@ -1,4 +1,4 @@
-﻿-- ClawOS core/update_async.lua
+﻿-- Loom OS core/update_async.lua
 -- Main-state coordinator for non-blocking Runtime OTA.
 
 
@@ -38,7 +38,7 @@ end
 
 local function paths()
     local data = storage.get_root_dir()
-    local root = storage.join_path(data, "clawos-runtime")
+    local root = storage.join_path(data, "loom-os-runtime")
     local job_dir = storage.join_path(root, "jobs")
     return {
         root = root,
@@ -87,7 +87,7 @@ end
 local function start_worker(payload, options, target_version)
     options = options or {}
     if active then
-        return nil, errors.new("E_BUSY", "a ClawOS Runtime update job is already active", {
+        return nil, errors.new("E_BUSY", "a Loom OS Runtime update job is already active", {
             job_id = active.job_id,
         })
     end
@@ -111,8 +111,8 @@ local function start_worker(payload, options, target_version)
         args = { request_path = request_path },
         timeout_ms = options.timeout_ms == nil and 0 or options.timeout_ms,
         log_bytes = options.log_bytes or 8192,
-        name = "clawos-runtime-update",
-        exclusive = "clawos-runtime-update",
+        name = "loom-os-runtime-update",
+        exclusive = "loom-os-runtime-update",
         replace = options.replace == true,
     })
     if not job then return nil, job_err end
@@ -230,7 +230,7 @@ function M.cancel()
 end
 
 
--- Called from the ClawOS main loop. It performs no network or release-file I/O.
+-- Called from the Loom OS main loop. It performs no network or release-file I/O.
 -- pending_version in state.json is authoritative even if in-memory job state was lost.
 function M.poll(current_version)
     if active then
@@ -243,7 +243,7 @@ function M.poll(current_version)
             if result.status == "ready" then
                 local version = result.version
                 active = nil
-                runtime_control.request_restart("clawos_update_ready:" .. tostring(version))
+                runtime_control.request_restart("loom_os_update_ready:" .. tostring(version))
                 return true
             elseif result.status == "no_update" then
                 active = nil
@@ -266,7 +266,7 @@ function M.poll(current_version)
         local version = state.pending_version
         active = nil
         last_result = last_result or { status = "ready", version = version }
-        runtime_control.request_restart("clawos_update_ready:" .. tostring(version))
+        runtime_control.request_restart("loom_os_update_ready:" .. tostring(version))
         return true
     end
 

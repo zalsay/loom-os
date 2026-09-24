@@ -13,8 +13,8 @@ deps.agent = {
         return {
             operation = input.operation,
             manifest = {
-                schema = 1, api = "0.1", min_clawos = "0.1.0",
-                id = "org.clawos.generated.demo",
+                schema = 1, api = "0.1", min_loom_os = "0.1.0",
+                id = "org.loom-os.generated.demo",
                 name = "Generated Demo",
                 version = "1.0.0",
                 entry = "main.lua",

@@ -1,4 +1,4 @@
--- ClawOS core/apps.lua
+-- Loom OS core/apps.lua
 -- Phase 1 App discovery and registry construction.
 
 local storage = require("storage")

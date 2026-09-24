@@ -1,5 +1,5 @@
-﻿-- ClawOS update/release_client.lua
--- Minimal client for the canonical ClawOS Runtime release service.
+﻿-- Loom OS update/release_client.lua
+-- Minimal client for the canonical Loom OS Runtime release service.
 
 
 local json = require("json")
@@ -55,7 +55,7 @@ local function build_url(options)
 
 
     return trim_slash(options.base_url)
-        .. "/v1/clawos/releases/latest"
+        .. "/v1/loom-os/releases/latest"
         .. "?board=" .. options.board
         .. "&channel=" .. options.channel
         .. "&current=" .. options.current_version

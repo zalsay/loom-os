@@ -38,7 +38,7 @@ func releaseHandler(store ReleaseStore) http.Handler {
 			return
 		}
 		switch {
-		case r.URL.Path == "/v1/clawos/releases/latest":
+		case r.URL.Path == "/v1/loom-os/releases/latest":
 			serveLatest(w, r, store)
 		case strings.HasPrefix(r.URL.Path, "/files/"):
 			serveFile(w, r, store)
@@ -131,7 +131,7 @@ func serveFile(w http.ResponseWriter, r *http.Request, store ReleaseStore) {
 
 func serve(args []string) error {
 	flags := flag.NewFlagSet("serve", flag.ContinueOnError)
-	root := os.Getenv("CLAWOS_RELEASE_ROOT")
+	root := os.Getenv("LOOM_OS_RELEASE_ROOT")
 	if root == "" {
 		root = "./release-data"
 	}
@@ -149,7 +149,7 @@ func serve(args []string) error {
 		return err
 	}
 	address := net.JoinHostPort(*host, strconv.Itoa(*port))
-	fmt.Printf("ClawOS release server: http://%s root=%s\n", address, store.Root)
+	fmt.Printf("Loom OS release server: http://%s root=%s\n", address, store.Root)
 	fmt.Println("Production deployment must put this service behind HTTPS termination.")
 	server := &http.Server{Addr: address, Handler: releaseHandler(store), ReadHeaderTimeout: 10 * time.Second}
 	return server.ListenAndServe()

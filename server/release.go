@@ -30,7 +30,7 @@ func parseVersion(raw string) (Version, error) {
 	}
 	m := versionRE.FindStringSubmatch(raw)
 	if m == nil {
-		return Version{}, errors.New("invalid ClawOS version")
+		return Version{}, errors.New("invalid Loom OS version")
 	}
 	channel, sequence := m[4], m[5]
 	if channel == "" {
@@ -109,8 +109,8 @@ func validateManifest(m Manifest) (Version, error) {
 	if m.Schema != 1 {
 		return Version{}, errors.New("schema must be 1")
 	}
-	if m.Product != "clawos" {
-		return Version{}, errors.New("product must be clawos")
+	if m.Product != "loom-os" {
+		return Version{}, errors.New("product must be loom-os")
 	}
 	if err := validateBoard(m.Board); err != nil {
 		return Version{}, err
@@ -125,7 +125,7 @@ func validateManifest(m Manifest) (Version, error) {
 	if version.Channel != m.Channel {
 		return Version{}, errors.New("version suffix does not match channel")
 	}
-	if expected := fmt.Sprintf("clawos:%s:%s", m.Board, m.Version); m.ReleaseID != expected {
+	if expected := fmt.Sprintf("loom-os:%s:%s", m.Board, m.Version); m.ReleaseID != expected {
 		return Version{}, fmt.Errorf("release_id must equal %s", expected)
 	}
 	if m.Entry != "main.lua" {
@@ -179,7 +179,7 @@ func (s ReleaseStore) boardRoot(board string) (string, error) {
 	if err := validateBoard(board); err != nil {
 		return "", err
 	}
-	return filepath.Join(s.Root, "clawos", board), nil
+	return filepath.Join(s.Root, "loom-os", board), nil
 }
 
 func (s ReleaseStore) releaseRoot(board, version string) (string, error) {

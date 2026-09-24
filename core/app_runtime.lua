@@ -1,4 +1,4 @@
--- ClawOS core/app_runtime.lua
+-- Loom OS core/app_runtime.lua
 -- Foreground App loader/lifecycle execution.
 
 

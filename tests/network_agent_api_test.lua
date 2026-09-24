@@ -3,7 +3,7 @@ local network = require("api.network")
 local agent = require("api.agent")
 local requests = require("system.net.request")
 local agent_runtime = require("system.agent.runtime")
-local record = { id = "org.clawos.test", manifest = { permissions = {
+local record = { id = "org.loom-os.test", manifest = { permissions = {
     network = { enabled = true }, agent = true } } }
 local jobs = {}
 local adapter = {

@@ -15,7 +15,7 @@ Next gate: execute the linked Mosaico checklist, record actual device evidence, 
 
 ---
 
-# ClawOS Development Plan
+# Loom OS Development Plan
 
 
 
@@ -1040,9 +1040,9 @@ Next gate: execute the linked Mosaico checklist, record actual device evidence, 
 
 
 
-> ClawOS v0.1 execution roadmap for ESP-Claw + ESP-Mosaico
+> Loom OS v0.1 execution roadmap for ESP-Claw + ESP-Mosaico
 >
-> This document is the project execution plan. Architecture and API details remain in `clawos.md`.
+> This document is the project execution plan. Architecture and API details remain in `loom-os.md`.
 
 
 
@@ -3092,7 +3092,7 @@ Next gate: execute the linked Mosaico checklist, record actual device evidence, 
 
 
 
-ClawOS v0.1 must prove one complete product loop on ESP-Mosaico:
+Loom OS v0.1 must prove one complete product loop on ESP-Mosaico:
 
 
 
@@ -4118,12 +4118,12 @@ ClawOS v0.1 must prove one complete product loop on ESP-Mosaico:
 
 
 ```text
-ClawOS boot
+Loom OS boot
   -> Launcher
   -> discover installed Apps
   -> tap App icon
   -> load Lua App in sandbox
-  -> create App UI under ClawOS-owned LVGL runtime
+  -> create App UI under Loom OS-owned LVGL runtime
   -> access permitted device services
   -> Home / Back
   -> release all App resources
@@ -6178,7 +6178,7 @@ The target experience is a lightweight phone-like application environment on top
 
 
 
-## 2. Release Definition: ClawOS v0.1
+## 2. Release Definition: Loom OS v0.1
 
 
 
@@ -8228,10 +8228,10 @@ v0.1 is considered complete when all of the following are true:
 
 
 
-- Single ClawOS-owned LVGL runtime is stable on Mosaico.
+- Single Loom OS-owned LVGL runtime is stable on Mosaico.
 - Launcher discovers Apps from the writable DATA root.
 - App package + `manifest.json` format is stable.
-- One foreground UI App can launch, exit, reload, and crash without taking down ClawOS.
+- One foreground UI App can launch, exit, reload, and crash without taking down Loom OS.
 - Per-App sandbox and permission checks are enforced.
 - App-private storage, managed timers, GPIO, sensor access, system info, and notifications work.
 - Background Service model works independently from the foreground UI App.
@@ -11320,7 +11320,7 @@ v0.1 is considered complete when all of the following are true:
 
 
 
-## 3A. P0 — ClawOS Runtime OTA
+## 3A. P0 — Loom OS Runtime OTA
 
 
 
@@ -11834,7 +11834,7 @@ v0.1 is considered complete when all of the following are true:
 
 
 
-This is the highest-priority dependency because ClawOS bug fixes and feature updates must be deliverable without rebuilding or replacing ESP-IDF / ESP-Claw firmware.
+This is the highest-priority dependency because Loom OS bug fixes and feature updates must be deliverable without rebuilding or replacing ESP-IDF / ESP-Claw firmware.
 
 
 
@@ -12348,18 +12348,18 @@ Scope:
 
 
 
-- ClawOS Runtime lives in ESP-Claw's writable DATA root.
-- Stable bootstrap selects a versioned ClawOS release.
-- Immutable version directories under `<DATA_ROOT>/clawos-runtime/releases/`.
+- Loom OS Runtime lives in ESP-Claw's writable DATA root.
+- Stable bootstrap selects a versioned Loom OS release.
+- Immutable version directories under `<DATA_ROOT>/loom-os-runtime/releases/`.
 - `active_version / pending_version / previous_version` state model.
 - Download into staging; never overwrite the active runtime in place.
 - Validate release manifest and Lua syntax before activation.
-- Soft restart ClawOS only; ESP32/ESP-Claw firmware stays running.
+- Soft restart Loom OS only; ESP32/ESP-Claw firmware stays running.
 - Candidate must explicitly confirm healthy startup.
 - Candidate crash/exit before confirmation rolls back to the previous release.
-- Apps and appdata remain outside the versioned runtime and survive ClawOS updates.
+- Apps and appdata remain outside the versioned runtime and survive Loom OS updates.
 - HTTPS transport and declared file-size validation belong to the system update transport.
-- Ordinary App sandboxes MUST NOT write the ClawOS runtime/update directories.
+- Ordinary App sandboxes MUST NOT write the Loom OS runtime/update directories.
 
 
 
@@ -12880,7 +12880,7 @@ Implementation checkpoint (2026-09-22):
 - DONE: `update/README.md` architecture and operational rules.
 - DONE: `update/release-manifest.example.json`.
 - DONE: firmware-partition OTA artifacts created from the earlier misunderstanding were removed.
-- DONE: ClawOS HTTP facade + ESP-Claw `http_request` capability adapter + Runtime OTA default backend.
+- DONE: Loom OS HTTP facade + ESP-Claw `http_request` capability adapter + Runtime OTA default backend.
 - DONE: strict Runtime version parser/comparator, server version policy, and manifest schema; hash/SHA-256 intentionally removed.
 - PENDING: Update Center system UI.
 - DONE: initial `0.1.0` provisioning workflow (`provision/install_initial.lua`, explicit Runtime file list, staging, Lua validation, atomic release/state activation).
@@ -13398,16 +13398,16 @@ Acceptance:
 
 
 
-- C01: a new ClawOS release installs without modifying the active release.
+- C01: a new Loom OS release installs without modifying the active release.
 - C02: syntax/manifest failure never sets the candidate pending.
-- C03: network or download-validation failure leaves the active ClawOS unchanged.
-- C04: activation soft-restarts ClawOS without ESP32 firmware OTA.
-- C05: candidate crash before confirmation automatically returns to previous ClawOS.
+- C03: network or download-validation failure leaves the active Loom OS unchanged.
+- C04: activation soft-restarts Loom OS without ESP32 firmware OTA.
+- C05: candidate crash before confirmation automatically returns to previous Loom OS.
 - C06: healthy candidate confirms and becomes active.
 - C07: Apps and appdata survive Runtime update/rollback.
-- C08: normal App sandbox cannot modify `clawos-runtime/`.
+- C08: normal App sandbox cannot modify `loom-os-runtime/`.
 - C09: progress/error state can be surfaced in system UI.
-- C10: compatibility checks can reject a ClawOS release requiring unavailable ESP-Claw native modules.
+- C10: compatibility checks can reject a Loom OS release requiring unavailable ESP-Claw native modules.
 
 
 
@@ -13921,7 +13921,7 @@ Important boundary:
 
 
 
-ClawOS Runtime OTA updates Lua/LVGL system code such as `main.lua`, `core/`, `api/`, `ui/`, and `boards/`. It does not update ESP-IDF, ESP-Claw C code, bootloader, partition table, or built-in native Lua modules. If a future ClawOS release requires a new native module, that release must declare the firmware compatibility requirement instead of trying to replace firmware.
+Loom OS Runtime OTA updates Lua/LVGL system code such as `main.lua`, `core/`, `api/`, `ui/`, and `boards/`. It does not update ESP-IDF, ESP-Claw C code, bootloader, partition table, or built-in native Lua modules. If a future Loom OS release requires a new native module, that release must declare the firmware compatibility requirement instead of trying to replace firmware.
 
 
 
@@ -14952,7 +14952,7 @@ Implemented:
 
 
 - `system/net/errors.lua` — normalized network error objects.
-- `system/net/http_client.lua` — stable ClawOS HTTP facade.
+- `system/net/http_client.lua` — stable Loom OS HTTP facade.
 - `system/net/adapters/espclaw_http.lua` — adapter to ESP-Claw `cap_http_request` through the Lua `capability` bridge.
 - `system/net/download.lua` — file download + declared-size verification.
 - `update/runtime_backend.lua` — default Runtime OTA transport.
@@ -15482,7 +15482,7 @@ Pending:
 
 
 - device verification of the exact `capability.call("http_request", ...)` return shape on the target ESP-Claw Mosaico build;
-- configure the ClawOS update host in ESP-Claw's HTTP allowlist;
+- configure the Loom OS update host in ESP-Claw's HTTP allowlist;
 - DONE: declared-size-only download validation; hash/SHA-256 intentionally removed;
 - DONE: ESP-Claw async Lua job wrapper + Runtime OTA worker/coordinator; device integration test pending;
 - native/generic WebSocket Lua backend if/when available;
@@ -15746,7 +15746,7 @@ Acceptance:
 
 - N01: HTTPS GET returns normalized response.
 - N02: HTTP status >= 400 maps to `E_HTTP_STATUS`.
-- N03: plain HTTP is denied by default by ClawOS.
+- N03: plain HTTP is denied by default by Loom OS.
 - N04: file download writes only to the requested system path.
 - N05: update host not in ESP-Claw allowlist fails closed.
 - N06: declared file-size mismatch deletes the staged file and blocks activation.
@@ -16164,7 +16164,7 @@ Remaining device work:
 4. Verify ESP-Claw HTTP capability return shape and update-host allowlist.
 5. Verify async job start/get/tail/stop.
 6. Run `tests/runtime_ota_device_start.lua` against a real `0.1.1` release.
-7. Confirm foreground ClawOS observes `pending_version`, soft-restarts, and candidate confirms healthy boot.
+7. Confirm foreground Loom OS observes `pending_version`, soft-restarts, and candidate confirms healthy boot.
 8. Verify declared-size mismatch blocks activation.
 9. Verify broken candidate rolls back.
 10. Build Update Center UI.
@@ -36758,7 +36758,7 @@ Scope:
 - `api/ui.lua`
 - `api/nav.lua`
 - `ui/launcher.lua`
-- single ClawOS LVGL owner
+- single Loom OS LVGL owner
 - touch registration
 - System Layer / App Layer separation
 - queued navigation
@@ -64466,7 +64466,7 @@ Acceptance:
 
 - Logical sensor IDs can be registered independently from board drivers.
 - Manifest sensor permission filters `ctx.sensor` access.
-- Notifications render in the ClawOS System Layer.
+- Notifications render in the Loom OS System Layer.
 - App does not receive direct ownership of notification LVGL objects.
 
 
@@ -69592,7 +69592,7 @@ Goal:
 
 
 
-Bind the generic ClawOS runtime to real ESP-Mosaico hardware.
+Bind the generic Loom OS runtime to real ESP-Mosaico hardware.
 
 
 
@@ -73705,7 +73705,7 @@ Acceptance:
 
 
 
-- ClawOS boots directly on Mosaico.
+- Loom OS boots directly on Mosaico.
 - LCD and touch work through board adapter configuration.
 - IMU and magnetometer can be read through `ctx.sensor`.
 - Reserved pins cannot be claimed through `ctx.gpio`.
@@ -87055,7 +87055,7 @@ Tasks:
 - Select asynchronous execution backend.
 - Add request ownership to ResourceRegistry.
 - Add timeout and cancellation.
-- Queue completion callback back into ClawOS UI context.
+- Queue completion callback back into Loom OS UI context.
 - Drop stale callbacks after App generation changes.
 
 
@@ -98337,7 +98337,7 @@ Tasks:
 
 
 
-- Verify official Agent invocation path available to Lua/ClawOS.
+- Verify official Agent invocation path available to Lua/Loom OS.
 - Keep model/provider details outside the App ABI.
 - Integrate with ResourceRegistry.
 - Add cancellation / stale callback handling.
@@ -114751,7 +114751,7 @@ Goal:
 
 
 
-Use one real application to validate most of the ClawOS v0.1 API.
+Use one real application to validate most of the Loom OS v0.1 API.
 
 
 
@@ -137324,7 +137324,7 @@ Goal:
 
 
 
-Enable the defining ClawOS experience: natural language -> new/modified App on device.
+Enable the defining Loom OS experience: natural language -> new/modified App on device.
 
 
 
@@ -146837,7 +146837,7 @@ Additional Mosaico integration tests:
 
 
 ```text
-ClawOS Runtime bootstrap + version state
+Loom OS Runtime bootstrap + version state
         ↓
 HTTPS download + strict version gate
         ↓
@@ -146845,4 +146845,4 @@ staging + validation
         ↓
 soft restart + candidate confirmation
         ↓
-automatic ClawOS 
+automatic Loom OS 

@@ -1,6 +1,6 @@
-# Mosaico 真机验收清单：ClawOS Patch 01–08
+# Mosaico 真机验收清单：Loom OS Patch 01–08
 
-日期：2026-09-24。记录每项的固件版本、Runtime 版本、设备序列号、日志和 PASS/FAIL。先在测试设备上备份 `clawos/` 与 `clawos-runtime/`。
+日期：2026-09-24。记录每项的固件版本、Runtime 版本、设备序列号、日志和 PASS/FAIL。先在测试设备上备份 `loom-os/` 与 `loom-os-runtime/`。
 
 ## 前置条件
 
@@ -27,7 +27,7 @@
 
 - [ ] 在验证的非阻塞适配器接入后，HTTPS 请求与 Agent 请求回调由主循环 poll 交付；关闭 App 后取消请求，不触发旧 generation 回调。
 - [ ] 无适配器时 `ctx.network/ctx.agent` 明确返回 `E_UNSUPPORTED`；拒绝明文 HTTP 和任意下载路径。
-- [ ] 注册真实 `soil.moisture` provider 后，AI Farm 采样、写 `appdata/org.clawos.ai-farm/soil/latest.json`、通知、Agent 分析；重启及关闭 UI 后历史数据仍在。未注册 provider 时应保持等待状态。
+- [ ] 注册真实 `soil.moisture` provider 后，AI Farm 采样、写 `appdata/org.loom-os.ai-farm/soil/latest.json`、通知、Agent 分析；重启及关闭 UI 后历史数据仍在。未注册 provider 时应保持等待状态。
 
 ## Patch 07：App 安装与回滚
 
@@ -39,7 +39,7 @@
 ## Patch 08：AI 创建/修改 App
 
 - [ ] 接入受控的结构化 App provider 后，catalog 只列已注册 API 与 sensor；缺失 provider 时返回 `E_UNSUPPORTED`。
-- [ ] 草稿位于 `clawos/authoring/`，Launcher 不扫描；禁止 `require('os')`、动态加载、路径穿越和不存在的 ctx API。
+- [ ] 草稿位于 `loom-os/authoring/`，Launcher 不扫描；禁止 `require('os')`、动态加载、路径穿越和不存在的 ctx API。
 - [ ] 安装前重验语法和权限批准；新增权限未经批准不得安装；修改时 App ID 不变且版本递增。
 - [ ] 候选经 Patch 07 staging/pending/confirm 或 rollback；草稿不能直接写 active release、Runtime 或其他 App 的 appdata。
 

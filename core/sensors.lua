@@ -1,4 +1,4 @@
--- ClawOS core/sensors.lua
+-- Loom OS core/sensors.lua
 -- Logical sensor registry decoupling Apps from board/driver-specific module names.
 
 local errors = require("core.errors")

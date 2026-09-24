@@ -1,4 +1,4 @@
--- ClawOS core/context.lua
+-- Loom OS core/context.lua
 -- Builds read-only App and Service Context objects from system API adapters.
 
 local errors = require("core.errors")

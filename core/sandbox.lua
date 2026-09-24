@@ -1,4 +1,4 @@
--- ClawOS core/sandbox.lua
+-- Loom OS core/sandbox.lua
 -- Per-App Lua environment and App-local require implementation.
 
 local storage = require("storage")

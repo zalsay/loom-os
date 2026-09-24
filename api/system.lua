@@ -1,5 +1,5 @@
--- ClawOS api/system.lua
--- Stable ClawOS system facade. Hardware-specific telemetry is adapter-driven.
+-- Loom OS api/system.lua
+-- Stable Loom OS system facade. Hardware-specific telemetry is adapter-driven.
 
 local errors = require("core.errors")
 local version = require("core.version")
@@ -23,7 +23,7 @@ function M.new(options)
             }
         end
         return {
-            clawos_version = version.clawos,
+            loom_os_version = version.loom_os,
             app_api = version.app_api,
             manifest_schema = version.manifest_schema,
             board = options.board,

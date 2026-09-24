@@ -45,11 +45,11 @@ assert(version.compare("1.0.0", "0.99.99") > 0)
 
 local manifest = {
     schema = 1,
-    product = "clawos",
+    product = "loom-os",
     board = "esp-mosaico",
     channel = "stable",
     version = "0.1.1",
-    release_id = "clawos:esp-mosaico:0.1.1",
+    release_id = "loom-os:esp-mosaico:0.1.1",
     min_bootstrap = "0.1.0",
 }
 assert(version.validate_manifest(manifest))

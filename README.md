@@ -2,7 +2,7 @@
 
 面向 ESP-Claw / Mosaico 的 Lua + LVGL 应用运行时，提供应用启动器、隔离运行环境、系统 API 和 Runtime 更新能力。
 
-> **当前版本状态：0.1.1 集成候选。** 主机侧集成测试已通过；Mosaico 真机验收仍待完成。代码中的 API、包标识和部分存储路径仍沿用 `ClawOS` 命名。
+> **当前版本状态：0.1.1 集成候选。** 主机侧集成测试已通过；Mosaico 真机验收仍待完成。API、包标识和存储路径已统一采用 loom-os 命名。
 
 ## 项目目标
 
@@ -13,7 +13,7 @@
 - Patch 01–08 已集成到 Lua 源码，主机侧集成序列已通过；Go 版参考 OTA 服务由 GitHub Actions 运行测试。
 - 真机验收尚未完成。下一步是按 [Mosaico 真机验收清单](Mosaico-Patch01-08-Device-Checklist.md) 执行 C01–C10，记录固件、Runtime、设备日志和结果。
 - 在真机清单通过前，不要将 Patch 01–08 标记为设备验收完成，也不要开始新的功能 Patch。
-- 分阶段记录、验证结果和限制见 [开发计划](ClawOS-Development-Plan.md)。
+- 分阶段记录、验证结果和限制见 [开发计划](Loom-OS-Development-Plan.md)。
 
 ## 能力概览
 
@@ -45,10 +45,11 @@ texlua tests/patch01_08_integration_test.lua
 
 ## 真机安装与验收
 
-先在测试设备上备份 `clawos/` 和 `clawos-runtime/`。新装和 OTA 流程、Runtime 文件清单、适配器要求及 C01–C10 步骤见 [真机验收清单](Mosaico-Patch01-08-Device-Checklist.md)。
+先在测试设备上备份 `loom-os/` 和 `loom-os-runtime/`。新装和 OTA 流程、Runtime 文件清单、适配器要求及 C01–C10 步骤见 [真机验收清单](Mosaico-Patch01-08-Device-Checklist.md)。
 
 - 新设备按清单检查初始安装流程。
-- 已运行 0.1.0 的设备通过 Runtime OTA 测试升级，不要重跑初始安装脚本。
+- 已使用 loom-os 目录和发布协议的 0.1.0 测试设备通过 Runtime OTA 升级，不要重跑初始安装脚本。
+- 旧命名设备的存储目录和 OTA 协议与新名称不兼容；先备份 App 数据并完成专门迁移，再测试升级。
 - 保存每项验收使用的固件版本、Runtime 版本、设备日志和 PASS / FAIL 结果。
 
 ## 已知限制与安全边界

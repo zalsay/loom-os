@@ -1,5 +1,5 @@
--- ClawOS core/manifest.lua
--- Loads and validates ClawOS App manifest.json files.
+-- Loom OS core/manifest.lua
+-- Loads and validates Loom OS App manifest.json files.
 
 local storage = require("storage")
 local json = require("json")
@@ -209,7 +209,7 @@ function M.validate(value, app_dir, options)
         return nil, errors.new("E_VERSION", "manifest api must be MAJOR.MINOR")
     end
     if api_major ~= SUPPORTED_API_MAJOR or api_minor > SUPPORTED_API_MINOR then
-        return nil, errors.new("E_VERSION", "unsupported ClawOS App API", {
+        return nil, errors.new("E_VERSION", "unsupported Loom OS App API", {
             supported = string.format("%d.%d", SUPPORTED_API_MAJOR, SUPPORTED_API_MINOR),
             actual = value.api,
         })
@@ -224,21 +224,21 @@ function M.validate(value, app_dir, options)
     if not split_version(value.version) then
         return nil, errors.new("E_VERSION", "version must be MAJOR.MINOR.PATCH", { version = value.version })
     end
-    if not split_version(value.min_clawos) then
-        return nil, errors.new("E_VERSION", "min_clawos must be MAJOR.MINOR.PATCH", {
-            min_clawos = value.min_clawos,
+    if not split_version(value.min_loom_os) then
+        return nil, errors.new("E_VERSION", "min_loom_os must be MAJOR.MINOR.PATCH", {
+            min_loom_os = value.min_loom_os,
         })
     end
 
-    local current_clawos = options.clawos_version or version.clawos
-    local cmp, cmp_err = M.compare_semver(current_clawos, value.min_clawos)
+    local current_loom_os = options.loom_os_version or version.loom_os
+    local cmp, cmp_err = M.compare_semver(current_loom_os, value.min_loom_os)
     if cmp == nil then
         return nil, cmp_err
     end
     if cmp < 0 then
-        return nil, errors.new("E_VERSION", "App requires a newer ClawOS version", {
-            current = current_clawos,
-            required = value.min_clawos,
+        return nil, errors.new("E_VERSION", "App requires a newer Loom OS version", {
+            current = current_loom_os,
+            required = value.min_loom_os,
         })
     end
 

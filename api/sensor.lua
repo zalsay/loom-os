@@ -1,4 +1,4 @@
--- ClawOS api/sensor.lua
+-- Loom OS api/sensor.lua
 -- Permission-aware logical sensor facade.
 
 local errors = require("core.errors")

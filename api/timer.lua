@@ -1,4 +1,4 @@
--- ClawOS api/timer.lua
+-- Loom OS api/timer.lua
 -- App-scoped managed timers backed by core.timers.
 
 local errors = require("core.errors")

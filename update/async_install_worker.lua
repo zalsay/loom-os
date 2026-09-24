@@ -1,4 +1,4 @@
-﻿-- ClawOS update/async_install_worker.lua
+﻿-- Loom OS update/async_install_worker.lua
 -- Runs in an ESP-Claw async Lua job (separate Lua State).
 
 
@@ -31,7 +31,7 @@ local function fail(message)
         mode = request.mode,
         message = tostring(message),
     })
-    error("CLAWOS_UPDATE_FAILED " .. tostring(message))
+    error("LOOM_OS_UPDATE_FAILED " .. tostring(message))
 end
 
 
@@ -54,7 +54,7 @@ if request.mode == "latest" then
             mode = "latest",
             current_version = request.query.current_version,
         })
-        print("CLAWOS_UPDATE_NO_UPDATE " .. tostring(request.query.current_version))
+        print("LOOM_OS_UPDATE_NO_UPDATE " .. tostring(request.query.current_version))
         return
     end
 
@@ -71,7 +71,7 @@ assert(type(release) == "table", "release manifest is required")
 
 
 local function progress(p)
-    print(string.format("CLAWOS_UPDATE_PROGRESS %d/%d %s",
+    print(string.format("LOOM_OS_UPDATE_PROGRESS %d/%d %s",
         tonumber(p.index) or 0,
         tonumber(p.total) or 0,
         tostring(p.path or "")))
@@ -93,4 +93,4 @@ write_result({
 })
 
 
-print("CLAWOS_UPDATE_READY " .. tostring(release.version))
+print("LOOM_OS_UPDATE_READY " .. tostring(release.version))

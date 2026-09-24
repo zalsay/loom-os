@@ -1,6 +1,6 @@
-﻿-- ClawOS bootstrap.lua
--- Stable loader for DATA-root ClawOS runtime releases.
--- Normal ClawOS OTA updates MUST NOT replace this file.
+﻿-- Loom OS bootstrap.lua
+-- Stable loader for DATA-root Loom OS runtime releases.
+-- Normal Loom OS OTA updates MUST NOT replace this file.
 
 
 local storage = require("storage")
@@ -8,7 +8,7 @@ local json = require("json")
 
 
 local DATA_ROOT = assert(storage.get_root_dir())
-local RUNTIME_ROOT = storage.join_path(DATA_ROOT, "clawos-runtime")
+local RUNTIME_ROOT = storage.join_path(DATA_ROOT, "loom-os-runtime")
 local RELEASES_ROOT = storage.join_path(RUNTIME_ROOT, "releases")
 local STATE_PATH = storage.join_path(RUNTIME_ROOT, "state.json")
 local BOOTSTRAP_VERSION = "0.1.0"
@@ -39,13 +39,13 @@ end
 
 
 local function save_state(state)
-    local text = assert(encode(state), "failed to encode ClawOS runtime state")
+    local text = assert(encode(state), "failed to encode Loom OS runtime state")
     local ok, result = pcall(storage.write_file, STATE_PATH, text)
-    assert(ok and result ~= false, "failed to write ClawOS runtime state")
+    assert(ok and result ~= false, "failed to write Loom OS runtime state")
 end
 
 
-local function clear_clawos_modules()
+local function clear_loom_os_modules()
     local prefixes = {
         "^core%.", "^api%.", "^ui%.", "^boards%.", "^services%.",
         "^system%.", "^update%.",
@@ -65,7 +65,7 @@ local function run_release(version, pending)
     local root = storage.join_path(RELEASES_ROOT, version)
     local entry = storage.join_path(root, "main.lua")
     if not storage.exists(entry) then
-        return nil, "ClawOS release missing main.lua: " .. tostring(version)
+        return nil, "Loom OS release missing main.lua: " .. tostring(version)
     end
 
 
@@ -76,13 +76,13 @@ local function run_release(version, pending)
         old_path
 
 
-    clear_clawos_modules()
+    clear_loom_os_modules()
 
 
     local chunk, load_err = loadfile(entry, "t", _G)
     if not chunk then
         package.path = old_path
-        clear_clawos_modules()
+        clear_loom_os_modules()
         return nil, load_err
     end
 
@@ -99,7 +99,7 @@ local function run_release(version, pending)
 
 
     package.path = old_path
-    clear_clawos_modules()
+    clear_loom_os_modules()
 
 
     if not ok then return nil, result end
@@ -119,7 +119,7 @@ end
 while true do
     local state = load_state()
     local selected = state.pending_version or state.active_version
-    assert(selected, "ClawOS runtime is not provisioned: no active_version")
+    assert(selected, "Loom OS runtime is not provisioned: no active_version")
 
 
     local was_pending = state.pending_version == selected

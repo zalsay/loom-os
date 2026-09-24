@@ -1,4 +1,4 @@
-﻿# ClawOS Network Foundation
+﻿# Loom OS Network Foundation
 
 
 System-only network primitives shared by Runtime OTA, `ctx.network`, Agent streaming and future Store/resource services.
@@ -38,7 +38,7 @@ Runtime OTA   ctx.network   Agent / Store
 ESP-Claw's `http_request` Capability supports URL, method, headers, body, timeout, body limits, file save path and file size limits. Its file mode writes a temporary file and renames it to the requested `save_path` only after the request succeeds.
 
 
-ClawOS therefore does not implement another HTTP/TLS stack.
+Loom OS therefore does not implement another HTTP/TLS stack.
 
 
 `system.net.http_client` normalizes this into:
@@ -53,7 +53,7 @@ http.download(options)
 ```
 
 
-HTTPS is required by default at the ClawOS layer even though upstream `http_request` can also accept plain HTTP.
+HTTPS is required by default at the Loom OS layer even though upstream `http_request` can also accept plain HTTP.
 
 
 ## Download validation
@@ -68,13 +68,13 @@ HTTPS is required by default at the ClawOS layer even though upstream `http_requ
 - declared file-size match when `size` is present.
 
 
-Cryptographic file hashing is intentionally not part of ClawOS v0.1 Runtime OTA.
+Cryptographic file hashing is intentionally not part of Loom OS v0.1 Runtime OTA.
 
 
 ## WebSocket
 
 
-The verified ESP-Claw Lua module catalog does not currently list a generic WebSocket client, although ESP-Claw uses WebSocket internally. ClawOS therefore freezes the public system API now and keeps the wire implementation behind a backend:
+The verified ESP-Claw Lua module catalog does not currently list a generic WebSocket client, although ESP-Claw uses WebSocket internally. Loom OS therefore freezes the public system API now and keeps the wire implementation behind a backend:
 
 
 ```lua
