@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "api": "0.1",
+  "id": "org.clawos.invalid-path",
+  "name": "Invalid Path Fixture",
+  "version": "0.1.0",
+  "entry": "../main.lua",
+  "min_clawos": "0.1.0",
+  "permissions": {}
+}

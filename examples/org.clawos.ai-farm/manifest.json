@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "api": "0.1",
+  "id": "org.clawos.ai-farm",
+  "name": "AI Farm",
+  "version": "1.0.0",
+  "entry": "main.lua",
+  "min_clawos": "0.1.0",
+  "services": [{"id":"soil-monitor","entry":"services/soil_monitor.lua","autostart":false}],
+  "permissions": {
+    "background": true,
+    "sensor": ["soil.moisture"],
+    "notification": true,
+    "agent": true
+  }
+}

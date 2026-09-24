@@ -1,0 +1,67 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClawOS Runtime Release Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema","product","board","channel","version","release_id","entry","min_bootstrap","files"],
+  "properties": {
+    "schema": { "const": 1 },
+    "product": { "const": "clawos" },
+    "board": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "channel": { "enum": ["stable","rc","beta","dev"] },
+    "version": {
+      "type": "string",
+      "maxLength": 32,
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-(dev|beta|rc)\\.([1-9][0-9]*))?$"
+    },
+    "release_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^clawos:[a-z0-9][a-z0-9-]*:(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-(dev|beta|rc)\\.([1-9][0-9]*))?$"
+    },
+    "entry": { "const": "main.lua" },
+    "min_bootstrap": {
+      "type": "string",
+      "maxLength": 32,
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-(dev|beta|rc)\\.([1-9][0-9]*))?$"
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path","url","size"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "pattern": "^https://" },
+          "size": { "type": "integer", "minimum": 1 }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "channel": { "const": "stable" } } },
+      "then": { "properties": { "version": { "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$" } } }
+    },
+    {
+      "if": { "properties": { "channel": { "const": "rc" } } },
+      "then": { "properties": { "version": { "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)-rc\\.([1-9][0-9]*)$" } } }
+    },
+    {
+      "if": { "properties": { "channel": { "const": "beta" } } },
+      "then": { "properties": { "version": { "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)-beta\\.([1-9][0-9]*)$" } } }
+    },
+    {
+      "if": { "properties": { "channel": { "const": "dev" } } },
+      "then": { "properties": { "version": { "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)-dev\\.([1-9][0-9]*)$" } } }
+    }
+  ]
+}
