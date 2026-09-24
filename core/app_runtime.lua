@@ -20,6 +20,7 @@ local service_api = require("api.service")
 local network_api = require("api.network")
 local agent_api = require("api.agent")
 local app_update = require("core.app_update").new(require("core.app_backend"))
+local remote_debug = require("core.remote_debug")
 
 
 local M = {}
@@ -163,7 +164,10 @@ function M.launch(app_id, args)
 
     instance_seq = instance_seq + 1
     local resources = assert(resources_mod.new(instance_seq))
-    local env, module_cache = sandbox.build(record)
+    local env, module_cache = sandbox.build(record, { print_fn = function(...)
+        remote_debug.write("INFO", record.id, ...)
+        print(...)
+    end })
     if not env then
         resources:release_all()
         return pending_result(record, nil, module_cache)

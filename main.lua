@@ -28,6 +28,7 @@ local notification_center = require("ui.notification_center")
 local service_runner = require("core.service_runner")
 local net_requests = require("system.net.request")
 local agent_runtime = require("system.agent.runtime")
+local remote_debug = require("core.remote_debug")
 
 
 
@@ -47,6 +48,9 @@ end
 local paths, err = paths_mod.resolve()
 assert(paths, err and err.message or "failed to resolve Loom OS paths")
 assert(paths_mod.ensure_layout(paths))
+local debug_ok, debug_err = remote_debug.configure(paths)
+if not debug_ok then print("Loom OS remote debug disabled:", debug_err) end
+remote_debug.write("INFO", "runtime", "boot", boot_context.version or "unknown")
 
 
 
@@ -111,6 +115,8 @@ for _, record in ipairs(apps.list()) do
                 if not started then
                     print("Loom OS service start failed:", record.id, service.id,
                         start_err and start_err.message or "unknown error")
+                    remote_debug.write("ERROR", "service", record.id, service.id,
+                        start_err and start_err.message or "unknown error")
                 end
             end
         end
@@ -121,6 +127,9 @@ app_runtime.configure({
     ui_state = ui,
     system_options = board_adapter.system_options({}),
     on_crash = function(instance, app_err)
+        remote_debug.write("ERROR", instance.record.id, "crash",
+            app_err and app_err.message or "unknown error",
+            app_err and app_err.detail and app_err.detail.cause or "")
         ui_runtime.set_title("Crash")
         crash_screen.show(ui, instance.record.manifest.name, app_err, nav)
     end,
@@ -196,6 +205,7 @@ local ok, loop_err = xpcall(function()
     while not runtime_control.should_exit() do
         ui_runtime.process_events(20)
         net_requests.poll()
+        remote_debug.poll()
         agent_runtime.poll()
 
 
@@ -205,6 +215,7 @@ local ok, loop_err = xpcall(function()
         if timer_failures and #timer_failures > 0 then
             for _, timer_err in ipairs(timer_failures) do
                 print("Loom OS timer error:", timer_err.message)
+                remote_debug.write("ERROR", "timer", timer_err.message)
             end
         end
 
@@ -220,6 +231,7 @@ local ok, loop_err = xpcall(function()
         local update_ready, update_err = update_async.poll(boot_context.version)
         if update_ready == nil and update_err then
             print("Loom OS update poll error:", update_err.message or update_err)
+            remote_debug.write("ERROR", "update", update_err.message or update_err)
         end
     end
 end, function(e)

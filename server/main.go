@@ -148,10 +148,24 @@ func serve(args []string) error {
 	if err != nil {
 		return err
 	}
+	var debug *debugStore
+	if token := os.Getenv("LOOM_OS_DEBUG_TOKEN"); token != "" {
+		debugRoot := os.Getenv("LOOM_OS_DEBUG_ROOT")
+		if debugRoot == "" {
+			debugRoot = filepath.Join(store.Root, "debug-logs")
+		}
+		debug, err = newDebugStore(debugRoot, token)
+		if err != nil {
+			return err
+		}
+	}
 	address := net.JoinHostPort(*host, strconv.Itoa(*port))
 	fmt.Printf("Loom OS release server: http://%s root=%s\n", address, store.Root)
+	if debug != nil {
+		fmt.Println("Development log endpoint enabled.")
+	}
 	fmt.Println("Production deployment must put this service behind HTTPS termination.")
-	server := &http.Server{Addr: address, Handler: releaseHandler(store), ReadHeaderTimeout: 10 * time.Second}
+	server := &http.Server{Addr: address, Handler: withDebugRoutes(releaseHandler(store), debug), ReadHeaderTimeout: 10 * time.Second}
 	return server.ListenAndServe()
 }
 

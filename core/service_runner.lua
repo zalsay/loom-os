@@ -85,7 +85,10 @@ function M.start_app(record, service_id)
     }
     local ctx = assert(require("core.context").new_service(record, descriptor, resources, providers))
     local sandbox = require("core.sandbox")
-    local env, cache = sandbox.build(record)
+    local env, cache = sandbox.build(record, { print_fn = function(...)
+        require("core.remote_debug").write("INFO", id, ...)
+        print(...)
+    end })
     local definition, load_err = sandbox.load_service(record, descriptor, env)
     if not definition then resources:release_all(); return nil, load_err end
     local service, start_err = M.start(id, {

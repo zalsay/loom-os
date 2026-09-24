@@ -15,6 +15,7 @@ return {
     "core/paths.lua",
     "core/permissions.lua",
     "core/resources.lua",
+    "core/remote_debug.lua",
     "core/runtime_control.lua",
     "core/runtime_update.lua",
     "core/runtime_version.lua",
