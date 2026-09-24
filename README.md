@@ -38,10 +38,15 @@
 
 ```sh
 texlua tests/patch01_08_integration_test.lua
+texlua tests/web_reader_test.lua
 (cd server && go test ./...)
 ```
 
 以上测试用于检查主机侧集成逻辑，不能替代 Mosaico 真机验收。
+
+## 网页阅读器示例
+
+[网页阅读器 App](examples/org.loom-os.web-reader/README.md) 将单个静态 HTML 页面显示为可滚动的 LVGL 文字视图。启动时显示内置页面；在线读取 HTTPS 页面需要设备网络适配器及目标域名许可。支持的 HTML 范围、大小限制和测试方法见示例说明。
 
 ## 真机安装与验收
 

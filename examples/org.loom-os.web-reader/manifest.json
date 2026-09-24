@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "api": "0.1",
+  "id": "org.loom-os.web-reader",
+  "name": "网页阅读器",
+  "version": "0.1.0",
+  "entry": "main.lua",
+  "min_loom_os": "0.1.0",
+  "permissions": {
+    "network": { "enabled": true }
+  }
+}
