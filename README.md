@@ -10,7 +10,7 @@
 
 ## 当前进度
 
-- Patch 01–08 已集成到 Lua 源码，主机侧集成序列和参考 OTA 服务测试通过。
+- Patch 01–08 已集成到 Lua 源码，主机侧集成序列已通过；Go 版参考 OTA 服务由 GitHub Actions 运行测试。
 - 真机验收尚未完成。下一步是按 [Mosaico 真机验收清单](Mosaico-Patch01-08-Device-Checklist.md) 执行 C01–C10，记录固件、Runtime、设备日志和结果。
 - 在真机清单通过前，不要将 Patch 01–08 标记为设备验收完成，也不要开始新的功能 Patch。
 - 分阶段记录、验证结果和限制见 [开发计划](ClawOS-Development-Plan.md)。
@@ -30,7 +30,7 @@
 
 设备 Runtime 依赖固件提供 `storage`、`json`、`lvgl`、`board_manager`；使用 GPIO 的应用还需要 `gpio`。具体固件、屏幕和传感器能力以设备实测为准。
 
-主机侧集成测试使用 Lua 5.3；可使用 `texlua` 运行。参考 OTA 服务需要 Python 3。
+主机侧集成测试使用 Lua 5.3；可使用 `texlua` 运行。参考 OTA 服务需要 Go 1.22 或更新版本。
 
 ## 主机侧测试
 
@@ -38,7 +38,7 @@
 
 ```sh
 texlua tests/patch01_08_integration_test.lua
-python3 -m unittest discover -s server/tests -q
+(cd server && go test ./...)
 ```
 
 以上测试用于检查主机侧集成逻辑，不能替代 Mosaico 真机验收。

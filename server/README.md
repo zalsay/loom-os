@@ -1,29 +1,25 @@
-# ClawOS Release Server
+# ClawOS OTA 发布服务
 
-Minimal reference server for ClawOS Runtime OTA v1.
+这是 ClawOS Runtime OTA v1 的 Go 参考实现，仅依赖 Go 标准库。运行和构建需要 Go 1.22 或更新版本。
 
-## Scope
+## 功能
 
-This server intentionally implements only the P0 contract:
+- 按 ClawOS 版本规则解析和排序版本，区分 stable、rc、beta、dev；
+- 按开发板和渠道挑选比当前版本更新、且符合 bootstrap 版本要求的发布；
+- `GET /v1/clawos/releases/latest`：有更新时返回 `200` 和清单，无更新时返回 `204`；
+- `GET /files/<board>/<version>/<path>`：只提供发布清单列出的文件；
+- 发布时计算文件实际大小和 HTTPS URL，以临时目录写入后发布，拒绝覆盖已有版本。
 
-- strict ClawOS version parsing and ordering;
-- immutable per-board releases;
-- `GET /v1/clawos/releases/latest`;
-- `HTTP 200` with a release manifest when an update is available;
-- `HTTP 204` when no compatible newer release exists;
-- static release-file download under `/files/...`;
-- exact file sizes in manifests;
-- bootstrap compatibility filtering.
+该参考服务没有账号、数据库、签名、哈希、管理界面或管理 API。
 
-It intentionally does **not** add accounts, database state, signing, hashes, dashboards, or admin APIs.
+## 目录与代码
 
-## Files
+- `main.go`：HTTP 接口和命令入口。
+- `release.go`：版本、清单验证及发布目录读取。
+- `publish.go`：发布工具。
+- `release_test.go`：版本、清单、接口、文件边界与发布测试。
 
-- `release_server.py` — file-backed HTTP service.
-- `publish_release.py` — immutable release publisher.
-- `tests/test_release_server.py` — version/manifest/store unit tests.
-
-## Store layout
+发布目录示例：
 
 ```text
 release-data/
@@ -37,41 +33,41 @@ release-data/
             └── update/
 ```
 
-## Run tests
+## 构建和测试
+
+在 `server` 目录运行：
 
 ```bash
-python3 -m unittest discover -s tests -v
+go test ./...
+go build -o release-server .
 ```
 
-## Publish
+## 发布版本
 
-Start from a manifest template that already has the canonical file path list. The publisher recalculates `size` and rewrites file URLs to the configured public base URL.
+清单模板须包含规范的 `files[].path` 列表。发布命令会重新计算每个文件的 `size`，并根据公开地址生成 `url`：
 
 ```bash
-python3 publish_release.py \
-  --store-root ./release-data \
-  --source-root ./clawos-0.1.1 \
-  --manifest ./release-manifest.json \
-  --public-base-url https://updates.example.com
+go run . publish \
+  -store-root ./release-data \
+  -source-root ./clawos-0.1.1 \
+  -manifest ./release-manifest.json \
+  -public-base-url https://updates.example.com
 ```
 
-Publishing fails if the target version directory already exists. A published version is immutable; fixes require a new version.
+目标版本目录已存在时命令会失败。修订已发布的内容需要使用新版本号。
 
-## Run server
+## 启动服务
 
 ```bash
-python3 release_server.py \
-  --root ./release-data \
-  --host 127.0.0.1 \
-  --port 8080
+go run . serve -root ./release-data -host 127.0.0.1 -port 8080
 ```
 
-For production, place this process behind HTTPS termination/reverse proxy. Device-facing manifest/file URLs must be HTTPS because ClawOS rejects plain HTTP by default.
+也可以运行构建后的 `./release-server serve ...`；`CLAWOS_RELEASE_ROOT` 可设置默认发布目录。生产环境应在反向代理上提供 HTTPS，设备端默认拒绝普通 HTTP。
 
-## Device query
+设备查询示例：
 
 ```text
 GET /v1/clawos/releases/latest?board=esp-mosaico&channel=stable&current=0.1.0&bootstrap=0.1.0
 ```
 
-The server uses the same version precedence as `ClawOS/update/VERSIONING.md`.
+版本优先级以 [`update/VERSIONING.md`](../update/VERSIONING.md) 为准；接口结构见 [`update/SERVER_API.md`](../update/SERVER_API.md)。

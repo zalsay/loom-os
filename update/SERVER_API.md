@@ -277,11 +277,12 @@ The minimal P0 server implementation is stored under:
 
 ```text
 ClawOS/server/
-├── release_server.py
-├── publish_release.py
-├── README.md
-└── tests/
-    └── test_release_server.py
+├── main.go
+├── release.go
+├── publish.go
+├── release_test.go
+├── go.mod
+└── README.md
 ```
 
 
@@ -302,4 +303,4 @@ Behavior implemented:
 The reference service is intentionally standard-library-only and should be placed behind HTTPS termination in production. ClawOS v0.1 intentionally does not add accounts, databases, signatures, hashes, dashboards, or admin APIs.
 
 
-Local unit tests cover numeric version ordering, prerelease ordering, invalid version rejection, manifest validation, latest selection, and bootstrap compatibility filtering.
+Go unit tests cover numeric version ordering, prerelease ordering, invalid version rejection, manifest validation, latest selection, and bootstrap compatibility filtering.
