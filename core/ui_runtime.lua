@@ -198,6 +198,15 @@ function M.set_title(text)
     end
 end
 
+function M.set_theme(theme)
+    if not state.initialized then return false end
+    local light = theme == "light"
+    state.screen:set_style({ bg_color = light and "#f5f7fa" or "#101418" })
+    state.system_bar:set_style({ bg_color = light and "#d8e5f0" or "#182028" })
+    state.title:set_style({ text_color = light and "#142638" or "#ffffff" })
+    return true
+end
+
 
 function M.shutdown()
     if not state.initialized then

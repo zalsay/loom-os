@@ -29,6 +29,9 @@ local service_runner = require("core.service_runner")
 local net_requests = require("system.net.request")
 local agent_runtime = require("system.agent.runtime")
 local remote_debug = require("core.remote_debug")
+local settings = require("core.settings")
+local settings_screen = require("ui.settings")
+local settings_status = require("system.settings_status")
 
 
 
@@ -89,6 +92,11 @@ local ui, ui_err = ui_runtime.init({
     require_touch = true,
 })
 assert(ui, ui_err and ui_err.message or "Loom OS UI init failed")
+local settings_ok, settings_err = settings.configure(paths, {
+    theme = ui_runtime.set_theme,
+    wifi = { status = settings_status.wifi_status },
+})
+if not settings_ok then print("Loom OS settings unavailable:", settings_err.message) end
 
 
 
@@ -159,6 +167,13 @@ navigation.set_handler(function(action)
         if current then
             ui_runtime.set_title(current.record.manifest.name)
         end
+        return true
+    end
+
+    if action.type == "settings" then
+        app_runtime.stop("settings")
+        ui_runtime.set_title("设置")
+        settings_screen.show(ui, settings, nav)
         return true
     end
 

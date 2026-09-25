@@ -4,7 +4,7 @@
 
 ## 前置条件
 
-- [ ] 将 `provision/runtime_files.lua` 的 60 个运行时文件打包；逐项核对文件存在和 Lua 语法。新装设备运行一次 `provision/install_initial.lua`，安装 0.1.1 集成候选；已有 0.1.0 设备通过 Runtime OTA 发布 0.1.1，不重跑初始安装。
+- [ ] 按 `provision/runtime_files.lua` 清单打包运行时文件；逐项核对文件存在和 Lua 语法。新装设备运行一次 `provision/install_initial.lua`，安装 0.1.1 集成候选；已有 0.1.0 设备通过 Runtime OTA 发布 0.1.1，不重跑初始安装。
 - [ ] 运行 `tests/runtime_provision_check.lua`，确认 active、last_good 与 release 路径。
 - [ ] 固件提供 `storage`、`json`、`lvgl`、`gpio`、`board_manager`；记录 Mosaico LCD、触控及系统时钟实测值。
 - [ ] 明确是否已有经过验证的 soil.moisture Lua 驱动、非阻塞 HTTPS 适配器、Agent 结构化输出提供者。未接入时对应 API 必须返回 `E_UNSUPPORTED`，不得报告假成功。
@@ -44,6 +44,8 @@
 - [ ] 候选经 Patch 07 staging/pending/confirm 或 rollback；草稿不能直接写 active release、Runtime 或其他 App 的 appdata。
 
 ## 记录模板
+
+在上述验收之外，检查启动器“设置”入口、主题重启恢复、配网指引；接入设备提供者后，再验证亮度、音量、Wi-Fi 状态和连接，并确认密码不出现在 loom-os 设置文件与日志中。
 
 | 项目 | 固件/Runtime | 结果 | 设备日志或截图 | 问题编号 |
 |---|---|---|---|---|

@@ -9,6 +9,9 @@ function M.new()
         home = function()
             return navigation.enqueue({ type = "home" })
         end,
+        settings = function()
+            return navigation.enqueue({ type = "settings" })
+        end,
         back = function()
             return navigation.enqueue({ type = "back" })
         end,

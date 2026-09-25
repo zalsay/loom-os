@@ -16,6 +16,7 @@ local VALID = {
     back = true,
     open = true,
     reload = true,
+    settings = true,
 }
 
 

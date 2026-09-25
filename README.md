@@ -20,6 +20,7 @@
 | 模块 | 当前能力 |
 | --- | --- |
 | App Runtime | manifest 校验、应用发现、隔离环境、生命周期和启动器 |
+| 系统设置 | 启动器设置入口、深浅主题保存；Wi-Fi、亮度、音量的设备适配接口 |
 | 系统 API | App 专属存储、定时器、GPIO、传感器、通知和 Service |
 | 应用管理 | 分阶段安装、版本化发布、健康确认和失败回滚 |
 | Runtime 更新 | 暂存、版本检查、文件大小校验、切换和回滚流程 |
@@ -40,6 +41,7 @@
 texlua tests/patch01_08_integration_test.lua
 texlua tests/web_reader_test.lua
 texlua tests/remote_debug_test.lua
+texlua tests/settings_test.lua
 (cd server && go test ./...)
 ```
 
@@ -52,6 +54,10 @@ texlua tests/remote_debug_test.lua
 ## 开发版远程日志
 
 [开发日志配置与查询](server/README.md#开发版远程日志)：开发设备主动向 Go server 上传有上限的 App `print` 和 Runtime 错误，server 可按设备 ID 查询。该功能默认关闭，启用时须配置 HTTPS、令牌及设备网络适配器；设备端接入仍需真机验证。
+
+## 系统设置
+
+启动器中的“设置”入口提供 Wi-Fi 状态与配网指引、深浅主题、亮度和音量。主题在 loom-os 内直接生效并保存；亮度、音量及系统内直接连接 Wi-Fi 需要固件提供设备适配接口，未接入时明确显示不可用。具体接口和真机验收项见[系统设置说明](SETTINGS.md)。
 
 ## 真机安装与验收
 

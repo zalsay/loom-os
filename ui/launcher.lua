@@ -27,6 +27,12 @@ function M.show(ui_state, app_records, nav)
     })
     root:set_scroll({ dir = "ver", scrollbar = "auto" })
 
+    local settings_button = lv.button(root, {
+        text = "设置", w = 138, h = 78,
+        bg_color = "#286aa7", text_color = "#ffffff", radius = 12,
+    })
+    settings_button:on("clicked", function() nav.settings() end)
+
     for _, record in ipairs(app_records or {}) do
         if record.enabled and record.manifest then
             local button = lv.button(root, {
