@@ -1,0 +1,7 @@
+*.mp4
+*.png
+*.zip
+.env
+.secrets/
+.workbuddy/
+browser/
