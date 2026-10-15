@@ -1,0 +1,19 @@
+{
+  "fingerprint": "2331f062b8954e1eaf2e82ede513c25a0a259e393b2d963876eecf9d2ee6bcad",
+  "audio_sha256": "96a5f394cb3f1b5996ccdce38eeb13ee5e166cc0a7953f836674baca1e810f1e",
+  "model": "mimo-v2.5-tts",
+  "voice": "茉莉",
+  "seconds": 6.24,
+  "text": "(温柔)AI 一秒写完代码，孩子还练什么？（停顿）练提问，和验证。",
+  "usage": {
+    "completion_tokens": 41,
+    "prompt_tokens": 250,
+    "total_tokens": 291,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 119
+    }
+  }
+}

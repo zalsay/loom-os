@@ -1,0 +1,19 @@
+{
+  "fingerprint": "f647db79b61270badf2a78b80da305fec3e5f49e7bd38b9db08b653def2231b0",
+  "audio_sha256": "728df3dc3d2fbe67f3a3ce2ecb5086f7f563a1d25d7618967c3872327dab7104",
+  "model": "mimo-v2.5-tts",
+  "voice": "茉莉",
+  "seconds": 6.56,
+  "text": "(温柔)小车一跑偏，老师不急着给答案，先问孩子：（停顿）哪，出了问题？",
+  "usage": {
+    "completion_tokens": 43,
+    "prompt_tokens": 255,
+    "total_tokens": 298,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 119
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "fingerprint": "273cc6a611dbdb371d6e696f8bb10888b8b338e1099b5be8696227db90164dec",
+  "audio_sha256": "9b5ec5e37745351d3d30011e9cd79f64ae4bac522221935df4ffc0701ba44a9f",
+  "model": "mimo-v2.5-tts",
+  "voice": "茉莉",
+  "seconds": 5.6,
+  "text": "(温柔)门外还有一格小花园，把思考延伸到真实世界。",
+  "usage": {
+    "completion_tokens": 37,
+    "prompt_tokens": 243,
+    "total_tokens": 280,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 119
+    }
+  }
+}

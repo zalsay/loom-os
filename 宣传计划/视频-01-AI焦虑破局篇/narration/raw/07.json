@@ -1,0 +1,19 @@
+{
+  "fingerprint": "7f346e52bb274094b385fd18932c9cedb471ca16d637cda84a26d6f07e58b82f",
+  "audio_sha256": "0941934388895687bdba646df166540ccbe373a6521e6960132c26f144616cd0",
+  "model": "mimo-v2.5-tts",
+  "voice": "茉莉",
+  "seconds": 6.72,
+  "text": "(温柔)织界。（停顿）AI 引导，孩子思考，共同实现。",
+  "usage": {
+    "completion_tokens": 44,
+    "prompt_tokens": 244,
+    "total_tokens": 288,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 119
+    }
+  }
+}

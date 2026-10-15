@@ -5,3 +5,9 @@
 .secrets/
 .workbuddy/
 browser/
+
+# Local dependencies and caches
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc

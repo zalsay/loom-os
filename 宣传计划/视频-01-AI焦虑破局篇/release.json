@@ -1,0 +1,23 @@
+{
+  "episode_id": "course-intro",
+  "revision": 2,
+  "duration": 48.0,
+  "frames": 1152,
+  "mixed_pcm_peak": 0.52155,
+  "automated_checks": "passed",
+  "narration_status": "pending_mimo_api_key",
+  "visual_review": "passed",
+  "listening_review": "passed_music_bed_pending_mimo_api_key",
+  "sources": [
+    "Google Drive: 智慧农场双人PBL课程方案.md (1TJy9j49m_6UK4sjrWyef3LRKWZYGw3dp)",
+    "Google Drive: 教室布置.md (1SdhQzxxwMhaV4xOAp9wKa-dhDxUQynuy)",
+    "Google Drive: 服务端构建计划.md (1AZGFlYOA9KBTEUTZE-OU8yAOY01iGbCS)",
+    "Local: 数据复盘-2026-10-13.md & 03-笔记文案.txt"
+  ],
+  "saved_locations": [
+    "Zhi-Jie-course-intro-v002.mp4",
+    "Zhi-Jie-course-intro-v002-source.zip",
+    "out/picture.mp4"
+  ],
+  "video_sha256": "83d1ad65feeb62fcc7f20f16f8f42f8d1ba25d5ef869f8325493c338997aa1ff"
+}

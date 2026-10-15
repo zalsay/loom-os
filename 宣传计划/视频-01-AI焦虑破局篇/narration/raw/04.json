@@ -1,0 +1,19 @@
+{
+  "fingerprint": "67d4d7ea1b37c33e0eb7aff296e9791fe3147559cdf3934dadfc7683d6a60b8e",
+  "audio_sha256": "94b774b5731b030d70d363675c153e5bf70bad085dc9539309f0fdab5b39f928",
+  "model": "mimo-v2.5-tts",
+  "voice": "茉莉",
+  "seconds": 8.0,
+  "text": "(温柔)想加按钮、看读数？（语速稍快）AI 只给最小草稿，（停顿）验证，要孩子自己来。",
+  "usage": {
+    "completion_tokens": 52,
+    "prompt_tokens": 261,
+    "total_tokens": 313,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 119
+    }
+  }
+}

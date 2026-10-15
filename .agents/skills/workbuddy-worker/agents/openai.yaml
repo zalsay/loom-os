@@ -1,0 +1,4 @@
+interface:
+  display_name: "WorkBuddy 协作"
+  short_description: "通过 CLI 或 ACP 联系 WorkBuddy，交接织界宣传任务并核验结果"
+  default_prompt: "使用 $workbuddy-worker 检查 WorkBuddy 通信状态，并按当前授权范围交接织界宣传任务。"

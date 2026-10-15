@@ -1,0 +1,19 @@
+{
+  "fingerprint": "48d4ed4f5a48688ea37c6ac0fb0dd4de9ceab92b9759f58785b434ff66660e61",
+  "audio_sha256": "65a02595a309ff2eac9f6332f3a102073e139af5136b40f9c8aa566bca5a7d2f",
+  "model": "mimo-v2.5-tts",
+  "voice": "茉莉",
+  "seconds": 3.36,
+  "text": "(温柔)带走的是作品，更是底气。（停顿）",
+  "usage": {
+    "completion_tokens": 23,
+    "prompt_tokens": 239,
+    "total_tokens": 262,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 119
+    }
+  }
+}

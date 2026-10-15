@@ -1,0 +1,19 @@
+{
+  "fingerprint": "07b8507f34e5c5f6db8e0b8dbf2aa0aef9278d2ce3e3762e03485aba5ed9cd64",
+  "audio_sha256": "1d81e1192bf40e11da5859f0c669fc75b2f3a133fae4172238ab585a1f034aed",
+  "model": "mimo-v2.5-tts",
+  "voice": "茉莉",
+  "seconds": 7.68,
+  "text": "(温柔)先写预测，再实测。哪怕走偏，能找出原因，失败也是好证据。",
+  "usage": {
+    "completion_tokens": 50,
+    "prompt_tokens": 250,
+    "total_tokens": 300,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 119
+    }
+  }
+}

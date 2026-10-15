@@ -86,6 +86,10 @@ texlua tests/settings_test.lua
 | `examples/` | 示例 App 和 Service |
 | `tests/` | Lua 集成测试、Runtime 测试和设备 smoke test |
 | `server/` | Runtime OTA 参考服务与发布工具 |
+| [宣传计划/](宣传计划/README.md) | 织界小红书宣传计划、图文规范与发布反馈记录 |
+| [.agents/skills/](.agents/skills/workbuddy-worker/SKILL.md) | WorkBuddy 协作 skill 与 CLI 通信脚本 |
+
+使用 `$workbuddy-worker` 可检查 WorkBuddy 通信状态并交接已授权的织界宣传任务。调用方法、会话写入锁与结果核验规则见 [WorkBuddy 协作 skill](.agents/skills/workbuddy-worker/SKILL.md)。
 
 ## 继续开发
 

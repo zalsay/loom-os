@@ -1,0 +1,172 @@
+{
+  "series": "妈妈关心的事",
+  "status": "发布素材草稿",
+  "date": "2026-10-12",
+  "posts": [
+    {
+      "id": "01",
+      "title": "孩子爱搭积木，下一步怎么玩？",
+      "body": "孩子搭积木时很投入，妈妈可以顺着兴趣，多问一句：你想让它做什么？\n\n在织界的小车课题里，孩子可以先想用途，再选零件、画草图、自己搭底盘。试跑以后，看看车轮、结构或路线哪里需要调整。\n\n每辆车都可以不同。孩子需要说出自己的选择，也亲手检验。\n\n织界面向小学三至六年级，零基础起步，用“提问题—想办法—动手试—再调整”组织探索。\n\n下次陪孩子玩积木，可以试试三个问题：\n①你想让它做什么？\n②准备先试哪一步？\n③怎么知道它变好了？\n\n你家孩子最想造什么？留言聊聊，也欢迎关注织界，看我们继续把课程一步步准备起来。",
+      "tags": [
+        "织界",
+        "亲子陪伴",
+        "积木搭建",
+        "项目式学习",
+        "小学科学"
+      ],
+      "goal": "从孩子已有的积木兴趣切入，提供可直接用于亲子交流的问题，再介绍自主设计的小车课题。"
+    },
+    {
+      "id": "02",
+      "title": "三年级零基础，第一步可以做什么？",
+      "body": "没学过编程、没接触过电机，第一次可以从哪里开始？\n\n在织界的课程设计里，孩子可以先认识轮子、积木和植物，选一个自己想弄明白的问题，再画下来或试一个小动作。\n\n比如，用手推一推不同的小车，观察哪里转得顺；看看自己的种植格，想一想怎样记录植物的变化。\n\n老师会根据孩子的起点，帮助他们把想法拆成可以尝试的小步骤。我们希望孩子能够解释：我为什么这样选？这次看到了什么？下一步想改哪里？\n\n一张自己的草图、一次测试记录、一个新问题，都是可以一起回看的探索痕迹。\n\n织界面向小学三至六年级，零基础起步。你更想了解小车方向，还是植物种植方向？欢迎留言，我们继续展开介绍。",
+      "tags": [
+        "织界",
+        "零基础起步",
+        "小学科学",
+        "动手探索",
+        "孩子的好奇心"
+      ],
+      "goal": "把零基础参与说具体，展示起步步骤与家长可以观察的过程记录。"
+    },
+    {
+      "id": "03",
+      "title": "AI加入课堂，孩子还要思考吗？",
+      "body": "看到AI加入课程，妈妈可能会问：孩子自己的思考，会发生在哪里？\n\n以“小车为什么走偏”为例，在织界的课程设计里，老师和AI可以先引导孩子想：准备观察什么？怎样比较两个方案？\n\n孩子提出自己的判断，选一个办法。老师和AI支持把方案转成可以测试的功能，孩子再亲手试，记录结果，决定是否调整。\n\n孩子负责问题、选择和验证；老师与AI提供引导、反馈和实现支持。我们把这个过程叫作：AI 引导，孩子思考，共同实现。\n\n看一段课堂记录时，妈妈也可以留意三个地方：孩子说出了什么问题？为什么选择这个办法？试过后改变了什么？\n\n你最想了解AI在孩子学习中的哪一部分作用？欢迎留言，关注织界，我们会继续用具体课题来讲清楚。",
+      "tags": [
+        "织界",
+        "AI教育",
+        "亲子教育",
+        "项目式学习",
+        "独立思考"
+      ],
+      "goal": "说明孩子、老师和AI各自的行动，把AI引导与共同实现讲成可观察的过程。"
+    }
+  ],
+  "images": [
+    {
+      "key": "01-01",
+      "kind": "cover",
+      "title": [
+        "孩子爱搭积木",
+        "下一步怎么玩？"
+      ],
+      "subtitle": "顺着兴趣，多问一句：你想让它做什么？",
+      "lines": [],
+      "scene": "Coral-shirt elementary-age boy and blue-shirt girl design different small LEGO-compatible cars at a worktable. A warm Chinese mother is at the side, listening attentively to the boy pointing at his own pencil sketch, without directing or assembling for him. Detailed wheels, axles, brightly colored bricks; separate small seedling at side. The children's ideas are the focus."
+    },
+    {
+      "key": "01-02",
+      "kind": "content",
+      "title": [
+        "陪孩子玩积木",
+        "试着问这三句"
+      ],
+      "subtitle": "让孩子说出自己的想法",
+      "lines": [
+        "① 想让它做什么？",
+        "② 准备先试哪一步？",
+        "③ 怎么知道它变好了？"
+      ],
+      "scene": "A smaller illustration along the lower third: mother listening while boy shows his car sketch and girl points at a wheel. Three little pictorial icons alongside the three text rows: pencil, wheel, magnifier. Lots of readable space, do not make decorative text tiny."
+    },
+    {
+      "key": "01-03",
+      "kind": "content",
+      "title": [
+        "在织界",
+        "把想法变成测试"
+      ],
+      "subtitle": "小学三至六年级 · 零基础起步",
+      "lines": [
+        "自己选方案",
+        "动手搭底盘",
+        "试一次，再调整"
+      ],
+      "scene": "Three small connected crayon vignettes in a readable sequence: children draw different chassis plans, build a brick car with visible axle, observe its gently curved test trace and note a change. A separate movable ground planting box with handles at the side hints another project direction. No numerical scores or fake results."
+    },
+    {
+      "key": "02-01",
+      "kind": "cover",
+      "title": [
+        "零基础",
+        "也能从问题开始"
+      ],
+      "subtitle": "第一次，先从好奇和尝试开始。",
+      "lines": [],
+      "scene": "Warm Chinese mother stands at the side of inviting small workshop, watching her coral-shirt boy and the blue-shirt girl curiously examine loose wheels, an unassembled axle, colorful bricks and a young seedling in a separate ground planter. Open sketchbook with a simple question-mark sketch. Children are curious beginners, no complicated completed robots."
+    },
+    {
+      "key": "02-02",
+      "kind": "content",
+      "title": [
+        "第一次来",
+        "可以这样开始"
+      ],
+      "subtitle": "把想法拆成可以尝试的小步骤",
+      "lines": [
+        "看一看材料",
+        "选一个问题",
+        "画一个想法",
+        "试一个小动作"
+      ],
+      "scene": "Four small crayon pictorial icons beside the four text rows: a loose wheel and brick, simple question bubble, pencil sketch, a hand gently pushing a simple toy chassis. At lower third the same boy and girl inspect a wheel together, small illustration, preserve typography."
+    },
+    {
+      "key": "02-03",
+      "kind": "content",
+      "title": [
+        "成长的痕迹",
+        "值得被看见"
+      ],
+      "subtitle": "和孩子一起回看探索过程",
+      "lines": [
+        "一张自己的草图",
+        "一次测试的记录",
+        "一个新的问题"
+      ],
+      "scene": "A warm mother with boy and girl examines three pieces of a child's learning record on a small table: his own car pencil sketch, a pictorial test trace, and a new question mark on a note. No grades, awards, comparisons or numerical results. Children point and explain; focus is record and reflection."
+    },
+    {
+      "key": "03-01",
+      "kind": "cover",
+      "title": [
+        "AI来了",
+        "孩子还要思考吗？"
+      ],
+      "subtitle": "AI 引导，孩子思考，共同实现。",
+      "lines": [],
+      "scene": "Same coral-shirt boy and blue-shirt girl actively compare their own sketches with a LEGO-compatible car. At SIDE a modest small computer screen shows only a simple cyan question-mark dialogue symbol. Warm mother observes them talking. No robot replacing the children, no giant AI face, no fake program text."
+    },
+    {
+      "key": "03-02",
+      "kind": "content",
+      "title": [
+        "小车走偏了",
+        "先提出你的判断"
+      ],
+      "subtitle": "先观察，再选办法，一起试。",
+      "lines": [
+        "准备观察什么？",
+        "怎样比较两个方案？",
+        "试过以后改哪里？"
+      ],
+      "scene": "Children inspect a car wheel and sketched possible changes. A small cyan question-mark screen sits unobtrusively to the side. A mother or adult mentor listens while girl gestures to one chosen sketch. A curved chalk trace beside the car illustrates a possible test, no measurements or success claim."
+    },
+    {
+      "key": "03-03",
+      "kind": "content",
+      "title": [
+        "看孩子的探索",
+        "留意这三个地方"
+      ],
+      "subtitle": "关注织界，一起看想法怎样被验证。",
+      "lines": [
+        "提出了什么问题？",
+        "为什么选这个办法？",
+        "试过后改变了什么？"
+      ],
+      "scene": "At lower third mother listens as boy and girl point at their sketchbook and a partial car, plus a separate plant ground box. Pencil, question bubble and magnifier visual motifs; small unimportant cyan screen off to the side. Children remain protagonists; no invented quotes, achievement badges or assessment scores."
+    }
+  ]
+}

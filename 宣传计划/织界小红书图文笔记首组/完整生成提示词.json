@@ -1,0 +1,171 @@
+[
+  {
+    "key": "01-01",
+    "kind": "cover",
+    "title": [
+      "孩子爱搭积木",
+      "下一步怎么玩？"
+    ],
+    "subtitle": "顺着兴趣，多问一句：你想让它做什么？",
+    "lines": [],
+    "scene": "Coral-shirt elementary-age boy and blue-shirt girl design different small LEGO-compatible cars at a worktable. A warm Chinese mother is at the side, listening attentively to the boy pointing at his own pencil sketch, without directing or assembling for him. Detailed wheels, axles, brightly colored bricks; separate small seedling at side. The children's ideas are the focus.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: COVER. Page capsule exactly “01 · 1/3”. Title in two lines exactly “孩子爱搭积木\n下一步怎么玩？”. Supporting line exactly “顺着兴趣，多问一句：你想让它做什么？”.\nScene: Coral-shirt elementary-age boy and blue-shirt girl design different small LEGO-compatible cars at a worktable. A warm Chinese mother is at the side, listening attentively to the boy pointing at his own pencil sketch, without directing or assembling for him. Detailed wheels, axles, brightly colored bricks; separate small seedling at side. The children's ideas are the focus.",
+    "filename": "01-01-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "94ef16d04a6e41fb015e0fa8823a57f614d36e18bbe9185b7b864e5563de374e"
+  },
+  {
+    "key": "01-02",
+    "kind": "content",
+    "title": [
+      "陪孩子玩积木",
+      "试着问这三句"
+    ],
+    "subtitle": "让孩子说出自己的想法",
+    "lines": [
+      "① 想让它做什么？",
+      "② 准备先试哪一步？",
+      "③ 怎么知道它变好了？"
+    ],
+    "scene": "A smaller illustration along the lower third: mother listening while boy shows his car sketch and girl points at a wheel. Three little pictorial icons alongside the three text rows: pencil, wheel, magnifier. Lots of readable space, do not make decorative text tiny.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: CONTENT. Page capsule exactly “01 · 2/3”. Title in two lines exactly “陪孩子玩积木\n试着问这三句”. Body text in separate clear readable rows exactly:\n“① 想让它做什么？”\n“② 准备先试哪一步？”\n“③ 怎么知道它变好了？”\nSupporting line exactly “让孩子说出自己的想法”.\nScene: A smaller illustration along the lower third: mother listening while boy shows his car sketch and girl points at a wheel. Three little pictorial icons alongside the three text rows: pencil, wheel, magnifier. Lots of readable space, do not make decorative text tiny.\nThe text rows are primary on this informational card. Do not draw a huge illustration that competes with the text. Do not merge rows into paragraphs or add other body copy. Maintain this campaign's exact small logo, crayon header, generous margins, restrained bright cyan/gold accents and clean readable ivory text.",
+    "filename": "01-02-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "de909eb664bd1a673193e22191242fd9165222e71f4a2d1fab9c94b6b0c46a52"
+  },
+  {
+    "key": "01-03",
+    "kind": "content",
+    "title": [
+      "在织界",
+      "把想法变成测试"
+    ],
+    "subtitle": "小学三至六年级 · 零基础起步",
+    "lines": [
+      "自己选方案",
+      "动手搭底盘",
+      "试一次，再调整"
+    ],
+    "scene": "Three small connected crayon vignettes in a readable sequence: children draw different chassis plans, build a brick car with visible axle, observe its gently curved test trace and note a change. A separate movable ground planting box with handles at the side hints another project direction. No numerical scores or fake results.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: CONTENT. Page capsule exactly “01 · 3/3”. Title in two lines exactly “在织界\n把想法变成测试”. Body text in separate clear readable rows exactly:\n“自己选方案”\n“动手搭底盘”\n“试一次，再调整”\nSupporting line exactly “小学三至六年级 · 零基础起步”.\nScene: Three small connected crayon vignettes in a readable sequence: children draw different chassis plans, build a brick car with visible axle, observe its gently curved test trace and note a change. A separate movable ground planting box with handles at the side hints another project direction. No numerical scores or fake results.\nThe text rows are primary on this informational card. Do not draw a huge illustration that competes with the text. Do not merge rows into paragraphs or add other body copy. Maintain this campaign's exact small logo, crayon header, generous margins, restrained bright cyan/gold accents and clean readable ivory text.",
+    "filename": "01-03-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "da1d5957bb47bb4818cd85691e0b85672f6efc02c3826235c47f8a6ffe850131"
+  },
+  {
+    "key": "02-01",
+    "kind": "cover",
+    "title": [
+      "零基础",
+      "也能从问题开始"
+    ],
+    "subtitle": "第一次，先从好奇和尝试开始。",
+    "lines": [],
+    "scene": "Warm Chinese mother stands at the side of inviting small workshop, watching her coral-shirt boy and the blue-shirt girl curiously examine loose wheels, an unassembled axle, colorful bricks and a young seedling in a separate ground planter. Open sketchbook with a simple question-mark sketch. Children are curious beginners, no complicated completed robots.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: COVER. Page capsule exactly “02 · 1/3”. Title in two lines exactly “零基础\n也能从问题开始”. Supporting line exactly “第一次，先从好奇和尝试开始。”.\nScene: Warm Chinese mother stands at the side of inviting small workshop, watching her coral-shirt boy and the blue-shirt girl curiously examine loose wheels, an unassembled axle, colorful bricks and a young seedling in a separate ground planter. Open sketchbook with a simple question-mark sketch. Children are curious beginners, no complicated completed robots.",
+    "filename": "02-01-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "76ec5c3f001119ce9814859a632a75257c8bc64de3eea3ee3d2d63b13f7cd9df"
+  },
+  {
+    "key": "02-02",
+    "kind": "content",
+    "title": [
+      "第一次来",
+      "可以这样开始"
+    ],
+    "subtitle": "把想法拆成可以尝试的小步骤",
+    "lines": [
+      "看一看材料",
+      "选一个问题",
+      "画一个想法",
+      "试一个小动作"
+    ],
+    "scene": "Four small crayon pictorial icons beside the four text rows: a loose wheel and brick, simple question bubble, pencil sketch, a hand gently pushing a simple toy chassis. At lower third the same boy and girl inspect a wheel together, small illustration, preserve typography.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: CONTENT. Page capsule exactly “02 · 2/3”. Title in two lines exactly “第一次来\n可以这样开始”. Body text in separate clear readable rows exactly:\n“看一看材料”\n“选一个问题”\n“画一个想法”\n“试一个小动作”\nSupporting line exactly “把想法拆成可以尝试的小步骤”.\nScene: Four small crayon pictorial icons beside the four text rows: a loose wheel and brick, simple question bubble, pencil sketch, a hand gently pushing a simple toy chassis. At lower third the same boy and girl inspect a wheel together, small illustration, preserve typography.\nThe text rows are primary on this informational card. Do not draw a huge illustration that competes with the text. Do not merge rows into paragraphs or add other body copy. Maintain this campaign's exact small logo, crayon header, generous margins, restrained bright cyan/gold accents and clean readable ivory text.",
+    "filename": "02-02-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "ba53aa58bbdb0ad461efe48f2a2b0a45befdf4908f659a90c8e9983181b1b2fe"
+  },
+  {
+    "key": "02-03",
+    "kind": "content",
+    "title": [
+      "成长的痕迹",
+      "值得被看见"
+    ],
+    "subtitle": "和孩子一起回看探索过程",
+    "lines": [
+      "一张自己的草图",
+      "一次测试的记录",
+      "一个新的问题"
+    ],
+    "scene": "A warm mother with boy and girl examines three pieces of a child's learning record on a small table: his own car pencil sketch, a pictorial test trace, and a new question mark on a note. No grades, awards, comparisons or numerical results. Children point and explain; focus is record and reflection.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: CONTENT. Page capsule exactly “02 · 3/3”. Title in two lines exactly “成长的痕迹\n值得被看见”. Body text in separate clear readable rows exactly:\n“一张自己的草图”\n“一次测试的记录”\n“一个新的问题”\nSupporting line exactly “和孩子一起回看探索过程”.\nScene: A warm mother with boy and girl examines three pieces of a child's learning record on a small table: his own car pencil sketch, a pictorial test trace, and a new question mark on a note. No grades, awards, comparisons or numerical results. Children point and explain; focus is record and reflection.\nThe text rows are primary on this informational card. Do not draw a huge illustration that competes with the text. Do not merge rows into paragraphs or add other body copy. Maintain this campaign's exact small logo, crayon header, generous margins, restrained bright cyan/gold accents and clean readable ivory text.",
+    "filename": "02-03-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "f2b87fcb001d4a064872a81b74eea46dab8143f895ef81173c1907bb617b0d19"
+  },
+  {
+    "key": "03-01",
+    "kind": "cover",
+    "title": [
+      "AI来了",
+      "孩子还要思考吗？"
+    ],
+    "subtitle": "AI 引导，孩子思考，共同实现。",
+    "lines": [],
+    "scene": "Same coral-shirt boy and blue-shirt girl actively compare their own sketches with a LEGO-compatible car. At SIDE a modest small computer screen shows only a simple cyan question-mark dialogue symbol. Warm mother observes them talking. No robot replacing the children, no giant AI face, no fake program text.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: COVER. Page capsule exactly “03 · 1/3”. Title in two lines exactly “AI来了\n孩子还要思考吗？”. Supporting line exactly “AI 引导，孩子思考，共同实现。”.\nScene: Same coral-shirt boy and blue-shirt girl actively compare their own sketches with a LEGO-compatible car. At SIDE a modest small computer screen shows only a simple cyan question-mark dialogue symbol. Warm mother observes them talking. No robot replacing the children, no giant AI face, no fake program text.",
+    "filename": "03-01-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "840996d49a6d480f314a3e5cd265666c91310b4444fd6597f2e611a504d7264e"
+  },
+  {
+    "key": "03-02",
+    "kind": "content",
+    "title": [
+      "小车走偏了",
+      "先提出你的判断"
+    ],
+    "subtitle": "先观察，再选办法，一起试。",
+    "lines": [
+      "准备观察什么？",
+      "怎样比较两个方案？",
+      "试过以后改哪里？"
+    ],
+    "scene": "Children inspect a car wheel and sketched possible changes. A small cyan question-mark screen sits unobtrusively to the side. A mother or adult mentor listens while girl gestures to one chosen sketch. A curved chalk trace beside the car illustrates a possible test, no measurements or success claim.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: CONTENT. Page capsule exactly “03 · 2/3”. Title in two lines exactly “小车走偏了\n先提出你的判断”. Body text in separate clear readable rows exactly:\n“准备观察什么？”\n“怎样比较两个方案？”\n“试过以后改哪里？”\nSupporting line exactly “先观察，再选办法，一起试。”.\nScene: Children inspect a car wheel and sketched possible changes. A small cyan question-mark screen sits unobtrusively to the side. A mother or adult mentor listens while girl gestures to one chosen sketch. A curved chalk trace beside the car illustrates a possible test, no measurements or success claim.\nThe text rows are primary on this informational card. Do not draw a huge illustration that competes with the text. Do not merge rows into paragraphs or add other body copy. Maintain this campaign's exact small logo, crayon header, generous margins, restrained bright cyan/gold accents and clean readable ivory text.",
+    "filename": "03-02-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "ab89017ab15cdd19942410c61cec1471acc34f230e882a277d6ef11bf5876e6b"
+  },
+  {
+    "key": "03-03",
+    "kind": "content",
+    "title": [
+      "看孩子的探索",
+      "留意这三个地方"
+    ],
+    "subtitle": "关注织界，一起看想法怎样被验证。",
+    "lines": [
+      "提出了什么问题？",
+      "为什么选这个办法？",
+      "试过后改变了什么？"
+    ],
+    "scene": "At lower third mother listens as boy and girl point at their sketchbook and a partial car, plus a separate plant ground box. Pencil, question bubble and magnifier visual motifs; small unimportant cyan screen off to the side. Children remain protagonists; no invented quotes, achievement badges or assessment scores.",
+    "prompt": "Use case: ads-marketing. Produce ONE finished 3:4 portrait carousel card, approximately 1080x1440, for a Chinese course account's image-and-text note aimed at mothers of elementary-age children. NOT a phone mockup or contact sheet.\nImage 1 is the exact approved 织界 logo; Image 2 is the campaign STYLE reference. Keep that finished small logo intact, placed upper left with generous 7% top margin; do not redesign the mosaic chip or Chinese brand lettering. Retain the same coral-shirt boy, blue-shirt girl, tactile crayon colored-pencil illustration style, matte dark navy-slate paper, warm ivory + gold bold Chinese display lettering, cyan underline, warm workshop lighting, detailed physical bricks, rubber wheels, soil and leaves. Recompose for 3:4 instead of copying 9:16. Create restrained premium educational editorial graphics, energetic but not cluttered.\nSeries identity at upper right exactly “妈妈关心的事”. Small page capsule specified below. Footer exactly “AI 引导 · 孩子思考 · 共同实现”; a tiny bottom note “课程情境示意”.\nFor COVER cards: oversized two-line title at upper quarter, first line ivory and second warm gold, main illustration centered through middle/lower half, concise supporting line near bottom above footer.\nFor CONTENT cards: two-line title at top; immediately below are 3 or 4 clearly separated large readable Chinese text rows, with subtle cyan/gold check or number accents and supporting small pictorial icons. Body text should be crisp and simple, not overly rough. Illustration occupies only lower third and never overlaps the text. Supporting line above identical footer. Keep dark background and bright subjects, generous margins, all characters fully formed. EXACT provided text only; no extra tiny labels, dates, prices, statistics, awards, QR code, platform logos, watermarks or fake testimonials. Main text is readable on a small mobile screen.\nCard type: CONTENT. Page capsule exactly “03 · 3/3”. Title in two lines exactly “看孩子的探索\n留意这三个地方”. Body text in separate clear readable rows exactly:\n“提出了什么问题？”\n“为什么选这个办法？”\n“试过后改变了什么？”\nSupporting line exactly “关注织界，一起看想法怎样被验证。”.\nScene: At lower third mother listens as boy and girl point at their sketchbook and a partial car, plus a separate plant ground box. Pencil, question bubble and magnifier visual motifs; small unimportant cyan screen off to the side. Children remain protagonists; no invented quotes, achievement badges or assessment scores.\nThe text rows are primary on this informational card. Do not draw a huge illustration that competes with the text. Do not merge rows into paragraphs or add other body copy. Maintain this campaign's exact small logo, crayon header, generous margins, restrained bright cyan/gold accents and clean readable ivory text.",
+    "filename": "03-03-配图.png",
+    "width": 1086,
+    "height": 1448,
+    "sha256": "568b68e85549b916177ff64db84b8ce36521f1c95bc943395488a37923d40fa1"
+  }
+]

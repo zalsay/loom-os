@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "start": 0.6,
+    "end": 5.154,
+    "window_end": 5.55,
+    "original_seconds": 4.554,
+    "tempo": 1.0,
+    "status": "pending_mimo_api_key",
+    "text": "AI 一秒就能写完代码，为什么还要带孩子亲手搭底盘、种植物？因为越是不缺现成答案的时代，会提问题、敢验真伪的能力越值钱。"
+  },
+  {
+    "id": 2,
+    "start": 6.6,
+    "end": 12.074,
+    "window_end": 12.55,
+    "original_seconds": 5.474,
+    "tempo": 1.0,
+    "status": "pending_mimo_api_key",
+    "text": "在织界，三至六年级零基础起步。比如小车走偏了，老师和 AI 不会直接给标准答案，而是先问孩子：你觉得是哪里出了问题？"
+  },
+  {
+    "id": 3,
+    "start": 13.6,
+    "end": 19.074,
+    "window_end": 19.55,
+    "original_seconds": 5.474,
+    "tempo": 1.0,
+    "status": "pending_mimo_api_key",
+    "text": "四人两组的小工坊里，不发统一复制图纸。两个孩子一人调轮轴结构，一人画设计草图，自己决定先试哪一种改法。"
+  },
+  {
+    "id": 4,
+    "start": 20.6,
+    "end": 26.994,
+    "window_end": 27.55,
+    "original_seconds": 6.394,
+    "tempo": 1.0,
+    "status": "pending_mimo_api_key",
+    "text": "通电前先写下预测，架空车轮验电后再上测试垫实测。哪怕还是走偏了也没关系，只要能对比预期找出原因，失败也是宝贵的证据。"
+  },
+  {
+    "id": 5,
+    "start": 28.6,
+    "end": 34.994,
+    "window_end": 35.55,
+    "original_seconds": 6.394,
+    "tempo": 1.0,
+    "status": "pending_mimo_api_key",
+    "text": "想加个屏幕按钮或看传感器读数？AI 只提供最小可测试草稿。孩子不用先背半年代码，但必须自己预测触发逻辑，再亲手验证对不对。"
+  },
+  {
+    "id": 6,
+    "start": 36.6,
+    "end": 41.154,
+    "window_end": 41.55,
+    "original_seconds": 4.554,
+    "tempo": 1.0,
+    "status": "pending_mimo_api_key",
+    "text": "走出门外，每人还照顾一格移动小花园。用手摸干湿土对照读数，用量杯测准每一次浇水，把思考延伸到真实的生命周期里。"
+  },
+  {
+    "id": 7,
+    "start": 42.45,
+    "end": 47.418,
+    "window_end": 47.85,
+    "original_seconds": 4.968,
+    "tempo": 1.0,
+    "status": "pending_mimo_api_key",
+    "text": "带走能测试的作品，更带走独立解决问题的底气。织界，AI 引导，孩子思考，共同实现。"
+  }
+]
