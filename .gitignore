@@ -11,3 +11,19 @@ browser/
 node_modules/
 __pycache__/
 *.pyc
+
+# Media files
+*.mov
+*.m4a
+*.m4v
+*.mp3
+*.wav
+*.aac
+*.flac
+*.ogg
+*.opus
+*.avi
+*.mkv
+*.webm
+*.wmv
+*.3gp
