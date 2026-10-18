@@ -59,6 +59,8 @@ texlua tests/settings_test.lua
 
 启动器中的“设置”入口提供 Wi-Fi 状态与配网指引、深浅主题、亮度和音量。主题在 loom-os 内直接生效并保存；亮度、音量及系统内直接连接 Wi-Fi 需要固件提供设备适配接口，未接入时明确显示不可用。具体接口和真机验收项见[系统设置说明](SETTINGS.md)。
 
+macOS 上可在仓库根目录运行 `./cofe` 阻止系统因空闲而休眠，按 `Ctrl-C` 停止；它不保持显示器常亮，也不保证不锁屏。边界和测试见 [`tools/cofe.md`](tools/cofe.md)。
+
 ## 真机安装与验收
 
 先在测试设备上备份 `loom-os/` 和 `loom-os-runtime/`。新装和 OTA 流程、Runtime 文件清单、适配器要求及 C01–C10 步骤见 [真机验收清单](Mosaico-Patch01-08-Device-Checklist.md)。

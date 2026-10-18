@@ -1,0 +1,23 @@
+#!/bin/sh
+
+usage() {
+    printf '%s\n' 'Usage: ./cofe [--help]' \
+        'Prevent macOS system idle sleep until interrupted with Ctrl-C.' \
+        'This does not keep the display awake or change lock settings.'
+}
+
+if [ "$#" -gt 0 ]; then
+    if [ "$#" -eq 1 ] && [ "$1" = --help ]; then
+        usage
+        exit 0
+    fi
+    usage >&2
+    exit 2
+fi
+
+if [ "$(/usr/bin/uname -s 2>/dev/null)" != Darwin ]; then
+    printf '%s\n' 'cofe is supported only on macOS (Darwin).' >&2
+    exit 1
+fi
+
+exec /usr/bin/caffeinate -i
