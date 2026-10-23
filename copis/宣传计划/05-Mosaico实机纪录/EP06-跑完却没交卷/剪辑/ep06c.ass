@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cap,Hiragino Sans GB,62,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,1,0,1,2.2,1.2,8,40,40,0,1
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: Note,Hiragino Sans GB,34,&H00C8D2D8,&H00C8D2D8,&H00101B22,&H00101B22,0,0,0,0,100,100,0,0,3,1.0,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,96,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:33.00,Badge,,0,0,0,,{\pos(540,120)}──  织界创造日记 · EP06  ──
+Dialogue: 0,0:00:00.00,0:00:33.00,T1,,0,0,0,,{\pos(540,200)}它卡在交卷那一步
+Dialogue: 0,0:00:00.00,0:00:33.00,T2,,0,0,0,,{\pos(540,300)}我先在电脑上摸个底
+Dialogue: 0,0:00:00.00,0:00:33.00,Note,,0,0,0,,{\pos(540,1252)}终端红字是负向测试的预期输出  不是这一轮的失败
+Dialogue: 0,0:00:00.50,0:00:02.41,Cap,,0,0,0,,{\pos(540,1470)}上一集它卡在交卷
+Dialogue: 0,0:00:02.41,0:00:03.60,Cap,,0,0,0,,{\pos(540,1470)}整晚没回话
+Dialogue: 0,0:00:03.60,0:00:05.45,Cap,,0,0,0,,{\pos(540,1470)}这次我没急着碰它
+Dialogue: 0,0:00:05.45,0:00:07.44,Cap,,0,0,0,,{\pos(540,1470)}先在电脑上写了支探针
+Dialogue: 0,0:00:07.44,0:00:08.63,Cap,,0,0,0,,{\pos(540,1470)}探针很克制
+Dialogue: 0,0:00:08.63,0:00:10.30,Cap,,0,0,0,,{\pos(540,1470)}只问能干不能干
+Dialogue: 0,0:00:10.30,0:00:11.12,Cap,,0,0,0,,{\pos(540,1470)}不读文件
+Dialogue: 0,0:00:11.12,0:00:12.35,Cap,,0,0,0,,{\pos(540,1470)}也不重跑导出
+Dialogue: 0,0:00:12.35,0:00:13.21,Cap,,0,0,0,,{\pos(540,1470)}它只查
+Dialogue: 0,0:00:13.21,0:00:14.07,Cap,,0,0,0,,{\pos(540,1470)}不动手
+Dialogue: 0,0:00:14.07,0:00:15.34,Cap,,0,0,0,,{\pos(540,1470)}三组跑下来
+Dialogue: 0,0:00:15.34,0:00:15.85,Cap,,0,0,0,,{\pos(540,1470)}{\c&H64C8FA&}全过{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.85,0:00:17.39,Cap,,0,0,0,,{\pos(540,1470)}屏幕上最后那句
+Dialogue: 0,0:00:17.39,0:00:18.92,Cap,,0,0,0,,{\pos(540,1470)}我盯着看了半天
+Dialogue: 0,0:00:18.92,0:00:20.29,Cap,,0,0,0,,{\pos(540,1470)}{\c&H64C8FA&}主机验证通过{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.29,0:00:22.35,Cap,,0,0,0,,{\pos(540,1470)}设备运行时还没验证
+Dialogue: 0,0:00:22.35,0:00:23.02,Cap,,0,0,0,,{\pos(540,1470)}说白了
+Dialogue: 0,0:00:23.02,0:00:24.81,Cap,,0,0,0,,{\pos(540,1470)}电脑这边我拿准了
+Dialogue: 0,0:00:24.81,0:00:26.63,Cap,,0,0,0,,{\pos(540,1470)}真机那边还是空白
+Dialogue: 0,0:00:26.63,0:00:27.76,Cap,,0,0,0,,{\pos(540,1470)}慢一点不怕
+Dialogue: 0,0:00:27.76,0:00:28.88,Cap,,0,0,0,,{\pos(540,1470)}怕的是瞎试
+Dialogue: 0,0:00:28.88,0:00:29.64,Cap,,0,0,0,,{\pos(540,1470)}下一集
+Dialogue: 0,0:00:29.64,0:00:31.41,Cap,,0,0,0,,{\pos(540,1470)}把探针{\c&H64C8FA&}送进设备{\c&HFFFFFF&}

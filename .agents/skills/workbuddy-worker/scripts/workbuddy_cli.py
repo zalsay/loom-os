@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import argparse
+from collections import deque
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
@@ -16,6 +18,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import uuid
+
+
+LOCAL_HISTORY_TEXT_BUDGET = 200000
 
 
 class WorkBuddyError(Exception):
@@ -320,6 +325,166 @@ def parse_acp_prompt(messages: list[dict], reply: dict, session_id: str) -> dict
             'request_id': request_id, 'response': response, 'tool_names': tools}
 
 
+def _local_session_files(config_dir: Path, session_id: str | None = None):
+    projects = config_dir.expanduser().resolve() / 'projects'
+    if not projects.is_dir():
+        raise WorkBuddyError('local_store_not_found', 'WorkBuddy projects directory does not exist; check --config-dir.')
+    for project in sorted(projects.iterdir()):
+        if project.is_symlink() or not project.is_dir():
+            continue
+        paths = [project / (session_id + '.jsonl')] if session_id else sorted(project.glob('*.jsonl'))
+        for path in paths:
+            # Do not follow project/session symlinks or descend into sub-agent logs.
+            if path.is_file() and not path.is_symlink():
+                yield path
+
+
+def _timestamp_ms(value) -> float | None:
+    try:
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            milliseconds = float(value)
+        elif isinstance(value, str):
+            parsed = datetime.fromisoformat(value.replace('Z', '+00:00'))
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=timezone.utc)
+            milliseconds = parsed.timestamp() * 1000
+        else:
+            return None
+        datetime.fromtimestamp(milliseconds / 1000, timezone.utc)
+        return milliseconds
+    except (ValueError, OverflowError, OSError):
+        return None
+
+
+def _iso_timestamp(milliseconds: float) -> str:
+    return datetime.fromtimestamp(milliseconds / 1000, timezone.utc).isoformat(timespec='milliseconds').replace('+00:00', 'Z')
+
+
+def _message_text(record: dict) -> str:
+    if record.get('type') != 'message' or record.get('role') not in ('user', 'assistant'):
+        return ''
+    if any(record.get(key) is True for key in ('isMeta', 'isInjected', 'isHidden')):
+        return ''
+    content = record.get('content')
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        return ''.join(block['text'] for block in content if isinstance(block, dict)
+                       and block.get('type') in ('input_text', 'output_text', 'text')
+                       and isinstance(block.get('text'), str))
+    return ''
+
+
+def _scan_local_transcript(path: Path, limit: int = 0, max_chars: int = 4000,
+                           role: str = 'all') -> dict:
+    session_id = path.stem
+    summary = {'session_id': session_id, 'title': session_id, 'workspace': None,
+               'message_count': 0, 'updated_at': None}
+    messages = deque()
+    retained_chars = 0
+    total, skipped, latest = 0, 0, None
+    # Snapshot the byte length: a growing live log must not make this read endless.
+    with path.open('rb') as stream:
+        stat = os.fstat(stream.fileno())
+        remaining = stat.st_size
+        while remaining > 0:
+            line = stream.readline(min(remaining, 8 * 1024 * 1024 + 1))
+            if not line:
+                break
+            remaining -= len(line)
+            if len(line) > 8 * 1024 * 1024:
+                raise WorkBuddyError('record_too_large', 'Local history contains a record over 8 MiB; no unbounded read was performed.')
+            if not line.strip():
+                continue
+            try:
+                record = json.loads(line)
+            except (ValueError, UnicodeDecodeError):
+                skipped += 1
+                continue
+            if not isinstance(record, dict):
+                skipped += 1
+                continue
+            if record.get('sessionId') not in (None, '', session_id):
+                continue
+            timestamp = _timestamp_ms(record.get('timestamp'))
+            if timestamp is not None:
+                latest = timestamp if latest is None else max(latest, timestamp)
+            cwd = record.get('cwd')
+            if isinstance(cwd, str) and Path(cwd).is_absolute():
+                summary['workspace'] = str(Path(cwd).resolve())
+            if record.get('type') == 'ai-title' and isinstance(record.get('aiTitle'), str) and record['aiTitle'].strip():
+                summary['title'] = record['aiTitle'][:300]
+            text = _message_text(record)
+            if not text.strip():
+                continue
+            summary['message_count'] += 1
+            if role != 'all' and record['role'] != role:
+                continue
+            total += 1
+            if limit:
+                snippet = text[:max_chars]
+                while messages and (len(messages) >= limit or retained_chars + len(snippet) > LOCAL_HISTORY_TEXT_BUDGET):
+                    retained_chars -= len(messages.popleft()['text'])
+                messages.append({'id': record.get('id'), 'role': record['role'],
+                                 'timestamp': _iso_timestamp(timestamp) if timestamp is not None else None,
+                                 'text': snippet, 'truncated': len(text) > max_chars})
+                retained_chars += len(snippet)
+    summary['updated_at'] = _iso_timestamp(latest if latest is not None else stat.st_mtime * 1000)
+    return {'session': summary, 'messages': list(messages), 'total': total,
+            'skipped_records': skipped, 'warnings': ['Malformed or incomplete JSONL records were skipped.'] if skipped else []}
+
+
+def _workspace_matches(cwd: str | None, workspace: Path | None) -> bool:
+    if workspace is None:
+        return True
+    return cwd is not None and Path(cwd).resolve().is_relative_to(workspace.expanduser().resolve())
+
+
+def _validate_local_options(limit: int, max_chars: int = 4000, role: str = 'all'):
+    if not 1 <= limit <= 1000 or not 1 <= max_chars <= 100000 or role not in ('all', 'user', 'assistant'):
+        raise WorkBuddyError('invalid_history_options', 'Limit must be 1–1000, max-chars 1–100000, and role all/user/assistant.')
+
+
+def list_local_sessions(config_dir: Path, workspace: Path | None, limit: int = 20,
+                        query: str = '') -> dict:
+    _validate_local_options(limit)
+    sessions, skipped, warnings = [], 0, []
+    for path in _local_session_files(config_dir):
+        result = _scan_local_transcript(path)
+        session = result['session']
+        if not _workspace_matches(session['workspace'], workspace):
+            continue
+        if query.casefold() not in (session['title'] + ' ' + (session['workspace'] or '') + ' ' + session['session_id']).casefold():
+            continue
+        sessions.append(session)
+        skipped += result['skipped_records']
+        warnings.extend(result['warnings'])
+    sessions.sort(key=lambda item: (item['updated_at'], item['session_id']), reverse=True)
+    return {'status': 'SUCCESS', 'source': 'local', 'read_only': True,
+            'sessions': sessions[:limit], 'total': len(sessions), 'has_more': len(sessions) > limit,
+            'skipped_records': skipped, 'warnings': sorted(set(warnings))}
+
+
+def read_local_history(config_dir: Path, session_id: str, workspace: Path | None,
+                       limit: int = 20, max_chars: int = 4000, role: str = 'all') -> dict:
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_:-]{0,127}', session_id):
+        raise WorkBuddyError('invalid_session_id', 'Session ID must be a plain identifier, not a path or glob.')
+    _validate_local_options(limit, max_chars, role)
+    matches = []
+    for path in _local_session_files(config_dir, session_id):
+        result = _scan_local_transcript(path, limit, max_chars, role)
+        if _workspace_matches(result['session']['workspace'], workspace):
+            matches.append(result)
+    if not matches:
+        raise WorkBuddyError('session_not_found', 'No matching local session in this workspace; check the ID and workspace scope.')
+    if len(matches) > 1:
+        raise WorkBuddyError('ambiguous_session', 'This session ID appears in multiple projects; narrow --workspace instead of picking one.')
+    result = matches[0]
+    return {'status': 'SUCCESS', 'source': 'local', 'read_only': True, **result,
+            'session_id': session_id, 'has_more': result['total'] > len(result['messages']),
+            'text_budget_chars': LOCAL_HISTORY_TEXT_BUDGET}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest='command', required=True)
@@ -342,11 +507,30 @@ def main() -> int:
         command.add_argument('--workspace', type=Path, default=Path.cwd())
     for command in (doctor, native, gateway):
         command.add_argument('--timeout', type=float, default=120 if command != doctor else 10)
+    sessions = commands.add_parser('sessions', help='List local WorkBuddy sessions without contacting a model or gateway.')
+    sessions.add_argument('--query', default='', help='Filter session ID, title or workspace (not message bodies).')
+    history = commands.add_parser('history', help='Read recent user/assistant text from one local session.')
+    history.add_argument('--session-id', required=True)
+    history.add_argument('--role', choices=('all', 'user', 'assistant'), default='all')
+    history.add_argument('--max-chars', type=int, default=4000, help='Maximum characters per message (1–100000).')
+    for command in (sessions, history):
+        command.add_argument('--config-dir', type=Path, help='WorkBuddy data root; defaults to WORKBUDDY_CONFIG_DIR or ~/.workbuddy.')
+        command.add_argument('--limit', type=int, default=20, help='Return up to this many sessions or latest matching messages (1–1000).')
+        scope = command.add_mutually_exclusive_group()
+        scope.add_argument('--workspace', type=Path, default=Path.cwd(), help='Include this workspace and descendants; default is current directory.')
+        scope.add_argument('--all-workspaces', action='store_true', help='Explicitly allow reading across all local projects.')
     args = parser.parse_args()
     try:
-        if args.timeout <= 0:
+        if args.command in ('sessions', 'history'):
+            config_dir = args.config_dir or Path(os.environ.get('WORKBUDDY_CONFIG_DIR') or str(Path.home() / '.workbuddy'))
+            scope = None if args.all_workspaces else args.workspace.expanduser().resolve()
+            if args.command == 'sessions':
+                output = list_local_sessions(config_dir, scope, args.limit, args.query)
+            else:
+                output = read_local_history(config_dir, args.session_id, scope, args.limit, args.max_chars, args.role)
+        elif args.timeout <= 0:
             raise WorkBuddyError('invalid_timeout', 'Timeout must be positive.')
-        if args.command == 'doctor':
+        elif args.command == 'doctor':
             cli = find_cli(args.cli)
             if args.url:
                 candidates = [select_gateway(args.url, args.token_env)]

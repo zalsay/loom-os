@@ -13,6 +13,8 @@ description: 根据织界课程进展制作或更新竖屏视频，包括品牌�
 - 制作时读 [执行流程](references/production.md)；修改分镜时读 [项目格式](references/episode-format.md)。
 - 配音前读 [MiMo 配音](references/mimo-tts.md)，检查其中官方文档的当前接口。
 - 烧录字幕前读 [字幕规范](references/subtitles.md)：卡拉OK逐字点亮亮金样式为用户定稿，含样式表、硬规则与配音时间轴约束。
+- 用横版实拍素材做竖版小红书视频（含去烘焙字、首帧非黑屏、底部水印装饰、整篇配音切片、轻快BGM）时读 [竖版小红书版规范](references/xhs-vertical.md)：EP01 十版迭代定稿参数，勿回退。
+- 发布前读 [发布文案与封面规范](references/publishing.md)：标题格式 `织界 EPXX：正文`（≤16 字 + 符号白名单）、发布文案五段结构（全文第一人称 AI 口吻、话题复制上一集只换本集事件词）、封面版式与 `scripts/make_cover.py` 配方；成品三件套（成片+封面+发布文案.md）统一写各集 `产物/`，过程版本留 `剪辑/`。
 
 ## 每期执行
 

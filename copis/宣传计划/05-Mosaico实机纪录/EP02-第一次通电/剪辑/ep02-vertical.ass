@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Badge,PingFang SC,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,8,0,1,1.2,0,8,40,40,0,1
+Style: Title,PingFang SC,86,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: Sub,PingFang SC,66,&H00E8FFF6,&H00E8FFF6,&H00101B22,&H00101B22,1,0,0,0,100,100,1.5,0,1,2.2,1.2,8,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:01:00.10,Badge,,0,0,0,,{\pos(540,150)}──  织界创造日记 · EP02  ──
+Dialogue: 0,0:00:00.00,0:01:00.10,Title,,0,0,0,,{\pos(540,235)}{\fs74}第一次通电\N{\fs92\c&H64C8FA&}亮起来了{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.82,0:00:03.86,Sub,,0,0,0,,{\pos(540,1310)}上一集开完箱，
+Dialogue: 0,0:00:04.34,0:00:05.20,Sub,,0,0,0,,{\pos(540,1310)}今天给它第一次通电。
+Dialogue: 0,0:00:05.76,0:00:07.27,Sub,,0,0,0,,{\pos(540,1310)}屏幕还黑着，
+Dialogue: 0,0:00:08.03,0:00:09.37,Sub,,0,0,0,,{\pos(540,1310)}先找到侧边的{\c&H64C8FA&}电源键{\c&HFFFFFF&}。
+Dialogue: 0,0:00:09.87,0:00:10.92,Sub,,0,0,0,,{\pos(540,1310)}按下去的一瞬间，
+Dialogue: 0,0:00:11.68,0:00:12.94,Sub,,0,0,0,,{\pos(540,1310)}屏幕{\c&H64C8FA&}亮起来了{\c&HFFFFFF&}。
+Dialogue: 0,0:00:13.29,0:00:14.21,Sub,,0,0,0,,{\pos(540,1310)}第一次点亮成功，
+Dialogue: 0,0:00:14.79,0:00:15.66,Sub,,0,0,0,,{\pos(540,1310)}亮度很足，
+Dialogue: 0,0:00:16.14,0:00:17.55,Sub,,0,0,0,,{\pos(540,1310)}画面也清楚。
+Dialogue: 0,0:00:17.95,0:00:19.30,Sub,,0,0,0,,{\pos(540,1310)}这块二点一六寸的方屏，
+Dialogue: 0,0:00:19.55,0:00:21.45,Sub,,0,0,0,,{\pos(540,1310)}看着确实舒服。
+Dialogue: 0,0:00:22.18,0:00:23.17,Sub,,0,0,0,,{\pos(540,1310)}开机后先做基础设置。
+Dialogue: 0,0:00:23.65,0:00:24.44,Sub,,0,0,0,,{\pos(540,1310)}{\c&H64C8FA&}触控很跟手{\c&HFFFFFF&}，
+Dialogue: 0,0:00:25.09,0:00:26.51,Sub,,0,0,0,,{\pos(540,1310)}点哪是哪。
+Dialogue: 0,0:00:26.69,0:00:28.94,Sub,,0,0,0,,{\pos(540,1310)}连网络，要用屏幕键盘输密码，
+Dialogue: 0,0:00:29.38,0:00:30.37,Sub,,0,0,0,,{\pos(540,1310)}一格一格点，速度不快，
+Dialogue: 0,0:00:30.37,0:00:31.16,Sub,,0,0,0,,{\pos(540,1310)}但输入很稳。
+Dialogue: 0,0:00:32.17,0:00:33.88,Sub,,0,0,0,,{\pos(540,1310)}配对请求发出之后，
+Dialogue: 0,0:00:34.34,0:00:35.90,Sub,,0,0,0,,{\pos(540,1310)}系统就顺利跑起来了。
+Dialogue: 0,0:00:36.58,0:00:38.33,Sub,,0,0,0,,{\pos(540,1310)}主界面是一排应用图标，
+Dialogue: 0,0:00:39.00,0:00:39.84,Sub,,0,0,0,,{\pos(540,1310)}快捷面板、
+Dialogue: 0,0:00:40.28,0:00:41.72,Sub,,0,0,0,,{\pos(540,1310)}设置列表都点了一遍，
+Dialogue: 0,0:00:41.88,0:00:43.16,Sub,,0,0,0,,{\pos(540,1310)}反应{\c&H64C8FA&}没有卡顿{\c&HFFFFFF&}。
+Dialogue: 0,0:00:52.19,0:00:52.80,Sub,,0,0,0,,{\pos(540,1310)}下一集，
+Dialogue: 0,0:00:52.98,0:00:54.14,Sub,,0,0,0,,{\pos(540,1310)}给它装上模块，
+Dialogue: 0,0:00:54.59,0:00:55.81,Sub,,0,0,0,,{\pos(540,1310)}让它真正动起来。
+Dialogue: 0,0:00:56.23,0:00:57.05,Sub,,0,0,0,,{\pos(540,1310)}{\c&H64C8FA&}关注织界{\c&HFFFFFF&}，
+Dialogue: 0,0:00:57.47,0:00:58.98,Sub,,0,0,0,,{\pos(540,1310)}看设备的成长记录。

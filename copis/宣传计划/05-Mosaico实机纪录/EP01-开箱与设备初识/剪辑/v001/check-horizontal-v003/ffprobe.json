@@ -1,0 +1,43 @@
+{
+    "programs": [
+
+    ],
+    "stream_groups": [
+
+    ],
+    "streams": [
+        {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "avg_frame_rate": "30000/1001",
+            "side_data_list": [
+                {
+
+                }
+            ]
+        },
+        {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "avg_frame_rate": "0/0"
+        }
+    ],
+    "format": {
+        "filename": "/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP01-开箱与设备初识/剪辑/v001/EP01-开箱主版-横版-v003.mp4",
+        "duration": "60.060000",
+        "size": "36098668",
+        "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf62.3.100"
+        }
+    }
+}

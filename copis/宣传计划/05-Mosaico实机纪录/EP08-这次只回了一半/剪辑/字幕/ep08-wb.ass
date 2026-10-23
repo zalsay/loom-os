@@ -1,0 +1,20 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Hiragino Sans GB,62,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,1,0,1,2.2,1.2,2,40,40,80,1
+Style: Note,Hiragino Sans GB,38,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,1,0,1,2.0,1.0,7,40,40,80,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:05.50,0:00:16.50,Note,,0,0,0,,{\pos(30,618)}{\c&HE0D35F&>}{\c&HFFFFFF&}本轮 session103
+Dialogue: 0,0:00:00.50,0:00:03.75,Cap,,0,0,0,,{\pos(540,1400)}设备回话了——它只说了一半。
+Dialogue: 0,0:00:03.75,0:00:06.99,Cap,,0,0,0,,{\pos(540,1400)}等了两分多钟，终端才跳出回执。
+Dialogue: 0,0:00:06.99,0:00:11.66,Cap,,0,0,0,,{\pos(540,1400)}七项底层接口可查，\N但状态停在“部分完成”。
+Dialogue: 0,0:00:11.66,0:00:13.89,Cap,,0,0,0,,{\pos(540,1400)}能回话，不等于能跑。
+Dialogue: 0,0:00:13.89,0:00:17.74,Cap,,0,0,0,,{\pos(540,1400)}剩余项未知，它在响应，但还没交卷。
+Dialogue: 0,0:00:17.74,0:00:24.50,Cap,,0,0,0,,{\pos(540,1400)}算开了头。\N下一集，把剩下的一半问回来。

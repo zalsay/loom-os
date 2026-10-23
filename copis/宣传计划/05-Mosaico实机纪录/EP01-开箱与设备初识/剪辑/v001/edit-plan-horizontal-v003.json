@@ -1,0 +1,80 @@
+{
+  "episode": "EP01-开箱与设备初识",
+  "version": "v003-horizontal",
+  "kind": "real-footage-first-cut",
+  "source": "/Volumes/RC500/dev/loom-os/copis/rawvideo/IMG_4947.mp4",
+  "output": "EP01-开箱主版-横版-v003.mp4",
+  "target": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30000/1001",
+    "duration_target_seconds": 60,
+    "audio": "保留现场原声，未配旁白"
+  },
+  "segments": [
+    {
+      "source_start": 0,
+      "source_end": 8,
+      "purpose": "S01：展示完整未拆包装，建立到货起点",
+      "evidence": "画面显示 ESP-MOSAICO 包装正面",
+      "privacy": "不使用包装背面标签画面"
+    },
+    {
+      "source_start": 26,
+      "source_end": 38,
+      "purpose": "S03-S04：打开外盒并第一次展示黄色内托与设备",
+      "evidence": "画面显示打开后的内托、设备和保护件",
+      "privacy": "从 26 秒开始，避开约 22–25 秒的包装背面标签"
+    },
+    {
+      "source_start": 38,
+      "source_end": 52,
+      "purpose": "S05：取出设备并展示正面、组件和侧面",
+      "evidence": "画面显示手持设备及其结构细节",
+      "privacy": "只保留清晰且不含识别信息的设备画面"
+    },
+    {
+      "source_start": 52,
+      "source_end": 70,
+      "purpose": "S06：补充接口、屏幕和外观细节",
+      "evidence": "画面显示设备侧边、接口和未进入联网设置前的屏幕",
+      "privacy": "在第一次通电/网络配置开始前结束本段"
+    }
+  ],
+  "text_overlays": [
+    {
+      "output_start": 0,
+      "output_end": 8,
+      "text": "Mosaico 到货了"
+    },
+    {
+      "output_start": 8,
+      "output_end": 20,
+      "text": "先开箱，不急着通电"
+    },
+    {
+      "output_start": 20,
+      "output_end": 34,
+      "text": "确认设备与配件"
+    },
+    {
+      "output_start": 34,
+      "output_end": 54,
+      "text": "接下来逐项验证"
+    }
+  ],
+  "excluded": [
+    {
+      "source_start": 70,
+      "source_end": 277.644,
+      "reason": "进入联网设置和功能浏览，留给 EP02/资料版"
+    },
+    {
+      "source_start": 8,
+      "source_end": 26,
+      "reason": "包装侧面/背面标签、二维码或识别信息风险"
+    }
+  ],
+  "status": "横版无旁白初剪，已完成技术检查与抽帧查看，待用户审看",
+  "framing": "全程保持原始16:9横版，不竖裁、不旋转、不拉伸；片尾同画幅。"
+}

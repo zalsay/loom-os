@@ -1,0 +1,163 @@
+{
+  "checked_at": "2026-10-23T09:52:55.170177+08:00",
+  "records": [
+    {
+      "cmd": [
+        "ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-v",
+        "warning",
+        "-xerror",
+        "-i",
+        "产物/EP07-我传完了还没跑-竖版-v007.mp4",
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-f",
+        "null",
+        "-"
+      ],
+      "cwd": "/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑",
+      "rc": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "cmd": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=nb_read_frames,r_frame_rate,duration",
+        "-of",
+        "default=nw=1",
+        "-i",
+        "产物/EP07-我传完了还没跑-竖版-v007.mp4"
+      ],
+      "cwd": "/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑",
+      "rc": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "cmd": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-count_packets",
+        "-select_streams",
+        "a:0",
+        "-show_entries",
+        "stream=nb_read_packets",
+        "-of",
+        "default=nw=1",
+        "-i",
+        "产物/EP07-我传完了还没跑-竖版-v007.mp4"
+      ],
+      "cwd": "/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑",
+      "rc": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "cmd": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-i",
+        "产物/EP07-我传完了还没跑-竖版-v007.mp4",
+        "-map",
+        "0:a:0",
+        "-c",
+        "copy",
+        "-f",
+        "adts",
+        "-"
+      ],
+      "cwd": "/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑",
+      "rc": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "cmd": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-i",
+        "产物/EP07-我传完了还没跑-竖版-v007.mp4",
+        "-map",
+        "0:a:0",
+        "-f",
+        "md5",
+        "-"
+      ],
+      "cwd": "/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑",
+      "rc": 0,
+      "stderr_bytes": 0
+    }
+  ],
+  "video_sha256": "ef576874afa49e5514959db1bff278aa7dbe74a2d53cd6930c206d30c9dd8baf",
+  "rois": {
+    "oldlog": {
+      "global_half_open": [
+        220,
+        618,
+        860,
+        672
+      ],
+      "time_inclusive": [
+        0.0,
+        6.2
+      ]
+    },
+    "focus": {
+      "global_half_open": [
+        0,
+        608,
+        1080,
+        668
+      ],
+      "time_inclusive": [
+        6.2,
+        10.2
+      ]
+    },
+    "pending": {
+      "global_half_open": [
+        240,
+        1235,
+        840,
+        1295
+      ],
+      "time_inclusive": [
+        10.28,
+        16.37
+      ]
+    }
+  },
+  "N": 735,
+  "gold_totals": {
+    "oldlog": 0,
+    "focus": 0,
+    "pending": 0
+  },
+  "gold_max_per_frame": {
+    "oldlog": 0,
+    "focus": 0,
+    "pending": 0
+  },
+  "active_frames": {
+    "oldlog": 187,
+    "focus": 121,
+    "pending": 183
+  },
+  "unmatched_source_warm_total": 0,
+  "archived_original_sha256": {
+    "full-frame-samples.png": "93081b0f54533060a23a20be8c5536e1669e77c3cee76d4db544438959b9a1ae",
+    "gold-scan.json": "788dbf2ed58bd36e0fc3898db5ac86af4cbaacbe49bf271ab9db955f1c1f8663",
+    "three-stages-comparison.png": "21087ec8c9761b41a8ea2005b1d86ba0b129e9d7a1e14fa7812afa007492309e",
+    "gold-scan-annotation-and-source.json": "f4a714ac6a1e1da698b85d3240aaad800ab9259877bb2a982b3ef5efe9d6c1a4"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "synthetic-smoke-test-only",
+  "width": 320,
+  "height": 568,
+  "fps": 30,
+  "segments": [
+    {
+      "source": "合成测试-非实拍 A.mp4",
+      "start": 0.25,
+      "end": 1.75,
+      "evidence": "合成横屏无声测试，不是设备实拍"
+    },
+    {
+      "source": "合成测试-非实拍 B.mp4",
+      "start": 0.25,
+      "end": 1.75,
+      "evidence": "合成竖屏有声测试，不是设备实拍"
+    }
+  ]
+}

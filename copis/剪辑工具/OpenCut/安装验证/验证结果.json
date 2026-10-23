@@ -1,0 +1,31 @@
+{
+  "kind": "synthetic-toolchain-verification-not-real-footage",
+  "checks": {
+    "skill-frontmatter-links-syntax": true,
+    "project-skill-discovery-link": true,
+    "ffmpeg-and-ffprobe": true,
+    "mixed-audio-and-no-audio": true,
+    "mixed-aspect-ratio-letterbox": true,
+    "chinese-and-spaced-paths": true,
+    "h264-aac-dimensions-fps-frame-count-duration": true,
+    "audio-video-start-timestamps-aligned": true,
+    "complete-decode-without-error": true,
+    "default-1080x1920-30fps-export": true,
+    "existing-output-not-overwritten": true,
+    "out-of-range-rejected-before-rendering": true,
+    "source-hashes-unchanged": true
+  },
+  "expected_duration": 3.0,
+  "actual_duration": 3.0,
+  "output": "/Volumes/RC500/dev/loom-os/copis/剪辑工具/OpenCut/安装验证/验证通过-合成素材非实拍.mp4",
+  "output_sha256": "621ef2e9c0b354247953664d12fece4bdafc7616de7010408322181dde99727e",
+  "ep01_status": "awaiting-footage",
+  "fixed_issue": "重置选段起点时间戳；中间片段改用 PCM，最终仅编码一次 AAC，消除拼接累计偏移。",
+  "deprecated_artifact": "/Volumes/RC500/dev/loom-os/copis/剪辑工具/OpenCut/安装验证/合成粗剪验证-非EP01.mp4",
+  "not_checked": [
+    "真实设备内容",
+    "人工试听听感",
+    "OpenCut 编辑器运行或工程导入",
+    "正式字幕和品牌包装"
+  ]
+}

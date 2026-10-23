@@ -1,0 +1,15 @@
+{
+  "frames": 735,
+  "visible_annotation_gold_total": {
+    "oldlog_active": 0,
+    "focus_active": 0,
+    "pending_active": 0
+  },
+  "visible_annotation_gold_max_per_frame": {
+    "oldlog_active": 0,
+    "focus_active": 0,
+    "pending_active": 0
+  },
+  "remaining_gold_without_source_warm_match_3px": 0,
+  "unmatched_samples": []
+}

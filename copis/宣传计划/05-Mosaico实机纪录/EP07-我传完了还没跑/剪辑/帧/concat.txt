@@ -1,0 +1,5 @@
+file '/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑/剪辑/帧/seg0.mp4'
+file '/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑/剪辑/帧/seg1.mp4'
+file '/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑/剪辑/帧/seg2.mp4'
+file '/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑/剪辑/帧/seg3.mp4'
+file '/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑/剪辑/帧/seg4.mp4'

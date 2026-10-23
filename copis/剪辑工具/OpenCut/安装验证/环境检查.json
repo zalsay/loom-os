@@ -1,0 +1,10 @@
+{
+  "ffmpeg": {
+    "path": "/opt/homebrew/bin/ffmpeg",
+    "version": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers"
+  },
+  "ffprobe": {
+    "path": "/opt/homebrew/bin/ffprobe",
+    "version": "ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers"
+  }
+}
