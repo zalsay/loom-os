@@ -15,7 +15,7 @@ OUT = f"{BASE}/产物"
 SRC = f"{D}/素材"
 OTTY = f"{SRC}/otty-136-160.mov"   # 本地时间 = 源时间 - 136
 MAC = f"{SRC}/mac-136-160.mov"
-BGM = "/Volumes/RC500/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP07-我传完了还没跑/剪辑/音频/BGM-candidate-EP06.wav"
+BGM = f"{D}/音频/bgm-v1.wav"  # 公共资源/BGM/bgm-v1.wav（md5 f14d9c80…），按规范复制到当集归档
 W, H = 1080, 1920
 BG = (40, 56, 64)
 HIRA = "/System/Library/Fonts/Hiragino Sans GB.ttc"
@@ -140,7 +140,7 @@ filters = (
     term + camera_mid + top_cam + base + overlays + ann +
     f"[b11]ass={D}/帧-样片/titles-ass.ass:fontsdir=/System/Library/Fonts,ass={D}/字幕/ep08.ass:fontsdir=/System/Library/Fonts[v];"
     f"[14:a]highpass=f=100,afade=t=in:ss=0:d=0.15,adelay=500|500,volume=1.15[na];"
-    f"[13:a]atrim=0:24.5,lowpass=f=3500,volume=0.8[bgm];"
+    f"[13:a]atrim=0:24.5,volume=0.8[bgm];"
     f"[na][bgm]amix=inputs=2:duration=longest:normalize=0,aformat=channel_layouts=stereo,"
     f"loudnorm=I=-14:TP=-1.6:LRA=11,aresample=44100,alimiter=limit=0.78:level=disabled,afade=t=out:st=22.5:d=2[a]"
 )
@@ -164,7 +164,7 @@ cmd = [
     "-map", "[v]", "-map", "[a]", "-t", "24.5",
     "-c:v", "libx264", "-preset", "medium", "-crf", "20",
     "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
-    f"{OUT}/EP08-这次只回了一半-竖版-v004.mp4",
+    f"{OUT}/EP08-这次只回了一半-竖版-v005.mp4",
 ]
 subprocess.run(cmd, check=True)
 print("rendered")
