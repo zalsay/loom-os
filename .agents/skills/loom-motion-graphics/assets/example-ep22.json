@@ -1,0 +1,16 @@
+{
+  "size": [1080, 608],
+  "duration": 22,
+  "fps": 30,
+  "beats": [
+    {"type": "counter", "start": 0, "end": 3.6, "label": "电脑端测试", "value": 1253, "caption": "全部通过"},
+    {"type": "grid", "start": 3.4, "end": 10.2, "title": "21 次打包", "count": 21, "fail_index": 20,
+     "fail_at": 6.6, "caption": "20 次成功，1 次退出码 2"},
+    {"type": "paths", "start": 10.0, "end": 16.4,
+     "left_label": "配置生成在", "left_title": "运行目录",
+     "right_label": "打包去找在", "right_title": "配置目录",
+     "verdict": "找到 ≠ 同一处", "note": "字体在运行目录，打包却按配置目录找"},
+    {"type": "track", "start": 16.1, "end": 22, "lit": 1,
+     "verdict": "测试通过 ≠ 打包能过", "note": "这一轮设备未连接，固件未构建"}
+  ]
+}
