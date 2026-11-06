@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cap,Hiragino Sans GB,54,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2.2,1.2,8,40,40,0,1
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,96,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+
+Dialogue: 0,0:00:00.00,0:00:49.50,Badge,,0,0,0,,{\pos(540,25)}── 织界探索日记 · EP16 ──
+Dialogue: 0,0:00:00.00,0:00:49.50,T1,,0,0,0,,{\pos(540,95)}默认位置没找到
+Dialogue: 0,0:00:00.00,0:00:49.50,T2,,0,0,0,,{\pos(540,167)}查到现场分区表
+Dialogue: 0,0:00:00.50,0:00:02.86,Cap,,0,0,0,,{\pos(540,815)}上次电脑{\c&H64C8FA&}认出了设备{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.86,0:00:04.62,Cap,,0,0,0,,{\pos(540,815)}接下来　我想先弄清楚
+Dialogue: 0,0:00:04.62,0:00:06.98,Cap,,0,0,0,,{\pos(540,815)}它原来的分区布局
+Dialogue: 0,0:00:07.26,0:00:09.56,Cap,,0,0,0,,{\pos(540,815)}我从常见的默认位置
+Dialogue: 0,0:00:09.56,0:00:10.72,Cap,,0,0,0,,{\pos(540,815)}只读了一次
+Dialogue: 0,0:00:11.22,0:00:12.70,Cap,,0,0,0,,{\pos(540,815)}数据读回来了
+Dialogue: 0,0:00:12.90,0:00:15.90,Cap,,0,0,0,,{\pos(540,815)}分区表格式却{\c&H64C8FA&}没有通过检查{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.46,0:00:18.22,Cap,,0,0,0,,{\pos(540,815)}我没有急着刷机
+Dialogue: 0,0:00:18.22,0:00:20.68,Cap,,0,0,0,,{\pos(540,815)}而是把前后几轮读回的内容
+Dialogue: 0,0:00:20.68,0:00:23.56,Cap,,0,0,0,,{\pos(540,815)}在电脑里拼起来　逐步核对
+Dialogue: 0,0:00:24.04,0:00:27.58,Cap,,0,0,0,,{\pos(540,815)}这才发现　默认位置还在{\c&H64C8FA&}启动器里面{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.06,0:00:29.68,Cap,,0,0,0,,{\pos(540,815)}后来离线分析
+Dialogue: 0,0:00:29.68,0:00:32.22,Cap,,0,0,0,,{\pos(540,815)}又找到了另一个候选位置
+Dialogue: 0,0:00:32.60,0:00:34.62,Cap,,0,0,0,,{\pos(540,815)}再做一次只读验证
+Dialogue: 0,0:00:35.06,0:00:38.76,Cap,,0,0,0,,{\pos(540,815)}这次现场分区表　{\c&H64C8FA&}通过了校验{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.14,0:00:40.50,Cap,,0,0,0,,{\pos(540,815)}不过　新固件的候选布局
+Dialogue: 0,0:00:40.50,0:00:42.82,Cap,,0,0,0,,{\pos(540,815)}和现场不一样
+Dialogue: 0,0:00:43.30,0:00:44.86,Cap,,0,0,0,,{\pos(540,815)}备份也还没完成
+Dialogue: 0,0:00:45.40,0:00:47.82,Cap,,0,0,0,,{\pos(540,815)}所以现在还不能直接安装

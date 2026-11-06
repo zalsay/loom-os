@@ -1,0 +1,7 @@
+# 正式180秒没有覆盖任务结尾
+
+三路正式started_at约04:12:34 UTC，ready04:12:40 UTC；180秒自然导出。任务本体135.505秒还不包含正式ready后源码guard和SDK export等开销，最终freeze拒绝时录制已结束，runner的all recorder alive断言失败，最终主流程应保留verification_failed/AssertionError。
+
+实际正式末帧只见525项测试OK，未见STRICT_CONTRACT_REJECTED；后续AX可见asr_service拒绝与TASK_FAILED AssertionError。日志与本机测试证据不作废，但录制覆盖明确PARTIAL，不能以六视频技术PASS改写任务或全程同步成功。原失败、唯一freeze和原视频保持，不第二次freeze或补拍重演。
+
+archive_review.py计划567、archive_review_v2.py按实际525但仍预期task与runner同状态，均未执行；独立v3按真实runner失败/任务blocked分别核验，终验媒体与来源，不宣称整个执行合规或完整图通过。下一轮须显式补旧v5的42项，录制预算覆盖guard/SDK启动/任务140秒及收尾，不能只按测试耗时估180秒；同时提供明确任务硬截止/足够录制余量，时长不足禁止派发。

@@ -1,0 +1,17 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,70,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,82,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2,1.5,8,40,40,0,1
+Style: Note,Hiragino Sans GB,32,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2,1,8,30,30,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:40.00,Badge,,0,0,0,,{\pos(540,40)}── 织界探索日记 · EP13 ──
+Dialogue: 0,0:00:00.00,0:00:40.00,T1,,0,0,0,,{\pos(540,102)}新固件做好以后
+Dialogue: 0,0:00:00.00,0:00:40.00,T2,,0,0,0,,{\pos(540,178)}先在电脑里试试
+Dialogue: 0,0:00:00.00,0:00:40.00,Note,,0,0,0,,{\pos(540,282)}上：设备旧画面  ·  下：电脑模拟日志
+Dialogue: 0,0:00:00.00,0:00:40.00,Note,,0,0,0,,{\pos(540,1645)}内部试剪 · 字幕与隐私未审 · 不可发布

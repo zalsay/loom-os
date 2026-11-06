@@ -1,0 +1,978 @@
+{
+  "remote_root": "/Users/sisu/Documents/dev/loom-os",
+  "captured_at_remote": "2026-11-02T16:39:16.410311+08:00",
+  "files": [
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/开发进度与素材总览.md",
+      "bytes": 194798,
+      "sha256": "57b073f37c5bb12201b06e0b41ad5fdc520a97670e96165dfd17448d18fd9510",
+      "remote_mtime": "2026-11-01T20:14:54.831992"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-221/操作说明.md",
+      "bytes": 1444,
+      "sha256": "df0d919e105f7de1ac146f71285c2b30779c511a5da6698e027faa4b76ab8ba8",
+      "remote_mtime": "2026-10-30T13:43:30.034533"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-222/FINAL.VISUAL.md",
+      "bytes": 580,
+      "sha256": "51df9c5244ec592ebb5f3729fbbae575a7a155faa0116cb468815acdc50e7aa2",
+      "remote_mtime": "2026-10-30T14:05:37.532960"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-222/PREFLIGHT.VISUAL.md",
+      "bytes": 595,
+      "sha256": "ab3043dcaa7de9c9cb67ecc71918fa7d6c67faa40d127388ca1734dac43ec78c",
+      "remote_mtime": "2026-10-30T13:51:40.335246"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-222/操作说明.md",
+      "bytes": 1707,
+      "sha256": "bf24c73a34d7a2196b796d3b5ae36de6d162b37876bc24f77f3e2964bccf8c6a",
+      "remote_mtime": "2026-10-30T13:49:01.011194"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-222/验收记录.md",
+      "bytes": 1409,
+      "sha256": "e3e8d4b01bd973494f86eb2dc780f9ecd19683eabf8f60344e06aff716b89263",
+      "remote_mtime": "2026-10-30T14:10:04.113738"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-223/FINAL.VISUAL.md",
+      "bytes": 439,
+      "sha256": "87f806e1eac7d90530289c2313fa5289db76e0c9a50b000c0afbaac57f4620ef",
+      "remote_mtime": "2026-10-30T14:33:07.784542"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-223/PREFLIGHT.VISUAL.md",
+      "bytes": 411,
+      "sha256": "b46363e593ca3b07351f4ffcba24e5284861a957e19c0f3c72a1587caa10e9e4",
+      "remote_mtime": "2026-10-30T14:20:49.253747"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-223/操作说明.md",
+      "bytes": 1916,
+      "sha256": "51df5195a8e71bdf349b9fb55c6c490a75bb6d570dba8180c2f78ede421a7d67",
+      "remote_mtime": "2026-10-30T13:56:52.021152"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-223/验收记录.md",
+      "bytes": 1213,
+      "sha256": "99cfba00b204ba029a8d8b3cecc819c6c6e7584f3c7806b7a36045a8803a0318",
+      "remote_mtime": "2026-10-30T14:38:43.363175"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-224/FINAL.VISUAL.md",
+      "bytes": 1092,
+      "sha256": "b81a1a202f23549298752b29f6f77f809c64b6a1ce27876dd021039d5953a224",
+      "remote_mtime": "2026-10-30T15:01:39.786534"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-224/PREFLIGHT.VISUAL.md",
+      "bytes": 380,
+      "sha256": "4a3afb66cc347e03799f938bf3c5e78e58a246e22d384d505ed6ac226e6d9a99",
+      "remote_mtime": "2026-10-30T14:44:44.484726"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-224/操作说明.md",
+      "bytes": 2129,
+      "sha256": "95884efb6db44699181e1f56ac32cead3edf7d2af7623000bd1e5c134d5600ce",
+      "remote_mtime": "2026-10-30T14:25:13.557590"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-224/验收记录.md",
+      "bytes": 5367,
+      "sha256": "4ac49ad78d1e15f3a372f8e25009c215ec4695722f09cb51bc9e8c8cbaa94a67",
+      "remote_mtime": "2026-10-30T15:11:16.041597"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-225/FINAL.VISUAL.md",
+      "bytes": 742,
+      "sha256": "b2287fbf9e8cc590da54d2da07ef66ec8e6861a20aa11ff9516a553fc59d6615",
+      "remote_mtime": "2026-10-30T16:08:47.695845"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-225/PREFLIGHT.VISUAL.md",
+      "bytes": 713,
+      "sha256": "baca47f913251600e4e2e85be6adb3da051639e6c6233d455a74dfa7222058e0",
+      "remote_mtime": "2026-10-30T15:49:37.219371"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-225/操作说明.md",
+      "bytes": 1711,
+      "sha256": "c47b217ab88333c17f252a25ec97ed92f1de09f7b812e4f0554879905d0da57c",
+      "remote_mtime": "2026-10-30T15:41:00.403734"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-225/验收记录.md",
+      "bytes": 2317,
+      "sha256": "5971f908edca94e7b8845c0d071942bbba8138f347f900b7a655ddd5b86b2525",
+      "remote_mtime": "2026-10-30T16:10:48.826216"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-226/FINAL.VISUAL.md",
+      "bytes": 687,
+      "sha256": "e2d548219d25b41fd4f4010751364eda8e197feefe27fdd1180709d85df3b05a",
+      "remote_mtime": "2026-10-30T16:40:57.977868"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-226/PREFLIGHT.VISUAL.md",
+      "bytes": 552,
+      "sha256": "de46170b3958e2609385aebbe72057bb7c35c80607a0a3a4c205de8027ea2a20",
+      "remote_mtime": "2026-10-30T16:13:09.614587"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-226/操作说明.md",
+      "bytes": 1889,
+      "sha256": "1ec8fdef35ba573258b68fbfbb0bd404bdb721afc973f08ca903da77c48da685",
+      "remote_mtime": "2026-10-30T16:03:20.135557"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-226/验收记录.md",
+      "bytes": 3492,
+      "sha256": "65ac3a4978f5c8ed24258613f0d5a787f08e8be56ef04e9a127c4afa89379acf",
+      "remote_mtime": "2026-10-30T16:48:33.277516"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-227/FINAL.VISUAL.md",
+      "bytes": 778,
+      "sha256": "901f7aa4b0eaa0b58becea8977dc8faa67e91239ca50f60031033ea9299d9231",
+      "remote_mtime": "2026-10-30T17:14:49.796091"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-227/PREFLIGHT.VISUAL.md",
+      "bytes": 637,
+      "sha256": "9041744d019ccec4d76009be9097356856421dcfa6f08703eae99193c031954a",
+      "remote_mtime": "2026-10-30T17:07:57.322223"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-227/操作说明.md",
+      "bytes": 1643,
+      "sha256": "cdfad3eef16d5b1eceffba77a4409daa9b0681e52fb85c0cf8ff7a64969a2323",
+      "remote_mtime": "2026-10-30T17:06:33.446340"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-227/验收记录.md",
+      "bytes": 1655,
+      "sha256": "7b257f3c70a9e9ed209b13805baa194e5d37be03a6d7fed42d763e7b04b80229",
+      "remote_mtime": "2026-10-30T17:18:58.362906"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-228/FINAL.VISUAL.md",
+      "bytes": 904,
+      "sha256": "3dd3609e8a0cf86c006ff5aad0577ce36f9f82e078abe224c2051fab1c8b6182",
+      "remote_mtime": "2026-10-30T17:30:56.581802"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-228/PREFLIGHT.VISUAL.md",
+      "bytes": 387,
+      "sha256": "f34548ad25bb43feda128c4e669965b5b394c7c79625bb098379ccd64be90624",
+      "remote_mtime": "2026-10-30T17:22:03.170277"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-228/操作说明.md",
+      "bytes": 1384,
+      "sha256": "a6f83c8bca65525a39cc96812ef47b7d175141f1fff1950dbfbd0d3c11d67edc",
+      "remote_mtime": "2026-10-30T17:12:33.197149"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-228/验收记录.md",
+      "bytes": 1669,
+      "sha256": "5430bc244de4673be3cab909edded8ef86cf0b5d373bde7d85872038fe541973",
+      "remote_mtime": "2026-10-30T17:31:54.420527"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-229/FINAL.VISUAL.md",
+      "bytes": 770,
+      "sha256": "be2a4cc2231b0b1128255563ba61a9792eb7320d086eead68c1047f97813c24a",
+      "remote_mtime": "2026-10-30T17:38:58.430072"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-229/PREFLIGHT.VISUAL.md",
+      "bytes": 514,
+      "sha256": "01c1be45d9aefc3cebb0b1d43a88cb08fb255348dc01d9c2d7dc017fb57c5e3e",
+      "remote_mtime": "2026-10-30T17:32:58.556207"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-229/操作说明.md",
+      "bytes": 1554,
+      "sha256": "d4db59247bc136e3d0df2d5b465843772b410091326d4e9defa8d893962c574c",
+      "remote_mtime": "2026-10-30T17:25:15.250956"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-229/验收记录.md",
+      "bytes": 1651,
+      "sha256": "c0f779fa842210a5604ce68617ffeee19d1e7c4c2e59e5d75930ef3590e00302",
+      "remote_mtime": "2026-10-30T17:39:58.606173"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-230/FINAL.VISUAL.md",
+      "bytes": 580,
+      "sha256": "ffdb9f7f19ba6585b19e88ed628086f9e312ae5c174f16db3bbf177480337f57",
+      "remote_mtime": "2026-10-30T17:43:41.063996"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-230/PREFLIGHT.VISUAL.md",
+      "bytes": 777,
+      "sha256": "0abb87477e18599c4fd556c4db2443df7bc6fa0d6cba2f7dd17f2668d4e35605",
+      "remote_mtime": "2026-10-30T17:41:37.009452"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-230/操作说明.md",
+      "bytes": 1174,
+      "sha256": "3c006dba43f1b8fcc3b31db635d33b48027069c2e9353d6927d4543b3bdd4ea7",
+      "remote_mtime": "2026-10-30T17:34:35.624726"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-30-ep04-legacy-build-230/验收记录.md",
+      "bytes": 1826,
+      "sha256": "d7a74fd2d54d385389c8a50bd752f9cd9a4e08741740771c783c65c8e4f9f4fb",
+      "remote_mtime": "2026-10-30T17:46:22.160126"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-234/操作说明.md",
+      "bytes": 1642,
+      "sha256": "8c6aab700f7ccdd92afcbe78cedb6e8df181c92ba32d913c6d8f35e031c6d5bf",
+      "remote_mtime": "2026-10-31T10:24:57.108700"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-234/最终画面审阅.md",
+      "bytes": 737,
+      "sha256": "01a0aeb529ea0fc9a7b80ed4675152fb011c0c620db571fcf30b887ebcdab3c8",
+      "remote_mtime": "2026-10-31T10:29:08.232496"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-234/源码核对.md",
+      "bytes": 4952,
+      "sha256": "1209eee8d1ac1832fbe243c76d5ee66502c19560bafc757cac894fb0c38d7c38",
+      "remote_mtime": "2026-10-31T10:32:37.710542"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-234/短测视觉审阅.md",
+      "bytes": 966,
+      "sha256": "e1e464f4602ac7903a5962cf575b75d5367112fb62414b8e094aa3f5df547822",
+      "remote_mtime": "2026-10-31T10:27:31.593354"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-234/验收记录.md",
+      "bytes": 2492,
+      "sha256": "ad2b72d0a0af76df0a297aaba7b6258bb690fa9640deb240e3df07f12d78734f",
+      "remote_mtime": "2026-10-31T10:32:37.711286"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-235/操作说明.md",
+      "bytes": 1718,
+      "sha256": "042a847802fa7bf404dcb24252261c26d5266d3118c6421cfa29d986be7ec006",
+      "remote_mtime": "2026-10-31T10:43:04.319681"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-235/最终视觉审阅.md",
+      "bytes": 876,
+      "sha256": "208c38d0daff640c59b699b1c0c7f5ea465802f7ea1be48c06ffc06e7c21b51d",
+      "remote_mtime": "2026-10-31T10:48:10.057556"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-235/核对结果.md",
+      "bytes": 2701,
+      "sha256": "36b019e6b68fba3eed53c9385f55d0ae3f44ca7348aee1091c9681fc486ef2b4",
+      "remote_mtime": "2026-10-31T10:45:27.957086"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-235/短测视觉审阅.md",
+      "bytes": 690,
+      "sha256": "7251096127b2c0570ec00b10ccd41760ee1c4485d8bee381757d0c5ed385a0fa",
+      "remote_mtime": "2026-10-31T10:44:01.523797"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-audit-235/验收记录.md",
+      "bytes": 3272,
+      "sha256": "1646110854349f85c370b55b977f0f65601439f807c734bee5668dcd29f35b2b",
+      "remote_mtime": "2026-10-31T10:49:52.386265"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-238/操作说明.md",
+      "bytes": 1210,
+      "sha256": "3706fb9ef34656c68084a41a2a17b23b7401993a10b6928fd934658124f82bd0",
+      "remote_mtime": "2026-10-31T11:55:29.284305"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-238/最终画面复核.md",
+      "bytes": 867,
+      "sha256": "e20f64a7bdde6039846d2ca023c504b39eade29fdfa5c20081631a2178b5c5d9",
+      "remote_mtime": "2026-10-31T12:06:58.188780"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-238/短测视觉复核.md",
+      "bytes": 450,
+      "sha256": "8d1f031b0287170ad4199014226cb39b279cec69daea3569e97c22fd76db7ef1",
+      "remote_mtime": "2026-10-31T11:56:56.294797"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-238/验收记录.md",
+      "bytes": 2090,
+      "sha256": "13144399876a07cc2d0629102c135859de11bfac0409b8ac5b40879454fd57f9",
+      "remote_mtime": "2026-10-31T12:08:32.154587"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-239/操作说明.md",
+      "bytes": 964,
+      "sha256": "c06ca0d48de9ceaad0679a38770554535f30e57f7476350967ec806c607f950d",
+      "remote_mtime": "2026-10-31T11:59:22.043396"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-239/最终画面复核.md",
+      "bytes": 998,
+      "sha256": "87dd2334fe30575ce1dd2e79ef31de9a742b138839f54d0f8b60bef5ae35d346",
+      "remote_mtime": "2026-10-31T12:16:24.559109"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-239/核对结果.md",
+      "bytes": 2384,
+      "sha256": "1a60c6c105ff649842d62a51b1fc7b638a93e65e35e00b03f0870badddc51781",
+      "remote_mtime": "2026-10-31T12:15:49.415629"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-239/短测视觉复核.md",
+      "bytes": 721,
+      "sha256": "907406bbe0ab949713277bb2fecd0622dff440d3581547760a695e622754dcd7",
+      "remote_mtime": "2026-10-31T12:11:32.056013"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-contract-239/验收记录.md",
+      "bytes": 3450,
+      "sha256": "98b9c1324161dbf03c7ec1e9118cc48a37bb05e987efe0d21f45b565ba31a130",
+      "remote_mtime": "2026-10-31T12:20:46.470016"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-240/失败定位.md",
+      "bytes": 1007,
+      "sha256": "e85549d7ecc3ace385c3b0e0189f481cb4952f7cc00500eb8e440ef09b770911",
+      "remote_mtime": "2026-10-31T15:00:12.175484"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-240/操作说明.md",
+      "bytes": 1083,
+      "sha256": "60e474d8ce3c95b9bc2a45203a3650e2a0bc1ad3aef66c6f02c7fa8bc6a4d2c8",
+      "remote_mtime": "2026-10-31T14:53:39.441821"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-240/最终画面复核.md",
+      "bytes": 690,
+      "sha256": "79b83c8d901882ec43ccdceafdb76c63490c700e3cd429e504b3b5285273942d",
+      "remote_mtime": "2026-10-31T15:03:43.174786"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-240/短测视觉复核.md",
+      "bytes": 636,
+      "sha256": "b0de4ce99a08eedd6862fcfe2d335697a4e34fea1bc7951277c3fa099886f405",
+      "remote_mtime": "2026-10-31T14:56:30.066977"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-240/验收记录.md",
+      "bytes": 1467,
+      "sha256": "28e1bcb4dbc6cbff08051c774bb82d455c8f5b37a436d5dee5d69156fadb5818",
+      "remote_mtime": "2026-10-31T15:06:16.572120"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-241/失败定位.md",
+      "bytes": 704,
+      "sha256": "ac4dc9dad44faf4d5bb7ce9696141036b8a19dc92fb447c652d4b9a41833ca05",
+      "remote_mtime": "2026-10-31T15:19:07.965422"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-241/操作说明.md",
+      "bytes": 1094,
+      "sha256": "2f59a23b345dd30e40e828a4ece8f15e8b1e4490f97c170b709ab84329367ce2",
+      "remote_mtime": "2026-10-31T14:57:51.993700"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-241/最终画面复核.md",
+      "bytes": 948,
+      "sha256": "ee1f0da62648b3da6d16e69393edd52e7387d3105a9b19f028827ffe486eba59",
+      "remote_mtime": "2026-10-31T15:24:31.179751"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-241/短测视觉复核.md",
+      "bytes": 818,
+      "sha256": "2f2299eacfded0b3a36029e2cd5199bbb156d25dbd43cb11080fa1488646b95a",
+      "remote_mtime": "2026-10-31T15:16:16.300901"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-241/验收记录.md",
+      "bytes": 1586,
+      "sha256": "8d8b9ad6bc4f51d96db4f5ff6c58f9de604e7dc37bad659dcf3a83bcd07859d6",
+      "remote_mtime": "2026-10-31T15:29:33.810304"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-242/失败定位.md",
+      "bytes": 784,
+      "sha256": "fda9194510413097c7b84d43518fd8bb740a83cf48c8386fd9abbc0ddd933ff4",
+      "remote_mtime": "2026-10-31T15:35:56.980098"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-242/操作说明.md",
+      "bytes": 1172,
+      "sha256": "81995a3d1f30c50166f5e176e09784ec1ecd777805c4d6cf9941aafe65b35e75",
+      "remote_mtime": "2026-10-31T15:19:08.069118"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-242/最终画面复核.md",
+      "bytes": 784,
+      "sha256": "a202e4140da3cd8373e2071eaddc2a290452c66b5f4dd71c3d76f6bc80324fb3",
+      "remote_mtime": "2026-10-31T15:39:16.457734"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-242/短测视觉复核.md",
+      "bytes": 670,
+      "sha256": "2dc60788ecb461e0872f0a0019627e883e121a7e429ecc07e6d921b315436b21",
+      "remote_mtime": "2026-10-31T15:30:56.347490"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-242/验收记录.md",
+      "bytes": 1415,
+      "sha256": "4b4b0723ecff66e2093bea4b7aed9e4a7e7ae07b068cf8892d975cf8a5b9c1ba",
+      "remote_mtime": "2026-10-31T15:42:53.583096"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-243/失败定位.md",
+      "bytes": 1011,
+      "sha256": "581a0fb67e542cbf7c728fb314f1de0e8697c1e8aafe5ccb5af8a058443b2af7",
+      "remote_mtime": "2026-10-31T16:01:26.573525"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-243/操作说明.md",
+      "bytes": 1416,
+      "sha256": "22dba016cc1000aa6b6347aa968a392c745ed5ca1f3f67489ea1fdf1f52582cb",
+      "remote_mtime": "2026-10-31T15:35:57.236767"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-243/最终画面复核.md",
+      "bytes": 662,
+      "sha256": "c85a2afc6fa673e7bfd265e38de5c99d44e9a467721f81c2282e1fa30cc2b6d6",
+      "remote_mtime": "2026-10-31T16:02:36.299368"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-243/短测视觉复核.md",
+      "bytes": 691,
+      "sha256": "d11325354f2f8167029deb6a9c4557447d385c97b57b06efa7bcca036f97933b",
+      "remote_mtime": "2026-10-31T15:54:59.130942"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-243/验收记录.md",
+      "bytes": 1448,
+      "sha256": "489ad42702bf9032d472d03cc96d300aa495d23df51e1430a84cbf628937afe0",
+      "remote_mtime": "2026-10-31T16:05:13.883518"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-244/操作说明.md",
+      "bytes": 1294,
+      "sha256": "642dbb10fda20e5bcf45584715010903e5e14f914b028e91ee3efc0f7f001b74",
+      "remote_mtime": "2026-10-31T16:01:26.838156"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-244/最终画面复核.md",
+      "bytes": 1038,
+      "sha256": "8a0e7b08e19568c74f92eed2e516f94af7971a509ba715a05a3baba93182e367",
+      "remote_mtime": "2026-10-31T16:20:28.002675"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-244/核对结果.md",
+      "bytes": 2251,
+      "sha256": "624ab84b147d46c915b89773df83c53b9117290c473ddd18019cf0f8afe9d4ef",
+      "remote_mtime": "2026-10-31T16:17:37.651933"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-244/短测视觉复核.md",
+      "bytes": 721,
+      "sha256": "2aab5cadd071cac5f49d7b8ea80c3a9f42a637f3a5f040e170516309a7b1666b",
+      "remote_mtime": "2026-10-31T16:08:50.199603"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-dependency-prepare-244/验收记录.md",
+      "bytes": 3154,
+      "sha256": "fc386f71a6443af2df6a26e64366408da4d3be94f457e9f23cf16e77fbe9ec8c",
+      "remote_mtime": "2026-10-31T16:25:31.044357"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-231/操作说明.md",
+      "bytes": 1321,
+      "sha256": "b33e086638cb29cb01942f37ee63fa60b115ea3be3cff13a074fe6d150ef85a8",
+      "remote_mtime": "2026-10-31T08:12:59.834799"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-231/最终画面复核.md",
+      "bytes": 1032,
+      "sha256": "b3b498d180d2b9841ca8c8c9e280a4b8256fda74460a53321fe1d5963c265e74",
+      "remote_mtime": "2026-10-31T08:27:06.030763"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-231/短测画面复核.md",
+      "bytes": 870,
+      "sha256": "d14b371e68f19f4bf7ca9bfe1b386a7c06f514a46621ac0494cd78b24e3d7d5d",
+      "remote_mtime": "2026-10-31T08:17:48.502195"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-231/配置失败定位.md",
+      "bytes": 1775,
+      "sha256": "c0b284f1e2ec6cf93b4c7cfa2d40530b2502ca56ec935159534d99b156403176",
+      "remote_mtime": "2026-10-31T08:25:12.224805"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-231/验收记录.md",
+      "bytes": 4775,
+      "sha256": "f2e9b7e13723a00f2fa78278c57846c1f057ed69c0c60de3b4f8032e69d9ad82",
+      "remote_mtime": "2026-10-31T08:31:51.198128"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-232/操作说明.md",
+      "bytes": 2029,
+      "sha256": "72f028cb563901895ab28be964d42f0d71ef703a72ed3c10c8da34d907b69874",
+      "remote_mtime": "2026-10-31T09:42:52.314073"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-232/最终画面复核.md",
+      "bytes": 1554,
+      "sha256": "e8aee00f94bb13339ff68e339861a25c693e8171e3301f1b5f2ce861f345de93",
+      "remote_mtime": "2026-10-31T09:52:21.988884"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-232/短测画面复核.md",
+      "bytes": 616,
+      "sha256": "926ad7f43306c453ab3a4a2e84877b4aa54b7b359fbe5a71f6e3327c85345415",
+      "remote_mtime": "2026-10-31T09:44:20.100712"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-232/配置失败定位.md",
+      "bytes": 2466,
+      "sha256": "7eec855f94a7977e2511e93b691abad376c017f9835916ae77d225b440097542",
+      "remote_mtime": "2026-10-31T09:50:35.824317"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-232/验收记录.md",
+      "bytes": 4978,
+      "sha256": "3f81fc40acf86bad1dd8312f517c0e84f5dfbb460c80b5d2bfa3374b3013260b",
+      "remote_mtime": "2026-10-31T09:55:04.800996"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-233/官方仓库对照.md",
+      "bytes": 2411,
+      "sha256": "f0d0174a79ea3c97a5e1c896c6ef5a3445b2fe43086b7a8618ae7d31f80a02f9",
+      "remote_mtime": "2026-10-31T10:02:55.403565"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-233/操作说明.md",
+      "bytes": 1641,
+      "sha256": "7f04a41b20c87e31de7f912489f369b5b9b9e465e7026a80097eee51bb0c2609",
+      "remote_mtime": "2026-10-31T10:06:06.228047"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-233/最终画面复核.md",
+      "bytes": 1765,
+      "sha256": "3b5090c17e8db310323662d4d102b880dcad2b892e0e818b24290b13a9c3a66b",
+      "remote_mtime": "2026-10-31T10:15:38.607584"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-233/短测画面复核.md",
+      "bytes": 904,
+      "sha256": "d02122f888a62c58811a18e685974928d007b38114954ea503adfaca3664c527",
+      "remote_mtime": "2026-10-31T10:07:06.304302"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-233/配置与图诊断.md",
+      "bytes": 3984,
+      "sha256": "b5cd7a117b1e79138fd572c596bfce122f0fa1eea7f27fd2c640e4d2650157a4",
+      "remote_mtime": "2026-10-31T10:14:31.020988"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-legacy-build-233/验收记录.md",
+      "bytes": 3967,
+      "sha256": "98e45799df9ee2fd3de3be0d33ddf17b97983ecadfeaf56da90a782b8b9479f7",
+      "remote_mtime": "2026-10-31T10:18:07.216257"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-follow-237/操作说明.md",
+      "bytes": 1759,
+      "sha256": "3d5506d295dd803fde7528f7c09f79a0bb02d5cd87d848be1bf1fe975a686599",
+      "remote_mtime": "2026-10-31T11:05:51.057018"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-follow-237/最终画面复核.md",
+      "bytes": 1047,
+      "sha256": "9e2055057a7469e782d0e72b62a543cdacf42d083d11f7da4b04cf821ab942cd",
+      "remote_mtime": "2026-10-31T11:17:09.589511"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-follow-237/核对结果.md",
+      "bytes": 3751,
+      "sha256": "c9ca41466ebeeabff4243dc4300cfeebe04a0ea17330be7413442166983d1463",
+      "remote_mtime": "2026-10-31T11:18:55.101827"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-follow-237/短测视觉复核.md",
+      "bytes": 707,
+      "sha256": "d5292b0dc9fce2a159f6e325f3a950552dbc739cfcbf910b3eb8a040cd6d417e",
+      "remote_mtime": "2026-10-31T11:12:45.211922"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-follow-237/验收记录.md",
+      "bytes": 3439,
+      "sha256": "fb5ab38a12b2fcd3ba42a81723aa5b1f0a4c5b90677ab8478496cb28befed865",
+      "remote_mtime": "2026-10-31T11:18:55.101342"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-redirect-236/操作说明.md",
+      "bytes": 1366,
+      "sha256": "5feb5e78545b86ccf9ebc8b59c4fac81475dbfd1f446c3b38ebbf5eacb85ac8d",
+      "remote_mtime": "2026-10-31T11:02:43.489295"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-redirect-236/最终视觉审阅.md",
+      "bytes": 506,
+      "sha256": "b70da9d9baa7cfb351b54df7139b8175180685e80ed931de66a573427c73c7a1",
+      "remote_mtime": "2026-10-31T11:08:27.432856"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-redirect-236/短测视觉审阅.md",
+      "bytes": 450,
+      "sha256": "a32c8f289731a2c2175eaa43bd3c3c41140dde079d125197b56601ac2e665238",
+      "remote_mtime": "2026-10-31T11:03:59.865175"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-redirect-236/跳转记录.md",
+      "bytes": 1650,
+      "sha256": "293dd35c013c5d4faa066e0752a8b8c062770887a20f02f8be8e40127edb3cc8",
+      "remote_mtime": "2026-10-31T11:06:58.612400"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-registry-redirect-236/验收记录.md",
+      "bytes": 1674,
+      "sha256": "4e32dbba152bdb6682d4f2890d4d5820f63cfad65b2171f15a67a1ef3d4fd0fc",
+      "remote_mtime": "2026-10-31T11:09:31.799514"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-245/操作说明.md",
+      "bytes": 1426,
+      "sha256": "f92d0ad1d88069a8efadaf7913f3d19e0730d2ec76808b6aeca61e8749c9e163",
+      "remote_mtime": "2026-10-31T17:46:35.292726"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-245/最终画面复核.md",
+      "bytes": 1033,
+      "sha256": "b3284dafe1ee9d2921348b78a123297b58701334c52f114df52cbb6d3e6d1721",
+      "remote_mtime": "2026-10-31T17:58:18.341905"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-245/核对结果.md",
+      "bytes": 3660,
+      "sha256": "6b615e73cb1a99c6d6cdcb1bf9f3000fe4affc853738cf5208e3f2e21cfd8c8b",
+      "remote_mtime": "2026-10-31T17:55:26.516975"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-245/短测画面复核.md",
+      "bytes": 579,
+      "sha256": "1ed40e543d9d95091e46a486da9d2168cdf7fdb3792ae1b1a84a52f47c704c1a",
+      "remote_mtime": "2026-10-31T17:50:53.481646"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-245/验收记录.md",
+      "bytes": 2942,
+      "sha256": "36d4f97dd0d4e4ccc10d5ade57398ca9765406bbd6bcc948f78f23b70142b997",
+      "remote_mtime": "2026-10-31T18:04:22.992884"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-246/操作说明.md",
+      "bytes": 1520,
+      "sha256": "c2396c816000c97d1aa32e79a31f19099f7b072db32604dcfb468594df90735b",
+      "remote_mtime": "2026-10-31T20:34:38.553241"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-246/最终画面复核.md",
+      "bytes": 1168,
+      "sha256": "fa7bfd85813df40dd60a21c1167e6b0f64b8ffab617ec535d9ad62fe5aedcffc",
+      "remote_mtime": "2026-10-31T20:42:33.008235"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-246/核对结果.md",
+      "bytes": 3495,
+      "sha256": "25b6e612bc46ee541cc4b81feb8d07aff4f044f1c5e7a0e0b210e17bca8f9080",
+      "remote_mtime": "2026-10-31T20:38:11.339084"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-246/短测画面复核.md",
+      "bytes": 745,
+      "sha256": "e49fbc48c6ad9da8d055ba21bcfbde29f8899ae50c08443be4cce831b9e44d1b",
+      "remote_mtime": "2026-10-31T20:35:49.999560"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-246/验收记录.md",
+      "bytes": 4195,
+      "sha256": "52f18525f81fc1b88858faefae6ae4b50a88221e88d5e7b0cfa2e25105f30400",
+      "remote_mtime": "2026-10-31T20:45:23.106056"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-247/操作说明.md",
+      "bytes": 1830,
+      "sha256": "45d3516a51812f17404472399f96f704a51b519b3a65d8d542cbfb108f3b135b",
+      "remote_mtime": "2026-10-31T22:16:47.368896"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-247/核对结果.md",
+      "bytes": 1168,
+      "sha256": "8ba500466b5c06032be46bf6616fbfcf2549268df758d8884bcc72e9024dbd72",
+      "remote_mtime": "2026-10-31T22:21:54.574298"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-247/验收记录.md",
+      "bytes": 2428,
+      "sha256": "a82a41bf2a1a42b6587f5a55f9f58a6f33777a58a78b1d00ec63f32014d3d1c8",
+      "remote_mtime": "2026-10-31T22:28:28.158987"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-248/操作说明.md",
+      "bytes": 1407,
+      "sha256": "0441237985ee098bac5e019d2c6e15f7bb917ce3969edd013e983efcdfc17a7f",
+      "remote_mtime": "2026-10-31T22:22:30.026343"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-248/核对结果.md",
+      "bytes": 1709,
+      "sha256": "eb96a5dc7e53fd9f2b7414a6c85077ba9000095a5491008b77bd6f6e284080a9",
+      "remote_mtime": "2026-10-31T22:37:55.880957"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-31-ep04-strict-graph-248/验收记录.md",
+      "bytes": 3155,
+      "sha256": "6b4fc8b52a105d5ce8f860dfd44a65b85841b789c9faba17431acafd56737ad7",
+      "remote_mtime": "2026-10-31T22:49:03.807310"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-256/下一步计划.md",
+      "bytes": 2810,
+      "sha256": "c61247fb0db0978a8ff46ac3a46dfcce78f6ccfd9b72a147a6414f4e8070920e",
+      "remote_mtime": "2026-11-01T18:17:08.977700"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-256/代码审阅.md",
+      "bytes": 1811,
+      "sha256": "26dd7a68cfc551e79c0bebcd100c4c10296ada6d660c4ff9ec3ebf315addbea1",
+      "remote_mtime": "2026-11-01T18:19:14.388370"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-256/操作说明.md",
+      "bytes": 1325,
+      "sha256": "655dda4edb6c605bf5c27207a2e07f1053bc84b8b6e9a6b70669308f94953f2d",
+      "remote_mtime": "2026-11-01T17:41:38.251590"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-256/核对结果.md",
+      "bytes": 3466,
+      "sha256": "ec2f4f06d42917afe36c53b182b21696cf0aca3ce037bd6adfa74b172dbd47fa",
+      "remote_mtime": "2026-11-01T18:17:08.976333"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-256/验收记录.md",
+      "bytes": 3298,
+      "sha256": "9e73a36ca718cf0fb79caf44fdcfc47da0758f40845b69e53965611033d9c070",
+      "remote_mtime": "2026-11-01T18:17:08.977056"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-257/下一步计划.md",
+      "bytes": 2649,
+      "sha256": "6be8d3de4cb7c4ed0159232f79e68e2e56c0a4f027fd07fa308300305d2bcdfc",
+      "remote_mtime": "2026-11-01T19:54:38.905828"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-257/代码审阅.md",
+      "bytes": 2525,
+      "sha256": "49e55a1286bd3fd975c8cc266b946955ca781b9201eb2155287953c8384a1e04",
+      "remote_mtime": "2026-11-01T19:54:38.906657"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-257/操作说明.md",
+      "bytes": 1459,
+      "sha256": "b53ad8a825128bfe0c50c1dad6cb72782f61fc5aa0f17a61d7b7fd90d8942786",
+      "remote_mtime": "2026-11-01T19:42:42.983493"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-257/核对结果.md",
+      "bytes": 2617,
+      "sha256": "967a8f814a25e14c5274a55890474d9f01b99d0f97cf317dcee75f321a6301f1",
+      "remote_mtime": "2026-11-01T19:56:01.560400"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-source-relocation-257/验收记录.md",
+      "bytes": 5617,
+      "sha256": "17e517c91cb9af7112839f1939384f21466039772eba848f36ba4c4bf8749343",
+      "remote_mtime": "2026-11-01T20:13:57.489408"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-249/操作说明.md",
+      "bytes": 1381,
+      "sha256": "1b2cabbf1b1aba62a00d9bec7f8ab9cca4c3fc6ea3d005e9fc98f510cce6cc38",
+      "remote_mtime": "2026-11-01T06:57:33.671587"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-249/验收记录.md",
+      "bytes": 1016,
+      "sha256": "6e3b9f102650801667157b813166922c02ebffa22ddbc19873efbb62be39c5bd",
+      "remote_mtime": "2026-11-01T06:59:38.198575"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-250/操作说明.md",
+      "bytes": 1582,
+      "sha256": "ffa2858aeec40b62bd7d5047ffcef57f1280c9083cd15f3cbbfd0314829d27dd",
+      "remote_mtime": "2026-11-01T06:59:38.250020"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-250/核对结果.md",
+      "bytes": 2164,
+      "sha256": "e973d0e913b3e7b69f0e356b64b9efb89e184ebdc7bcd62dad05dc2bbc917690",
+      "remote_mtime": "2026-11-01T07:03:34.596722"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-250/验收记录.md",
+      "bytes": 4423,
+      "sha256": "807bb6ac7eb04c52550330e564a9c0e1cc68c5ace68e4083cf094a156431379a",
+      "remote_mtime": "2026-11-01T07:10:21.287222"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-251/代码审阅.md",
+      "bytes": 1808,
+      "sha256": "e6c288709e56065d87e23d9b16a798c353aab4ef1821975d7dd493a846781461",
+      "remote_mtime": "2026-11-01T07:42:15.808755"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-251/操作说明.md",
+      "bytes": 1823,
+      "sha256": "0ec508aaebd86503e2424944a214112e021759915b18915a75d53de698265a76",
+      "remote_mtime": "2026-11-01T07:33:36.638501"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-251/核对结果.md",
+      "bytes": 3445,
+      "sha256": "b593958dd2bf8ff52af5fc8fe0f0219d1da58a005038d6081267c05fa2fc22fe",
+      "remote_mtime": "2026-11-01T07:46:39.586656"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-251/验收记录.md",
+      "bytes": 4847,
+      "sha256": "d8b0176bd559ed76344f05f8d1e912aff8f0ebbebbaff10b37d59ffb6f669c72",
+      "remote_mtime": "2026-11-01T07:48:14.613596"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-252/EMPTY_OUTPUTS.REVIEW.md",
+      "bytes": 533,
+      "sha256": "317a198a98757adcbe7f6aa212f012bb46fc0e3a1556730f593f85b93146c4fe",
+      "remote_mtime": "2026-11-01T11:51:44.746331"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-252/RECOVERY.FAILURE.md",
+      "bytes": 560,
+      "sha256": "db776f6d694c35358543c532aa24691adbbcb4b3ad8a52d19a07d4df2d56e7a3",
+      "remote_mtime": "2026-11-01T11:57:19.311747"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-252/操作说明.md",
+      "bytes": 1949,
+      "sha256": "f5c57e8cdfdd358c4bfd266c1f4b3ffd01980c2672dd7cb215bc898b824ea206",
+      "remote_mtime": "2026-11-01T11:45:42.443644"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-252/验收记录.md",
+      "bytes": 1802,
+      "sha256": "844b128158086c57b0e0a11801170010d00ecd775b02e4475f4f4908e2fad116",
+      "remote_mtime": "2026-11-01T12:07:18.957822"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-253/COVERAGE.REVIEW.md",
+      "bytes": 1160,
+      "sha256": "92af8a33e3b4f5ef74b34bbfde92982d4edd3b604b00675794be6809a8344a3d",
+      "remote_mtime": "2026-11-01T12:28:42.455358"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-253/TEST.COUNT.REVIEW.md",
+      "bytes": 744,
+      "sha256": "9f2e4047da096f3a7d5b52e37cdd1050fd23de8b5605d373a1c31b4bd33de153",
+      "remote_mtime": "2026-11-01T12:17:41.703942"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-253/代码审阅.md",
+      "bytes": 3189,
+      "sha256": "f758e9213fc03dd2bc032e35a52b084e73cfee33fbe06c70dffc8171776c9e5a",
+      "remote_mtime": "2026-11-01T12:28:42.450749"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-253/操作说明.md",
+      "bytes": 2282,
+      "sha256": "eafb0a0b8621191ef524f87aa72e1d04bd7d136be6189c5ca489b9bf3ead6d8b",
+      "remote_mtime": "2026-11-01T12:04:59.457473"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-253/核对结果.md",
+      "bytes": 4168,
+      "sha256": "db7206c5082178ab9fba690234dabc1374a82da4b2c37e177e4a6c4a8d0a6789",
+      "remote_mtime": "2026-11-01T12:41:30.038783"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-253/验收记录.md",
+      "bytes": 4017,
+      "sha256": "eeba2846063b61ad8729b32587f0b792e04b6a138350081fba084c96da583a2b",
+      "remote_mtime": "2026-11-01T12:41:30.039651"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-254/代码审阅.md",
+      "bytes": 1948,
+      "sha256": "672a5adaa91dda0a2b5f7787a26da3590e66dd83c2e54b6ba13ef8b5fce276b5",
+      "remote_mtime": "2026-11-01T13:37:17.783717"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-254/操作说明.md",
+      "bytes": 1947,
+      "sha256": "137de2cfbed94caa91430a3e418ef0e45ec9215dfd1ee0d05f4c936f7644eea7",
+      "remote_mtime": "2026-11-01T12:57:22.848536"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-254/核对结果.md",
+      "bytes": 1146,
+      "sha256": "0865f196c7f0fbd41fdef4e835b16513fd65558768842c7025a9f19a704f8542",
+      "remote_mtime": "2026-11-01T13:11:47.612403"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-254/验收记录.md",
+      "bytes": 2638,
+      "sha256": "ebba6a3a3f59f93484c5588db21ae4fcdfd1d002a71217764952df4d972320c5",
+      "remote_mtime": "2026-11-01T13:41:04.563849"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-255/下一步计划.md",
+      "bytes": 1210,
+      "sha256": "c8d7b9572544d9fa3d976a33f57171edd6b813a17439b6840dd6491c7c7f1d32",
+      "remote_mtime": "2026-11-01T13:54:40.568932"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-255/代码审阅.md",
+      "bytes": 1754,
+      "sha256": "926b662365767b28570682f7ad1c861c7f4c05db4f93d98462ca9a66323870fb",
+      "remote_mtime": "2026-11-01T13:46:05.904130"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-255/操作说明.md",
+      "bytes": 1918,
+      "sha256": "729316bbb0d035a6c17d020a8175d21d3a425c7cd8288b6b2f79c331e330c293",
+      "remote_mtime": "2026-11-01T13:17:50.090953"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-255/核对结果.md",
+      "bytes": 2058,
+      "sha256": "0936087f7d1239c4d28447937a2576aabe9c149d5142aa4eb75fee89bfe39b67",
+      "remote_mtime": "2026-11-01T14:09:58.171167"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-11-01-ep04-strict-graph-255/验收记录.md",
+      "bytes": 2712,
+      "sha256": "c1d8c5d0a588ae5054c7c1d33ee7c565a089ec69a36e85680503b9369fbae896",
+      "remote_mtime": "2026-11-01T14:09:58.170061"
+    }
+  ]
+}

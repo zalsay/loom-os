@@ -1,0 +1,19 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,70,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,88,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2,1.5,8,40,40,0,1
+Style: Info,Hiragino Sans GB,36,&H00E0E6E8,&H00E0E6E8,&H00151C20,&H00151C20,1,0,0,0,100,100,0,0,3,9,0,2,40,40,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:47.00,Badge,,0,0,0,,{\pos(540,56)}── 织界探索日记 · EP12 ──
+Dialogue: 0,0:00:00.00,0:00:47.00,T1,,0,0,0,,{\pos(540,118)}上次留下的问题
+Dialogue: 0,0:00:00.00,0:00:47.00,T2,,0,0,0,,{\pos(540,184)}新固件做出来了
+Dialogue: 1,0:00:00.00,0:00:27.00,Info,,0,0,0,,{\pos(540,1320)}说明：十月二十七日电脑构建记录
+Dialogue: 1,0:00:27.00,0:00:47.00,Info,,0,0,0,,{\pos(540,1320)}说明：十月二十九日只读检查，未刷写
+Dialogue: 1,0:00:00.00,0:00:47.00,Info,,0,0,0,,{\pos(540,1550)}设备旧界面 · 与下方非同一时间
+Dialogue: 1,0:00:00.00,0:00:47.00,Info,,0,0,0,,{\pos(540,1630)}内部试剪 · 字幕未完成 · 不可发布

@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cap,Hiragino Sans GB,50,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2.2,1.2,8,40,40,0,1
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,80,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+
+Dialogue: 0,0:00:00.00,0:00:25.60,Badge,,0,0,0,,{\pos(540,25)}── 织界探索日记 · EP18 ──
+Dialogue: 0,0:00:00.00,0:00:25.60,T1,,0,0,0,,{\pos(540,95)}刚准备的目录
+Dialogue: 0,0:00:00.00,0:00:25.60,T2,,0,0,0,,{\pos(540,174)}怎么又不见了？
+Dialogue: 0,0:00:00.50,0:00:02.73,Cap,,0,0,0,,{\pos(540,1580)}上一轮在电脑副本里准备
+Dialogue: 0,0:00:02.73,0:00:04.02,Cap,,0,0,0,,{\pos(540,1580)}卡在了依赖获取
+Dialogue: 0,0:00:04.02,0:00:05.46,Cap,,0,0,0,,{\pos(540,1580)}这一轮接着来
+Dialogue: 0,0:00:05.46,0:00:07.42,Cap,,0,0,0,,{\pos(540,1580)}七十项电脑端测试
+Dialogue: 0,0:00:07.42,0:00:08.50,Cap,,0,0,0,,{\pos(540,1580)}{\c&H64C8FA&}全部通过
+Dialogue: 0,0:00:08.50,0:00:09.83,Cap,,0,0,0,,{\pos(540,1580)}但配置时
+Dialogue: 0,0:00:09.83,0:00:14.62,Cap,,0,0,0,,{\pos(540,1580)}工具先把十一个\N它认为没用的组件目录清掉了
+Dialogue: 0,0:00:14.62,0:00:15.36,Cap,,0,0,0,,{\pos(540,1580)}里面就有 {\c&H64C8FA&}mdns
+Dialogue: 0,0:00:15.36,0:00:16.52,Cap,,0,0,0,,{\pos(540,1580)}再要找它
+Dialogue: 0,0:00:16.52,0:00:18.16,Cap,,0,0,0,,{\pos(540,1580)}路径已经不在了
+Dialogue: 0,0:00:18.16,0:00:19.53,Cap,,0,0,0,,{\pos(540,1580)}{\c&H64C8FA&}配置没走完
+Dialogue: 0,0:00:19.53,0:00:22.05,Cap,,0,0,0,,{\pos(540,1580)}这一轮没有生成最终固件
+Dialogue: 0,0:00:22.05,0:00:24.67,Cap,,0,0,0,,{\pos(540,1580)}设备上的效果也还没验证

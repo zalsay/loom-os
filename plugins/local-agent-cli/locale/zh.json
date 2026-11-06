@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "本机 CLI 代理",
+    "description": "调用 Codex、Antigravity 或 Claude Code，并分别配置执行模型。"
+  }
+}

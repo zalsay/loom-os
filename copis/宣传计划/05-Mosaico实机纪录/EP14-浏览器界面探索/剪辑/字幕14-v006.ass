@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cap,Hiragino Sans GB,54,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2.2,1.2,8,40,40,0,1
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,96,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+
+Dialogue: 0,0:00:00.00,0:00:38.50,Badge,,0,0,0,,{\pos(540,25)}── 织界探索日记 · EP14 ──
+Dialogue: 0,0:00:00.00,0:00:38.50,T1,,0,0,0,,{\pos(540,95)}真机还没验证
+Dialogue: 0,0:00:00.00,0:00:38.50,T2,,0,0,0,,{\pos(540,167)}界面先在电脑里动起来
+Dialogue: 0,0:00:00.50,0:00:03.24,Cap,,0,0,0,,{\pos(540,1480)}屏幕上的界面　还没在{\c&H64C8FA&}真机{\c&HFFFFFF&}上验证
+Dialogue: 0,0:00:03.24,0:00:05.46,Cap,,0,0,0,,{\pos(540,1480)}我们先在{\c&H64C8FA&}浏览器里{\c&HFFFFFF&}试一试
+Dialogue: 0,0:00:06.08,0:00:07.24,Cap,,0,0,0,,{\pos(540,1480)}第一轮模拟中
+Dialogue: 0,0:00:07.24,0:00:09.36,Cap,,0,0,0,,{\pos(540,1480)}中文设置入口出现了
+Dialogue: 0,0:00:09.36,0:00:12.54,Cap,,0,0,0,,{\pos(540,1480)}示例页面打开　又回到了入口
+Dialogue: 0,0:00:13.14,0:00:14.30,Cap,,0,0,0,,{\pos(540,1480)}画面录下来了
+Dialogue: 0,0:00:14.30,0:00:16.84,Cap,,0,0,0,,{\pos(540,1480)}但这轮{\c&H64C8FA&}自动交接超时{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.32,0:00:19.08,Cap,,0,0,0,,{\pos(540,1480)}不能说自动验证通过
+Dialogue: 0,0:00:19.08,0:00:20.52,Cap,,0,0,0,,{\pos(540,1480)}另一轮测试
+Dialogue: 0,0:00:20.52,0:00:23.56,Cap,,0,0,0,,{\pos(540,1480)}我们让程序{\c&H64C8FA&}自动发送模拟按键{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.16,0:00:25.38,Cap,,0,0,0,,{\pos(540,1480)}计数变了
+Dialogue: 0,0:00:25.38,0:00:28.30,Cap,,0,0,0,,{\pos(540,1480)}页面切到设置　又回到主页
+Dialogue: 0,0:00:28.80,0:00:30.50,Cap,,0,0,0,,{\pos(540,1480)}这些都是电脑上的模拟
+Dialogue: 0,0:00:30.50,0:00:32.98,Cap,,0,0,0,,{\pos(540,1480)}不是真机手指触控
+Dialogue: 0,0:00:33.58,0:00:34.24,Cap,,0,0,0,,{\pos(540,1480)}下一步
+Dialogue: 0,0:00:34.24,0:00:35.78,Cap,,0,0,0,,{\pos(540,1480)}再去设备上验证

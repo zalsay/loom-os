@@ -1,0 +1,12 @@
+{
+  "unrelatedGeometryUnchanged": true,
+  "unchangedMeshes": 35,
+  "sourcePaths": 104,
+  "vertices": 170787,
+  "triangles": 56929,
+  "minimumSurfaceLift": 0.011999970203921628,
+  "maximumSurfaceLift": 0.020240029318917663,
+  "minimumTriangleInteriorLift": 0.01182188778801363,
+  "phase": "Historical logo-only correction, before the subsequent video-guided body refinement",
+  "currentBodyMetrics": "body-refinement.json"
+}

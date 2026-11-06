@@ -1,0 +1,18 @@
+- insert:
+    - id: local-agent-cli
+      name: '@loom-os/local-agent-cli'
+      config:
+        models:
+          codex: gpt-6.1-sol--high
+          agy: gemini-3.8-flash--high
+          claude: haiku-5-5--high
+        executables:
+          codex: /Volumes/RC500/dev/loom-os/.scratch/bin/codex-node
+          agy: /Users/yingzhang/.local/bin/agy
+          claude: /opt/homebrew/bin/claude
+        timeoutMs: 600000
+        maxOutputBytes: 4194304
+        maxOutputChars: 24000
+        codexSandbox: workspace-write
+        claudePermissionMode: acceptEdits
+        agySandbox: true

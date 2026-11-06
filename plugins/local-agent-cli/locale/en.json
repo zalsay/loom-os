@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Local CLI agents",
+    "description": "Run Codex, Antigravity, or Claude Code with per-CLI model defaults."
+  }
+}

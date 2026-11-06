@@ -1,0 +1,663 @@
+{
+  "schema": 1,
+  "session_id": "2026-10-27-ep04-runtime-upload-160",
+  "nonce": "343a39c9b2f4",
+  "host": "10.0.0.129",
+  "port": 80,
+  "operation_scope": "runtime_manual_upload",
+  "setup_sha256": "a9b53a80c9159b2b4e8c3cde370e2773a2fa6fc5cb162983f768d09aaf94f6ac",
+  "inputs": [
+    {
+      "path": "api/agent.lua",
+      "sha256": "9e5604ae690a0921b4090dae5420dc187d72982a638fc3394413d556db7f8aca"
+    },
+    {
+      "path": "api/creator.lua",
+      "sha256": "9b93439e201131f858316af1bcc16a525f494a868a07b5800e37457a41b13244"
+    },
+    {
+      "path": "api/gpio.lua",
+      "sha256": "cf52661075a1533731c5b06c82a2b18f900d5b4c0d3758eb2abea02f1096154f"
+    },
+    {
+      "path": "api/nav.lua",
+      "sha256": "c518a6ddcf00566c043bb8dd7e8b06305e9d69765381f7f5ef22722f0402552e"
+    },
+    {
+      "path": "api/network.lua",
+      "sha256": "59d157cdff1007e4c6bbe9bb6ce8f5278bd38dd3bd0e3c4f732503d752192f6f"
+    },
+    {
+      "path": "api/notify.lua",
+      "sha256": "74a85446b84c7551a16705416ac1fa11bf16b54b21955ca8e863cf09ace1a09c"
+    },
+    {
+      "path": "api/sensor.lua",
+      "sha256": "4e633ba42eee3c5285d7f5edd0f84964c700490c50fd1e8e4fdb319ba2772091"
+    },
+    {
+      "path": "api/service.lua",
+      "sha256": "42e2e6bdc56ed1842a364f1de8d060b948a49dd9692aab40e12f3e702243941e"
+    },
+    {
+      "path": "api/storage.lua",
+      "sha256": "c4c522783017243c585b4908be656b6d1a550fc4d9fa8a6a86575be06bdd1fcf"
+    },
+    {
+      "path": "api/store.lua",
+      "sha256": "85ccebd9759f2c90e44445b2b9872f71a82e8c3cd15a4bc8c607ab97896fd093"
+    },
+    {
+      "path": "api/system.lua",
+      "sha256": "99c6a968f464d70e4d5c3779721001535735c3ebd602f7faf4d09dc1892e0bbd"
+    },
+    {
+      "path": "api/timer.lua",
+      "sha256": "352f684c112b17b6a2e98218d2593e1347f648007b913661c13a3cb81558644e"
+    },
+    {
+      "path": "api/ui.lua",
+      "sha256": "ee6a1f32b5088cb0ed385f3a72491773c131cf11d9827c78eb8a276cf7fd5571"
+    },
+    {
+      "path": "boards/mosaico.lua",
+      "sha256": "ffb82f14eb9b98ca8b284f8020cd8e4a9a50117f38d0add78eb293216988be97"
+    },
+    {
+      "path": "bootstrap.lua",
+      "sha256": "ea5ac8916567f800474bc485e1127f9023b21790f10754855081843d26d86e65"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/manual-artifacts/launcher.json",
+      "sha256": "935795c9b0c4e10b75b6f0e55d74c73a1b9a8362b5e3bb9ad2cc7c84c5cc13f5"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/manual-artifacts/manual.pending.json",
+      "sha256": "51043dfffe1f5ec34fe43fd6811a60a8d0936538523d02a8a13628a7c7040b7b"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/manual-artifacts/scripts/check.lua",
+      "sha256": "7d92950bb2a851e1e56eeb3b8971eb6063c9d64fec8f7056a16ab6091790f6da"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-manifest.json",
+      "sha256": "65acf5e7d5e092883a2310fa8f64ee8af19f97a6c5c44489cecaf21ed1fcc5e0"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/agent.lua",
+      "sha256": "9e5604ae690a0921b4090dae5420dc187d72982a638fc3394413d556db7f8aca"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/creator.lua",
+      "sha256": "9b93439e201131f858316af1bcc16a525f494a868a07b5800e37457a41b13244"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/gpio.lua",
+      "sha256": "cf52661075a1533731c5b06c82a2b18f900d5b4c0d3758eb2abea02f1096154f"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/nav.lua",
+      "sha256": "c518a6ddcf00566c043bb8dd7e8b06305e9d69765381f7f5ef22722f0402552e"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/network.lua",
+      "sha256": "59d157cdff1007e4c6bbe9bb6ce8f5278bd38dd3bd0e3c4f732503d752192f6f"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/notify.lua",
+      "sha256": "74a85446b84c7551a16705416ac1fa11bf16b54b21955ca8e863cf09ace1a09c"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/sensor.lua",
+      "sha256": "4e633ba42eee3c5285d7f5edd0f84964c700490c50fd1e8e4fdb319ba2772091"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/service.lua",
+      "sha256": "42e2e6bdc56ed1842a364f1de8d060b948a49dd9692aab40e12f3e702243941e"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/storage.lua",
+      "sha256": "c4c522783017243c585b4908be656b6d1a550fc4d9fa8a6a86575be06bdd1fcf"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/store.lua",
+      "sha256": "85ccebd9759f2c90e44445b2b9872f71a82e8c3cd15a4bc8c607ab97896fd093"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/system.lua",
+      "sha256": "99c6a968f464d70e4d5c3779721001535735c3ebd602f7faf4d09dc1892e0bbd"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/timer.lua",
+      "sha256": "352f684c112b17b6a2e98218d2593e1347f648007b913661c13a3cb81558644e"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/api/ui.lua",
+      "sha256": "ee6a1f32b5088cb0ed385f3a72491773c131cf11d9827c78eb8a276cf7fd5571"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/boards/mosaico.lua",
+      "sha256": "ffb82f14eb9b98ca8b284f8020cd8e4a9a50117f38d0add78eb293216988be97"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/bootstrap.lua",
+      "sha256": "ea5ac8916567f800474bc485e1127f9023b21790f10754855081843d26d86e65"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/app_author.lua",
+      "sha256": "90a879699d05f1a334d1b68a80069f251f698a28ea4e26531cd7ddd6bb117a01"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/app_backend.lua",
+      "sha256": "a9a701ea0b71731fbb728db27d0e4ccb98f59b0fe4a2e35ab916c35940a6be67"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/app_installer.lua",
+      "sha256": "27853eab91eff62ff1b7010be0d00288a4221fb7a9def932773e9e19a508ff70"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/app_runtime.lua",
+      "sha256": "028b048195102d45e50d61ea396c8a0e1f0b475bd20ad7799ec31395f5ef0626"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/app_update.lua",
+      "sha256": "c13564fafeed458870b91f6380ee58ce071e59d6c36cfd7cd10b7c31ffbe756a"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/app_validator.lua",
+      "sha256": "82201e3d210ae1467f9d401e1a51da387850a16db7c866c4f124afb3f3f16b9b"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/apps.lua",
+      "sha256": "6906455d0f750f8b417a8b299360331a51248bea5ee3e7809d402e6f0a37dad3"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/author_workspace.lua",
+      "sha256": "5639079244ce8e09f1b3146b215ebad06e57a43adffecb38a900617360fa2263"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/autostart.lua",
+      "sha256": "9374c9f73bc3f810ad12d3f520b4fde83151f4fe90ccc3366684dcd3e4d856a9"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/board.lua",
+      "sha256": "31896638bf75139745956aaac4731030e0b80136849a33dd59f5e449f122b343"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/capability_catalog.lua",
+      "sha256": "e51a96b7e1ef12b7313665d038e9ce129d9786618ccf5fd1dfea04e3c5ac583d"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/context.lua",
+      "sha256": "2e1e2769847aef6a6df8bd9b330133b72adc340a52960699b884d089eb870782"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/control_modules.lua",
+      "sha256": "ad5d37781fdb09314891987fb64e6c9ac5b9f9ed053a26c771f0160904300324"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/control_pairing.lua",
+      "sha256": "8818a63a834dc6b393c30cc94e84e5a5d3c16bc68cf19ca3f7f7196737821d2a"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/creator_runtime.lua",
+      "sha256": "743c045e07651c617a9dbc1c48793700735a5c25438eb78f73ab2eca4ef83247"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/errors.lua",
+      "sha256": "eba9a85baa482c7421dc68a128ffebf16d4a44c4ccbae0731f52be8c314ccc31"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/http_control.lua",
+      "sha256": "534694e62c893835bc2c30d03ab3fc6fe5a3e527dea1884ad6811508f10fd72e"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/manifest.lua",
+      "sha256": "4dfef8d6492a2e24303c365ee6dd626846e8f0d60b71b7b98f911a8e83217577"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/navigation.lua",
+      "sha256": "9193e9c9281f37f88403e30664e271b5817516a4e14a0c2269eabd7fb386f7ae"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/notifications.lua",
+      "sha256": "0e5f78d33ac9d12cbe073859cc36b76c493e5dbb43457e4ef01c5c2409029c6b"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/paths.lua",
+      "sha256": "1f682be48761825e8eb6d634977a5ca2ddfae5cc53da3d5b0dd9c152173e8314"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/permissions.lua",
+      "sha256": "bd44c32a7c26d4e1c8063842a2512a5c8690de43e83c795d7b719f83014c5035"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/remote_debug.lua",
+      "sha256": "3d283473f4e1a527b5cdcd40658a0848b47bba0f0dcc27d348407b88529c2676"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/resources.lua",
+      "sha256": "46e1b1087f4c08c287ce5a26748cffb46416103d3b93c39c66641e3404e794e8"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/runtime_control.lua",
+      "sha256": "ece962faa9486440e01e2bca34f5a7f6b57a1eca646c14b07a4c4ae74445ea58"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/runtime_update.lua",
+      "sha256": "bcdcfffc4491150547593017f448b153f82f93932abd5b25e7cbeef7fed75e6f"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/runtime_version.lua",
+      "sha256": "b6b3048e3feaafb634a13509d957c48a1e9c497c9d844ee1661ba85e0bd2923c"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/sandbox.lua",
+      "sha256": "3f376f3d88c85da7713be64311b397347d2e738de79b34d0fbd736871e5fec64"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/sensors.lua",
+      "sha256": "74a6cb00262ea62893abb30143f2903e3d1cebc7ba94e884a1b8133fe52d75c0"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/service_runner.lua",
+      "sha256": "05f461d42c4d585e52e60bc552a23b858e2e0ef74c5abafdbfbbacfdc1ac316e"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/settings.lua",
+      "sha256": "d7a80bdf7d427b81402b1ca7c61038ba868a39789ee0030b929e200a1677dde4"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/timers.lua",
+      "sha256": "5aad283ae17b17701a2be7229523fd2e534416b2b8020b055e57874f6a730586"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/ui_runtime.lua",
+      "sha256": "6d99a424f427692a68a1d3d65e63169c7f354913fcd96fb4a6e40cbd7944b61a"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/update_async.lua",
+      "sha256": "d6eeb3a3764545299682f3474c08517281c9e54b4f78b97ff503f60d1313e5c3"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/core/version.lua",
+      "sha256": "19a8b0899df3f9c9f23fa2cfcc3e878c366360469d64c71dd79e8cfeeba644c4"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/main.lua",
+      "sha256": "44275defc91bc5f7ab676374b52cbeb60eda3f45d8ea1d5814cfffecf6c4843d"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/provision/install_initial.lua",
+      "sha256": "b6f4ae66d7724dafc624e736e288a8967e96ded621c0955dab4ff9398c43ae1b"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/provision/runtime_files.lua",
+      "sha256": "0f8d9957db4803baf114b65da9b12c3eda3979054804eedc0e34677b4c6ee484"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/agent/app_builder.lua",
+      "sha256": "5cf9cc89ee0adacbf3d03de6376784cab06d6b67a7cacfba956dd2de7f023753"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/agent/runtime.lua",
+      "sha256": "d7756ca5a4a61bbd2f244c24f991e815c65d77496aa6b07fa04b3e39ffc13ad5"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/async/espclaw_jobs.lua",
+      "sha256": "69e1c763cbba1514588c6a992529498391e30d6fa6e142e716e427034e30c682"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/http/control_worker.lua",
+      "sha256": "47c6ea1c767b6f9bd98d00d4e7ead93933601a8ab681fecfbe1743ee83055099"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/net/adapters/espclaw_http.lua",
+      "sha256": "2021ccdc3fc8a299e76b9acb24bea9bc58556f40e8ea836e47fce7c06f6a1c84"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/net/adapters/espclaw_websocket.lua",
+      "sha256": "818f837cf4bf3820cc861ef8ed1cd1d4e0727a5124cff935df1c576e4180e44f"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/net/download.lua",
+      "sha256": "e33812bfa9f3c8b1253748396745b4872ea38002ad812c13f4bcd41b7e3c193e"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/net/errors.lua",
+      "sha256": "1bed08adfe0e871c5b5e7905017770a6f6ca67fb17eaf12c5289146980539605"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/net/http_client.lua",
+      "sha256": "f393293a920123c221a233b3f3cddc1c83fb17359f7bc89ad9c8e25336ed4780"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/net/request.lua",
+      "sha256": "32f5d0ad0c2be569174400cb185f54852bce7d2c5dbe29f3ed6c951b2adb5935"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/net/websocket_client.lua",
+      "sha256": "3900b4f3df128c894bdf728508b7756f62dc5fea6a558956acb9560623d22e48"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/system/settings_status.lua",
+      "sha256": "389d69c234da927d625926ff7b1b053a9d5d6067b73e3073843851432532e265"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/tests/runtime_provision_check.lua",
+      "sha256": "135eb4020cdb99e32dd5082ca12e0e26d66e01ae15496f9835793ce56a070bc6"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/ui/crash_screen.lua",
+      "sha256": "bf3a6bcafd57fad1389caa160b247b2145223beeb7e4d7e79f9ce9c270fa33b2"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/ui/launcher.lua",
+      "sha256": "828216cbdcc465e411aa443c862accd168f63f08abd71340944979736b62c180"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/ui/notification_center.lua",
+      "sha256": "9571e4b14e5c00dfe23856d4ea02d339cc6b8c21882600d81dd52d3cfedc0777"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/ui/settings.lua",
+      "sha256": "33ecc5f445ea4d27d555486ab963ec838e32a561d0bfc5333a6a5bfef23a9e22"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/update/async_install_worker.lua",
+      "sha256": "e6f338fa27b191a1a31ebb68440511bef3648d55ec6dd9aa74244fea6f71ea28"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/update/release_client.lua",
+      "sha256": "c7c7c576e70209209ef568aa75a3e06b9fc44d8b82464b0d8f190e27eb8a2a25"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-source/update/runtime_backend.lua",
+      "sha256": "4752a6dd1357849d43a02ad6724f1f4347598813c9aeb41770ec8cc535f470a8"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-25-ep04-runtime-manual-prepare-149/代码证据/runtime-validator.lua",
+      "sha256": "e69bc6230b4ba904e8853fbb8e638993b39412bdecb094b60add539c537be00c"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-27-ep04-runtime-upload-160/USER.AUTHORIZED.json",
+      "sha256": "bdc896fa15062d772799650dc6c136c9b583397cea4134d15b9af2de105af0d2"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-27-ep04-runtime-upload-160/setup.json",
+      "sha256": "a9b53a80c9159b2b4e8c3cde370e2773a2fa6fc5cb162983f768d09aaf94f6ac"
+    },
+    {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-27-ep04-runtime-upload-160/代码证据/runtime-inspector",
+      "sha256": "50dcd62c722f060ffda9bebe5bc4a4b15049509452a30010ec64da349da8fbf7"
+    },
+    {
+      "path": "core/app_author.lua",
+      "sha256": "90a879699d05f1a334d1b68a80069f251f698a28ea4e26531cd7ddd6bb117a01"
+    },
+    {
+      "path": "core/app_backend.lua",
+      "sha256": "a9a701ea0b71731fbb728db27d0e4ccb98f59b0fe4a2e35ab916c35940a6be67"
+    },
+    {
+      "path": "core/app_installer.lua",
+      "sha256": "27853eab91eff62ff1b7010be0d00288a4221fb7a9def932773e9e19a508ff70"
+    },
+    {
+      "path": "core/app_runtime.lua",
+      "sha256": "028b048195102d45e50d61ea396c8a0e1f0b475bd20ad7799ec31395f5ef0626"
+    },
+    {
+      "path": "core/app_update.lua",
+      "sha256": "c13564fafeed458870b91f6380ee58ce071e59d6c36cfd7cd10b7c31ffbe756a"
+    },
+    {
+      "path": "core/app_validator.lua",
+      "sha256": "82201e3d210ae1467f9d401e1a51da387850a16db7c866c4f124afb3f3f16b9b"
+    },
+    {
+      "path": "core/apps.lua",
+      "sha256": "6906455d0f750f8b417a8b299360331a51248bea5ee3e7809d402e6f0a37dad3"
+    },
+    {
+      "path": "core/author_workspace.lua",
+      "sha256": "5639079244ce8e09f1b3146b215ebad06e57a43adffecb38a900617360fa2263"
+    },
+    {
+      "path": "core/autostart.lua",
+      "sha256": "9374c9f73bc3f810ad12d3f520b4fde83151f4fe90ccc3366684dcd3e4d856a9"
+    },
+    {
+      "path": "core/board.lua",
+      "sha256": "31896638bf75139745956aaac4731030e0b80136849a33dd59f5e449f122b343"
+    },
+    {
+      "path": "core/capability_catalog.lua",
+      "sha256": "e51a96b7e1ef12b7313665d038e9ce129d9786618ccf5fd1dfea04e3c5ac583d"
+    },
+    {
+      "path": "core/context.lua",
+      "sha256": "2e1e2769847aef6a6df8bd9b330133b72adc340a52960699b884d089eb870782"
+    },
+    {
+      "path": "core/control_modules.lua",
+      "sha256": "ad5d37781fdb09314891987fb64e6c9ac5b9f9ed053a26c771f0160904300324"
+    },
+    {
+      "path": "core/control_pairing.lua",
+      "sha256": "8818a63a834dc6b393c30cc94e84e5a5d3c16bc68cf19ca3f7f7196737821d2a"
+    },
+    {
+      "path": "core/creator_runtime.lua",
+      "sha256": "743c045e07651c617a9dbc1c48793700735a5c25438eb78f73ab2eca4ef83247"
+    },
+    {
+      "path": "core/errors.lua",
+      "sha256": "eba9a85baa482c7421dc68a128ffebf16d4a44c4ccbae0731f52be8c314ccc31"
+    },
+    {
+      "path": "core/http_control.lua",
+      "sha256": "534694e62c893835bc2c30d03ab3fc6fe5a3e527dea1884ad6811508f10fd72e"
+    },
+    {
+      "path": "core/manifest.lua",
+      "sha256": "4dfef8d6492a2e24303c365ee6dd626846e8f0d60b71b7b98f911a8e83217577"
+    },
+    {
+      "path": "core/navigation.lua",
+      "sha256": "9193e9c9281f37f88403e30664e271b5817516a4e14a0c2269eabd7fb386f7ae"
+    },
+    {
+      "path": "core/notifications.lua",
+      "sha256": "0e5f78d33ac9d12cbe073859cc36b76c493e5dbb43457e4ef01c5c2409029c6b"
+    },
+    {
+      "path": "core/paths.lua",
+      "sha256": "1f682be48761825e8eb6d634977a5ca2ddfae5cc53da3d5b0dd9c152173e8314"
+    },
+    {
+      "path": "core/permissions.lua",
+      "sha256": "bd44c32a7c26d4e1c8063842a2512a5c8690de43e83c795d7b719f83014c5035"
+    },
+    {
+      "path": "core/remote_debug.lua",
+      "sha256": "3d283473f4e1a527b5cdcd40658a0848b47bba0f0dcc27d348407b88529c2676"
+    },
+    {
+      "path": "core/resources.lua",
+      "sha256": "46e1b1087f4c08c287ce5a26748cffb46416103d3b93c39c66641e3404e794e8"
+    },
+    {
+      "path": "core/runtime_control.lua",
+      "sha256": "ece962faa9486440e01e2bca34f5a7f6b57a1eca646c14b07a4c4ae74445ea58"
+    },
+    {
+      "path": "core/runtime_update.lua",
+      "sha256": "bcdcfffc4491150547593017f448b153f82f93932abd5b25e7cbeef7fed75e6f"
+    },
+    {
+      "path": "core/runtime_version.lua",
+      "sha256": "b6b3048e3feaafb634a13509d957c48a1e9c497c9d844ee1661ba85e0bd2923c"
+    },
+    {
+      "path": "core/sandbox.lua",
+      "sha256": "3f376f3d88c85da7713be64311b397347d2e738de79b34d0fbd736871e5fec64"
+    },
+    {
+      "path": "core/sensors.lua",
+      "sha256": "74a6cb00262ea62893abb30143f2903e3d1cebc7ba94e884a1b8133fe52d75c0"
+    },
+    {
+      "path": "core/service_runner.lua",
+      "sha256": "05f461d42c4d585e52e60bc552a23b858e2e0ef74c5abafdbfbbacfdc1ac316e"
+    },
+    {
+      "path": "core/settings.lua",
+      "sha256": "d7a80bdf7d427b81402b1ca7c61038ba868a39789ee0030b929e200a1677dde4"
+    },
+    {
+      "path": "core/timers.lua",
+      "sha256": "5aad283ae17b17701a2be7229523fd2e534416b2b8020b055e57874f6a730586"
+    },
+    {
+      "path": "core/ui_runtime.lua",
+      "sha256": "6d99a424f427692a68a1d3d65e63169c7f354913fcd96fb4a6e40cbd7944b61a"
+    },
+    {
+      "path": "core/update_async.lua",
+      "sha256": "d6eeb3a3764545299682f3474c08517281c9e54b4f78b97ff503f60d1313e5c3"
+    },
+    {
+      "path": "core/version.lua",
+      "sha256": "19a8b0899df3f9c9f23fa2cfcc3e878c366360469d64c71dd79e8cfeeba644c4"
+    },
+    {
+      "path": "main.lua",
+      "sha256": "44275defc91bc5f7ab676374b52cbeb60eda3f45d8ea1d5814cfffecf6c4843d"
+    },
+    {
+      "path": "provision/install_initial.lua",
+      "sha256": "b6f4ae66d7724dafc624e736e288a8967e96ded621c0955dab4ff9398c43ae1b"
+    },
+    {
+      "path": "provision/runtime_files.lua",
+      "sha256": "0f8d9957db4803baf114b65da9b12c3eda3979054804eedc0e34677b4c6ee484"
+    },
+    {
+      "path": "system/agent/app_builder.lua",
+      "sha256": "5cf9cc89ee0adacbf3d03de6376784cab06d6b67a7cacfba956dd2de7f023753"
+    },
+    {
+      "path": "system/agent/runtime.lua",
+      "sha256": "d7756ca5a4a61bbd2f244c24f991e815c65d77496aa6b07fa04b3e39ffc13ad5"
+    },
+    {
+      "path": "system/async/espclaw_jobs.lua",
+      "sha256": "69e1c763cbba1514588c6a992529498391e30d6fa6e142e716e427034e30c682"
+    },
+    {
+      "path": "system/http/control_worker.lua",
+      "sha256": "47c6ea1c767b6f9bd98d00d4e7ead93933601a8ab681fecfbe1743ee83055099"
+    },
+    {
+      "path": "system/net/adapters/espclaw_http.lua",
+      "sha256": "2021ccdc3fc8a299e76b9acb24bea9bc58556f40e8ea836e47fce7c06f6a1c84"
+    },
+    {
+      "path": "system/net/adapters/espclaw_websocket.lua",
+      "sha256": "818f837cf4bf3820cc861ef8ed1cd1d4e0727a5124cff935df1c576e4180e44f"
+    },
+    {
+      "path": "system/net/download.lua",
+      "sha256": "e33812bfa9f3c8b1253748396745b4872ea38002ad812c13f4bcd41b7e3c193e"
+    },
+    {
+      "path": "system/net/errors.lua",
+      "sha256": "1bed08adfe0e871c5b5e7905017770a6f6ca67fb17eaf12c5289146980539605"
+    },
+    {
+      "path": "system/net/http_client.lua",
+      "sha256": "f393293a920123c221a233b3f3cddc1c83fb17359f7bc89ad9c8e25336ed4780"
+    },
+    {
+      "path": "system/net/request.lua",
+      "sha256": "32f5d0ad0c2be569174400cb185f54852bce7d2c5dbe29f3ed6c951b2adb5935"
+    },
+    {
+      "path": "system/net/websocket_client.lua",
+      "sha256": "3900b4f3df128c894bdf728508b7756f62dc5fea6a558956acb9560623d22e48"
+    },
+    {
+      "path": "system/settings_status.lua",
+      "sha256": "389d69c234da927d625926ff7b1b053a9d5d6067b73e3073843851432532e265"
+    },
+    {
+      "path": "tests/runtime_provision_check.lua",
+      "sha256": "135eb4020cdb99e32dd5082ca12e0e26d66e01ae15496f9835793ce56a070bc6"
+    },
+    {
+      "path": "tools/compress_otty_recording.py",
+      "sha256": "5afb947bc49102ab66f3c70c6b746fb0362e4ffdd20e122612354649c109e6dd"
+    },
+    {
+      "path": "tools/live_capture.py",
+      "sha256": "c4e7cc555e15e695be7c86ad511b258aca0cb9271c9570a3d5f6835efd7aa8a7"
+    },
+    {
+      "path": "tools/mosaico_runtime_inspector.m",
+      "sha256": "05b3c4bafd8dc7054c8d29cfb6b1409e104ef704e6ff8ec88175c6bc64640e4c"
+    },
+    {
+      "path": "tools/mosaico_runtime_manual_check.mjs",
+      "sha256": "12e9eadfec6fdd20902901da182551a9ad4ca5505c5424e2917476c6ba4d72ed"
+    },
+    {
+      "path": "tools/mosaico_runtime_manual_io.mjs",
+      "sha256": "886b3adea98e89d8a278de48e78fd7c957887c422d16cbc3ef21db0e3ff6a9c4"
+    },
+    {
+      "path": "tools/mosaico_runtime_manual_live.mjs",
+      "sha256": "153fbdfe86c526cb61ec420ed17129c5232163fd1ec209366a38d389791b977f"
+    },
+    {
+      "path": "tools/mosaico_runtime_manual_transport.mjs",
+      "sha256": "81ab4f0ddaefc37714b27daf1e2d83b5f455b8bdb6d7ad13fdbe947fad7bfe22"
+    },
+    {
+      "path": "tools/mosaico_runtime_stage.mjs",
+      "sha256": "40fb270f76bb644f8c999b6a7066bf0ba62e935b3b2d68ff8314ca8d88be40b4"
+    },
+    {
+      "path": "tools/mosaico_runtime_validate.lua",
+      "sha256": "bba887eebf285b9e9e8aa5995c471d1b99e11d0b8718600e01317eada509fdd5"
+    },
+    {
+      "path": "ui/crash_screen.lua",
+      "sha256": "bf3a6bcafd57fad1389caa160b247b2145223beeb7e4d7e79f9ce9c270fa33b2"
+    },
+    {
+      "path": "ui/launcher.lua",
+      "sha256": "828216cbdcc465e411aa443c862accd168f63f08abd71340944979736b62c180"
+    },
+    {
+      "path": "ui/notification_center.lua",
+      "sha256": "9571e4b14e5c00dfe23856d4ea02d339cc6b8c21882600d81dd52d3cfedc0777"
+    },
+    {
+      "path": "ui/settings.lua",
+      "sha256": "33ecc5f445ea4d27d555486ab963ec838e32a561d0bfc5333a6a5bfef23a9e22"
+    },
+    {
+      "path": "update/async_install_worker.lua",
+      "sha256": "e6f338fa27b191a1a31ebb68440511bef3648d55ec6dd9aa74244fea6f71ea28"
+    },
+    {
+      "path": "update/release_client.lua",
+      "sha256": "c7c7c576e70209209ef568aa75a3e06b9fc44d8b82464b0d8f190e27eb8a2a25"
+    },
+    {
+      "path": "update/runtime_backend.lua",
+      "sha256": "4752a6dd1357849d43a02ad6724f1f4347598813c9aeb41770ec8cc535f470a8"
+    }
+  ]
+}

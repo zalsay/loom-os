@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-27T10:18:00.169Z",
+  "browser": "156.0.8078.48",
+  "checks": [
+    "desktop: actual WebGL 2 rendering, non-blank colored volume, no GL error",
+    "front, three-quarter, side and rear camera presets render",
+    "real pointer drag rotates the character",
+    "real mouse wheel changes orbit-camera zoom",
+    "reference illustration can hide and return",
+    "optional automatic rotation runs and stops",
+    "PNG download is an actual nonempty scene render",
+    "GLB v2 export contains complete character, excludes stage and remote textures",
+    "downloaded GLB independently reloads through GLTFLoader with true 3D bounds",
+    "exported GLB preserves all 104 source SVG logo paths and their provenance",
+    "exported GLB reloads real fur instances and embedded normal texture without remote assets",
+    "actual exported logo rendered at front and grazing-angle close-ups with no detached tubing",
+    "desktop resize preserves renderer and avoids horizontal overflow",
+    "390px mobile layout renders, all view controls work, reduced motion starts static",
+    "all normal desktop/mobile flows have zero console errors, warnings or remote requests",
+    "PNG encoding failure is visible and export control recovers",
+    "WebGL context loss shows a recoverable error and reload restores viewer"
+  ],
+  "errors": [],
+  "warnings": [],
+  "externalRequests": [],
+  "failedResponses": [],
+  "glb": {
+    "bytes": 7981124,
+    "furInstances": 45500,
+    "normalMaps": 34,
+    "size": [
+      3.1555880777113376,
+      4.276349111913708,
+      2.795373333207933
+    ],
+    "meshes": 149,
+    "head": true,
+    "tail": true,
+    "emblemPaths": 104,
+    "emblemSource": "LoomOS-panda-ink-clean.svg"
+  },
+  "passed": true
+}

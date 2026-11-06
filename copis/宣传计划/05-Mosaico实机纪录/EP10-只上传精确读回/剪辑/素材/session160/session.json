@@ -1,0 +1,189 @@
+{
+  "session_id": "2026-10-27-ep04-runtime-upload-160",
+  "created_at": "2026-10-27T02:51:18.455+00:00",
+  "status": "media-validated",
+  "release": "pending",
+  "recordings": {
+    "preflight": {
+      "requested_seconds": 8,
+      "started_at": "2026-10-27T02:51:20.784+00:00",
+      "camera_source": "quicktime_window",
+      "camera_device": {
+        "name": "FaceTime高清相机",
+        "window_id": 4167,
+        "window_title": "录影",
+        "window_owner": "QuickTime Player",
+        "audio": false
+      },
+      "files": {
+        "screen": "preflight/OTTY-screen.mov",
+        "camera": "preflight/MAC-camera.mov"
+      },
+      "screen_launch_at": "2026-10-27T02:51:20.785+00:00",
+      "screen_pid": 37618,
+      "camera_launch_at": "2026-10-27T02:51:20.790+00:00",
+      "camera_pid": 37619,
+      "both_ready_at": "2026-10-27T02:51:23.960+00:00",
+      "recorder_exits": [
+        0,
+        0
+      ],
+      "finished_at": "2026-10-27T02:51:30.058+00:00",
+      "screen": {
+        "duration": 8.02,
+        "width": 1452,
+        "height": 1058,
+        "fps": 55.9,
+        "audio": false,
+        "video": "h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1452x1058, 4806 kb/s, 55.90 fps, 60 tbr, 600 tbn (default)",
+        "bytes": 4843744,
+        "sha256": "0a85c404fd34b936570a047cf7a0190dae4812b2e75e4845fcce8242efbf5e1a",
+        "decode": "PASS"
+      },
+      "camera": {
+        "duration": 8.01,
+        "width": 1392,
+        "height": 832,
+        "fps": 55.9,
+        "audio": false,
+        "video": "h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1392x832, 13375 kb/s, 55.90 fps, 60 tbr, 600 tbn (default)",
+        "bytes": 13466406,
+        "sha256": "1430060d293c10191562994a812590a18c9c69e5e9640e5188cde1ca5331bb60",
+        "decode": "PASS"
+      },
+      "launch_delta_seconds": 0.005
+    },
+    "formal": {
+      "requested_seconds": 300,
+      "started_at": "2026-10-27T02:52:36.825+00:00",
+      "camera_source": "quicktime_window",
+      "camera_device": {
+        "name": "FaceTime高清相机",
+        "window_id": 4167,
+        "window_title": "录影",
+        "window_owner": "QuickTime Player",
+        "audio": false
+      },
+      "files": {
+        "screen": "原始素材/OTTY-screen.mov",
+        "camera": "原始素材/MAC-camera.mov"
+      },
+      "screen_launch_at": "2026-10-27T02:52:36.825+00:00",
+      "screen_pid": 37731,
+      "camera_launch_at": "2026-10-27T02:52:36.828+00:00",
+      "camera_pid": 37732,
+      "both_ready_at": "2026-10-27T02:52:39.772+00:00",
+      "task_started_at": "2026-10-27T02:52:39.774+00:00",
+      "task_exit": 0,
+      "task_finished_at": "2026-10-27T02:56:38.002+00:00",
+      "recorder_exits": [
+        0,
+        0
+      ],
+      "finished_at": "2026-10-27T02:57:37.688+00:00",
+      "screen": {
+        "duration": 300.02,
+        "width": 1452,
+        "height": 1058,
+        "fps": 44.77,
+        "audio": false,
+        "video": "h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1452x1058, 4631 kb/s, 44.77 fps, 60 tbr, 600 tbn (default)",
+        "bytes": 173923207,
+        "sha256": "1c8c03b5fb08399fe75d7a720c54fcb8b038eb9c0fa0bd069e96842eb4f4bcc7",
+        "decode": "PASS"
+      },
+      "camera": {
+        "duration": 300.01,
+        "width": 1392,
+        "height": 832,
+        "fps": 44.76,
+        "audio": false,
+        "video": "h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1392x832, 13250 kb/s, 44.76 fps, 60 tbr, 600 tbn (default)",
+        "bytes": 497119976,
+        "sha256": "9d90a64cff667133f3c754c1e424c59d97e4de4e5920b92e005f2c688a3c25e2",
+        "decode": "PASS"
+      },
+      "launch_delta_seconds": 0.003
+    }
+  },
+  "visual_review": "pending",
+  "audio": false,
+  "camera_mode": "QuickTime preview window image, no audio; not native camera stream",
+  "config": {
+    "question": "固定149候选的77个文件能否首次受限上传并逐项精确读回，且不执行？",
+    "episode_id": "EP04",
+    "seconds": 300,
+    "ffmpeg": "/private/tmp/loom-camera.bv0azJ/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1",
+    "window_id": 703,
+    "window_title": "Loom EP02 IDF62 20261017-16",
+    "otty_window": "w_7495DBEB-0E12-4457-9F67-F4FF4D338B6E",
+    "otty_pane": "p_1a14a2f26ff_f",
+    "otty_version": "1.5.4",
+    "camera_source": "quicktime_window",
+    "camera_window_id": 4167,
+    "camera_window_title": "录影",
+    "camera_window_owner": "QuickTime Player",
+    "camera_name": "FaceTime高清相机",
+    "audio": false,
+    "device_requests_allowed": true,
+    "operation_scope": "runtime_manual_upload",
+    "agent_execution": "current main agent only; no delegation",
+    "firmware": "unknown",
+    "runtime_acceptance": "not_run",
+    "task": [
+      "/Users/sisu/.local/opt/node-v24.18.0-darwin-arm64/bin/node",
+      "/Users/sisu/Documents/dev/loom-os/tools/mosaico_runtime_manual_live.mjs",
+      "runtime_manual_upload",
+      "/Users/sisu/Documents/dev/loom-os/copis/宣传计划/05-Mosaico实机纪录/EP04-LoomRuntime上传与验证/执行记录/2026-10-27-ep04-runtime-upload-160"
+    ]
+  },
+  "camera_source": "quicktime_window",
+  "camera_device": {
+    "name": "FaceTime高清相机",
+    "window_id": 4167,
+    "window_title": "录影",
+    "window_owner": "QuickTime Player",
+    "audio": false
+  },
+  "capture_tool_sha256": "c4e7cc555e15e695be7c86ad511b258aca0cb9271c9570a3d5f6835efd7aa8a7",
+  "git_before": "ecc6d8974e3d1c5b8be7626ca8537911c10135d5",
+  "branch": "main",
+  "verified_window": {
+    "kCGWindowLayer": 0,
+    "kCGWindowStoreType": 1,
+    "kCGWindowName": "Loom EP02 IDF62 20261017-16",
+    "kCGWindowBounds": {
+      "X": 166,
+      "Height": 945,
+      "Y": 86,
+      "Width": 1339
+    },
+    "kCGWindowOwnerPID": 659,
+    "kCGWindowMemoryUsage": 2368,
+    "kCGWindowIsOnscreen": true,
+    "kCGWindowNumber": 703,
+    "kCGWindowOwnerName": "Otty",
+    "kCGWindowSharingState": 1,
+    "kCGWindowAlpha": 1
+  },
+  "verified_camera_window": {
+    "kCGWindowOwnerName": "QuickTime Player",
+    "kCGWindowSharingState": 1,
+    "kCGWindowStoreType": 1,
+    "kCGWindowOwnerPID": 58684,
+    "kCGWindowName": "录影",
+    "kCGWindowIsOnscreen": true,
+    "kCGWindowAlpha": 1,
+    "kCGWindowBounds": {
+      "X": 352,
+      "Height": 720,
+      "Y": 295,
+      "Width": 1280
+    },
+    "kCGWindowMemoryUsage": 2368,
+    "kCGWindowLayer": 0,
+    "kCGWindowNumber": 4167
+  },
+  "git_after": "ecc6d8974e3d1c5b8be7626ca8537911c10135d5",
+  "finished_at": "2026-10-27T02:59:08.737+00:00"
+}

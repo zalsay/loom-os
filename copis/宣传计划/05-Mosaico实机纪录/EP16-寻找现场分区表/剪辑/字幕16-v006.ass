@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cap,Hiragino Sans GB,54,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2.2,1.2,8,40,40,0,1
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,96,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: Note,Hiragino Sans GB,36,&H00E6E6E6,&H00E6E6E6,&H00101B22,&HB4101B22,1,0,0,0,100,100,0,0,3,6,0,8,40,40,0,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+
+Dialogue: 0,0:00:00.00,0:00:39.00,Badge,,0,0,0,,{\pos(540,25)}── 织界探索日记 · EP16 ──
+Dialogue: 0,0:00:00.00,0:00:39.00,T1,,0,0,0,,{\pos(540,95)}找到分区表了
+Dialogue: 0,0:00:00.00,0:00:39.00,T2,,0,0,0,,{\pos(540,167)}为什么还不装新固件
+Dialogue: 0,0:00:08.58,0:00:14.58,Note,,0,0,0,,{\pos(540,925)}跨轮组合校验 · 非同一时刻全盘备份
+Dialogue: 0,0:00:18.20,0:00:22.22,Note,,0,0,0,,{\pos(540,925)}事后离线分析 · 无现场录屏
+Dialogue: 0,0:00:31.40,0:00:38.44,Note,,0,0,0,,{\pos(540,925)}事后离线比对 · 基于已读回数据
+Dialogue: 0,0:00:00.50,0:00:02.45,Cap,,0,0,0,,{\pos(540,1618)}给设备装新固件前
+Dialogue: 0,0:00:02.45,0:00:03.78,Cap,,0,0,0,,{\pos(540,1618)}{\c&H64C8FA&}先核对分区表{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.78,0:00:06.04,Cap,,0,0,0,,{\pos(540,1618)}默认位置读回了数据
+Dialogue: 0,0:00:06.04,0:00:06.92,Cap,,0,0,0,,{\pos(540,1618)}但{\c&H64C8FA&}格式检查没过{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.92,0:00:08.58,Cap,,0,0,0,,{\pos(540,1618)}{\c&H64C8FA&}这不等于设备坏了{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.58,0:00:12.44,Cap,,0,0,0,,{\pos(540,1618)}把前后几轮读回的字节{\c&H64C8FA&}组合校验{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.44,0:00:14.58,Cap,,0,0,0,,{\pos(540,1618)}不是{\c&H64C8FA&}同一时刻的全盘备份{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.58,0:00:18.20,Cap,,0,0,0,,{\pos(540,1618)}核对发现默认位置{\c&H64C8FA&}还在启动器范围内{\c&HFFFFFF&}
+Dialogue: 0,0:00:18.20,0:00:20.40,Cap,,0,0,0,,{\pos(540,1618)}{\c&H64C8FA&}后来的离线分析{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.40,0:00:22.22,Cap,,0,0,0,,{\pos(540,1618)}给出另一个候选位置
+Dialogue: 0,0:00:22.22,0:00:24.80,Cap,,0,0,0,,{\pos(540,1618)}再到现场{\c&H64C8FA&}只读核对{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.80,0:00:26.50,Cap,,0,0,0,,{\pos(540,1618)}表里有{\c&H64C8FA&}六个分区{\c&HFFFFFF&}
+Dialogue: 0,0:00:26.50,0:00:27.44,Cap,,0,0,0,,{\pos(540,1618)}{\c&H64C8FA&}表级校验通过{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.44,0:00:29.80,Cap,,0,0,0,,{\pos(540,1618)}这不等于能部署
+Dialogue: 0,0:00:29.80,0:00:31.40,Cap,,0,0,0,,{\pos(540,1618)}也不代表{\c&H64C8FA&}已安装或已备份{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.40,0:00:34.10,Cap,,0,0,0,,{\pos(540,1618)}{\c&H64C8FA&}事后离线比对{\c&HFFFFFF&}发现
+Dialogue: 0,0:00:34.10,0:00:36.30,Cap,,0,0,0,,{\pos(540,1618)}新固件候选布局与现场不同
+Dialogue: 0,0:00:36.30,0:00:38.44,Cap,,0,0,0,,{\pos(540,1618)}备份还没完成，所以{\c&H64C8FA&}先不装{\c&HFFFFFF&}

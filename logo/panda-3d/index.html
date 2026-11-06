@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ed">
+  <meta name="description" content="织界 LoomOS 熊猫吉祥物的独立三维造型原型。拖动旋转，探索每一面。">
+  <title>织界 Panda · 3D 造型室</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="织界熊猫造型室首页"><img src="/reference/logo.svg" alt="" width="40" height="40"><span>织界 <span class="brand-en">LoomOS</span></span></a>
+    <div class="studio-label">PANDA <span>/</span> CHARACTER STUDIO</div>
+    <span class="version">造型探索 <span class="version-dot"></span> 01</span>
+  </header>
+
+  <main class="workspace">
+    <section class="stage" id="stage" aria-label="熊猫三维展示区" data-state="loading">
+      <div class="stage-caption"><span class="eyebrow">FROM INK TO FORM</span><span>从一张画，到每一面。</span></div>
+      <div id="viewport" class="viewport"></div>
+      <div class="loading" id="loading" role="status"><span class="loading-dot"></span>正在搭建小小的世界…</div>
+      <div class="error" id="error" role="alert" hidden><strong>暂时无法展示 3D</strong><p id="error-message"></p><button id="retry" type="button">重新加载</button></div>
+      <div class="stage-bottom"><span class="interaction-hint">拖动旋转 <span>·</span> 滚轮 / 双指缩放</span><button class="orbit-button" id="rotate" type="button" aria-pressed="false" disabled><span class="rotation-symbol" aria-hidden="true">↻</span> 自动旋转</button></div>
+      <div class="stage-index" aria-hidden="true">FIG. 001 <span>LOOM PANDA</span></div>
+    </section>
+
+    <aside class="inspector" aria-label="造型与展示控制">
+      <div class="intro"><span class="eyebrow">织界 · 角色造型探索</span><h1>好奇心，<br>有了形状。</h1><p>圆圆的脑袋，软软的肚子。<br>把水墨里的小伙伴，带到立体世界。</p><span class="prototype-label">三维造型原型 · 非 SVG 挤出</span></div>
+      <section class="control-section" aria-labelledby="view-title"><div class="section-heading"><h2 id="view-title">换个角度，认识它</h2><span>VIEW</span></div><div class="view-buttons" role="group" aria-label="观察角度"><button type="button" data-view="front" aria-pressed="false" disabled>正面</button><button type="button" data-view="quarter" aria-pressed="true" disabled>¾ 视角</button><button type="button" data-view="side" aria-pressed="false" disabled>侧面</button><button type="button" data-view="back" aria-pressed="false" disabled>背面</button></div></section>
+      <section class="reference-section" aria-labelledby="reference-title"><div class="section-heading"><h2 id="reference-title">最初的模样</h2><label class="reference-switch"><input id="reference-toggle" type="checkbox" checked><span>显示原画</span></label></div><figure id="reference"><img src="/reference/panda.png" alt="原始水墨熊猫：米白大头、炭黑四肢，腹部是青绿与暖金交织的织界标志。" width="1024" height="1024"><figcaption><span>2D REFERENCE</span><span>水墨熊猫 · 无水印版</span></figcaption></figure></section>
+      <div class="palette" aria-label="材质配色：米白、炭黑、青绿、暖金"><div class="swatches" aria-hidden="true"><i class="ivory"></i><i class="ink"></i><i class="teal"></i><i class="ochre"></i></div><span>哑光质感 / 原画配色</span></div>
+      <div class="exports"><button class="primary" id="export-png" type="button" disabled>保存当前视角 <span>PNG ↗</span></button><button class="secondary" id="export-glb" type="button" disabled>下载立体模型 <span>GLB ↓</span></button></div>
+      <p id="status" class="status" role="status" aria-live="polite">准备场景中</p>
+    </aside>
+  </main>
+  <footer class="footer"><span>以好奇心，连接世界。</span><span>完整立体造型 <span class="footer-dot">·</span> 侧面与背面为新设计</span></footer>
+  <script type="module">
+    import('./src/viewer.js').then(({mountViewer}) => mountViewer()).catch(error => {
+      document.getElementById('loading').hidden = true;
+      document.getElementById('error').hidden = false;
+      document.getElementById('error-message').textContent = '请确认已执行 npm ci，并使用支持 WebGL 2 的浏览器。' + (error.message ? ' ' + error.message : '');
+      document.getElementById('stage').dataset.state = 'error';
+      document.getElementById('status').textContent = '场景未就绪';
+    });
+    document.getElementById('retry').addEventListener('click', () => location.reload());
+  </script>
+</body>
+</html>

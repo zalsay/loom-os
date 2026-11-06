@@ -1,0 +1,3 @@
+# 三路九源帧门槛
+
+实际查看本轮Otty/Safari/FaceTime三张三联图共九帧。原Otty703同pane、Safari4621旧202停止模拟页、FaceTime6182实体和USB线可辨认。密集细字/下沿PARTIAL，黑屏不认定模式，Safari非控制台。三路8秒静音完整解码通过，可放行正式ready内58测试及固定本地镜像构建，不授权设备操作。

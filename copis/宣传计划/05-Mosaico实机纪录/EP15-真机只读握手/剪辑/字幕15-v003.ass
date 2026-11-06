@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cap,Hiragino Sans GB,54,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2.2,1.2,8,40,40,0,1
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,96,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+
+Dialogue: 0,0:00:00.00,0:00:30.00,Badge,,0,0,0,,{\pos(540,25)}── 织界探索日记 · EP15 ──
+Dialogue: 0,0:00:00.00,0:00:30.00,T1,,0,0,0,,{\pos(540,95)}没找到应用串口
+Dialogue: 0,0:00:00.00,0:00:30.00,T2,,0,0,0,,{\pos(540,167)}手动引导后只读握手
+Dialogue: 0,0:00:00.50,0:00:02.10,Cap,,0,0,0,,{\pos(540,815)}设备连着网络
+Dialogue: 0,0:00:02.10,0:00:04.18,Cap,,0,0,0,,{\pos(540,815)}电脑却两次没找到{\c&H64C8FA&}可用串口{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.18,0:00:05.92,Cap,,0,0,0,,{\pos(540,815)}自动进入下载模式
+Dialogue: 0,0:00:05.92,0:00:07.20,Cap,,0,0,0,,{\pos(540,815)}这次没法验证
+Dialogue: 0,0:00:07.20,0:00:09.02,Cap,,0,0,0,,{\pos(540,815)}所以我们停下了　没有刷写
+Dialogue: 0,0:00:09.02,0:00:11.00,Cap,,0,0,0,,{\pos(540,815)}后来　在{\c&H64C8FA&}正式录像之前{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.00,0:00:13.06,Cap,,0,0,0,,{\pos(540,815)}手动让设备进入引导模式
+Dialogue: 0,0:00:13.06,0:00:14.55,Cap,,0,0,0,,{\pos(540,815)}电脑只读询问了一次
+Dialogue: 0,0:00:14.55,0:00:15.54,Cap,,0,0,0,,{\pos(540,815)}{\c&H64C8FA&}认出了芯片{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.54,0:00:17.06,Cap,,0,0,0,,{\pos(540,815)}没有复位或擦写
+Dialogue: 0,0:00:17.06,0:00:20.74,Cap,,0,0,0,,{\pos(540,815)}但握手后紧接着的{\c&H64C8FA&}一次系统检查{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.74,0:00:21.78,Cap,,0,0,0,,{\pos(540,815)}没有看到端口
+Dialogue: 0,0:00:22.20,0:00:24.20,Cap,,0,0,0,,{\pos(540,815)}整轮仍然标记为{\c&H64C8FA&}失败{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.20,0:00:26.22,Cap,,0,0,0,,{\pos(540,815)}认出芯片只是第一步
+Dialogue: 0,0:00:26.22,0:00:28.62,Cap,,0,0,0,,{\pos(540,815)}能否安全部署　还要继续核对

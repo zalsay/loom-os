@@ -1,0 +1,70 @@
+{
+  "reference": {
+    "file": "avatar-1790213242963395449-0.mp4",
+    "sha256": "4cfc05380a8d1a5da6a734c00e552ff64b4afbec7a07683ef44da9dadb7c140a",
+    "durationSeconds": 8,
+    "resolution": [
+      720,
+      720
+    ],
+    "sampledFrames": 8,
+    "limitation": "front and small-angle head turn only, not a full side-view scan"
+  },
+  "parts": {
+    "head": {
+      "before": [
+        2.4101920127868652,
+        2,
+        1.699999988079071
+      ],
+      "after": [
+        2.4101920127868652,
+        2,
+        2.551327705383301
+      ],
+      "depthIncreasePercent": 50.078101369059105
+    },
+    "torso": {
+      "before": [
+        1.98,
+        2.26,
+        1.46
+      ],
+      "after": [
+        2.12,
+        2.26,
+        2.12
+      ],
+      "depthIncreasePercent": 45.205479452054796
+    },
+    "arm-left": {
+      "before": [
+        1.0339399680434345,
+        1.7254867556875584,
+        0.68
+      ],
+      "after": [
+        1.0455880777113382,
+        1.7352053052307395,
+        1.02
+      ],
+      "depthIncreasePercent": 50
+    },
+    "foot-left": {
+      "before": [
+        0.81,
+        0.45,
+        1
+      ],
+      "after": [
+        0.81,
+        0.45,
+        1.28
+      ],
+      "depthIncreasePercent": 28.000000000000004
+    }
+  },
+  "furStrands": 45500,
+  "sourceLogoPaths": 104,
+  "logoImplementationUnchanged": true
+}

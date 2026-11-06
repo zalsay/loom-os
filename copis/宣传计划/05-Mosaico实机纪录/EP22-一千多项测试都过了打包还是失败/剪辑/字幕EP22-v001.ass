@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Cap,Hiragino Sans GB,50,&H00FFFFFF,&H00FFFFFF,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2.2,1.2,8,40,40,0,1
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,80,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,2,0,1,2.0,1.5,8,40,40,0,1
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+
+Dialogue: 0,0:00:00.00,0:00:22.00,Badge,,0,0,0,,{\pos(540,25)}── 织界探索日记 · EP22 ──
+Dialogue: 0,0:00:00.00,0:00:22.00,T1,,0,0,0,,{\pos(540,95)}一千多项测试都过了
+Dialogue: 0,0:00:00.00,0:00:22.00,T2,,0,0,0,,{\pos(540,174)}打包还是失败
+Dialogue: 0,0:00:00.50,0:00:02.57,Cap,,0,0,0,,{\pos(540,1580)}一千二百五十三项测试
+Dialogue: 0,0:00:02.57,0:00:03.31,Cap,,0,0,0,,{\pos(540,1580)}{\c&H64C8FA&}全部通过
+Dialogue: 0,0:00:03.31,0:00:05.34,Cap,,0,0,0,,{\pos(540,1580)}可第一次真正去打包界面
+Dialogue: 0,0:00:05.34,0:00:06.27,Cap,,0,0,0,,{\pos(540,1580)}还是失败了
+Dialogue: 0,0:00:06.27,0:00:07.38,Cap,,0,0,0,,{\pos(540,1580)}二十一次打包
+Dialogue: 0,0:00:07.38,0:00:08.31,Cap,,0,0,0,,{\pos(540,1580)}二十次成功
+Dialogue: 0,0:00:08.31,0:00:09.85,Cap,,0,0,0,,{\pos(540,1580)}{\c&HFF9678&}一次退出码二
+Dialogue: 0,0:00:09.85,0:00:10.77,Cap,,0,0,0,,{\pos(540,1580)}原因很具体
+Dialogue: 0,0:00:10.77,0:00:12.44,Cap,,0,0,0,,{\pos(540,1580)}配置按运行目录生成
+Dialogue: 0,0:00:12.44,0:00:16.20,Cap,,0,0,0,,{\pos(540,1580)}字体却按配置文件所在的目录去找
+Dialogue: 0,0:00:16.20,0:00:16.94,Cap,,0,0,0,,{\pos(540,1580)}测试通过
+Dialogue: 0,0:00:16.94,0:00:19.07,Cap,,0,0,0,,{\pos(540,1580)}{\c&HFF9678&}不等于打包能过
+Dialogue: 0,0:00:19.07,0:00:20.56,Cap,,0,0,0,,{\pos(540,1580)}这一轮也没碰设备

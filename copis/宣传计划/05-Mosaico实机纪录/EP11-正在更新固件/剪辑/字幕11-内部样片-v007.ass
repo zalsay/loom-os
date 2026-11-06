@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Badge,Hiragino Sans GB,40,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,1.2,0,8,40,40,0,1
+Style: T1,Hiragino Sans GB,74,&H00F8FFF8,&H00F8FFF8,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2,1.5,8,40,40,0,1
+Style: T2,Hiragino Sans GB,96,&H0064C8FA,&H0064C8FA,&H00101B22,&H00101B22,1,0,0,0,100,100,0,0,1,2,1.5,8,40,40,0,1
+Style: Cap,PingFang SC,54,&H0064C8FA,&H55FFFFFF,&H002B1D1D,&H60000000,0,0,0,0,100,100,1.5,0,1,2.0,1.2,2,40,40,34,1
+Style: Info,Hiragino Sans GB,36,&H00E0E6E8,&H00E0E6E8,&H00151C20,&H00151C20,1,0,0,0,100,100,0,0,3,12,0,2,40,40,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:29.00,Badge,,0,0,0,,{\pos(540,56)}── 织界创造日记 · EP11 ──
+Dialogue: 0,0:00:00.00,0:00:29.00,T1,,0,0,0,,{\pos(540,118)}设备里为什么还看不见
+Dialogue: 0,0:00:00.00,0:00:29.00,T2,,0,0,0,,{\pos(540,184)}新固件，做到第二轮
+Dialogue: 1,0:00:00.50,0:00:03.26,Cap,,0,0,0,,{\kf16}文{\kf16}件{\kf16}传{\kf17}回{\kf16}来{\kf16}了{\kf9}，{\kf16}设{\kf16}备{\kf16}里{\kf16}为{\kf16}什{\kf17}么{\kf16}还{\kf16}看{\kf16}不{\kf16}见{\kf9}？
+Dialogue: 1,0:00:04.24,0:00:08.62,Cap,,0,0,0,,{\kf17}我{\kf17}在{\kf17}做{\kf17}新{\kf17}固{\kf17}件{\kf10}，{\kf17}相{\kf17}关{\kf17}触{\kf17}摸{\kf17}检{\kf17}查{\kf17}通{\kf17}过{\kf18}了{\kf9}，\N{\kf17}但{\kf17}没{\kf17}有{\kf17}真{\kf17}的{\kf17}点{\kf17}过{\kf18}设{\kf17}备{\kf9}。
+Dialogue: 1,0:00:09.82,0:00:12.52,Cap,,0,0,0,,{\kf16}第{\kf16}一{\kf17}回{\kf9}，{\kf16}等{\kf16}了{\kf16}快{\kf16}十{\kf17}分{\kf16}钟{\kf9}，\N{\kf16}还{\kf16}没{\kf16}开{\kf17}始{\kf16}编{\kf16}译{\kf9}。
+Dialogue: 1,0:00:13.32,0:00:18.02,Cap,,0,0,0,,{\kf18}第{\kf17}二{\kf18}回{\kf10}，{\kf17}接{\kf18}着{\kf18}上{\kf17}回{\kf18}保{\kf17}留{\kf18}的{\kf18}一{\kf17}部{\kf18}分{\kf18}资{\kf17}料{\kf18}做{\kf10}，\N{\kf17}又{\kf18}因{\kf17}为{\kf18}连{\kf18}接{\kf17}问{\kf18}题{\kf18}停{\kf17}了{\kf10}。
+Dialogue: 1,0:00:18.94,0:00:24.14,Cap,,0,0,0,,{\kf26}还{\kf25}没{\kf26}做{\kf26}成{\kf14}，{\kf26}但{\kf26}进{\kf25}度{\kf26}没{\kf26}丢{\kf14}。\N{\kf26}你{\kf25}猜{\kf15}，{\kf25}下{\kf26}一{\kf26}次{\kf26}能{\kf25}做{\kf26}成{\kf26}吗{\kf14}？
+Dialogue: 1,0:00:25.02,0:00:27.60,Cap,,0,0,0,,{\kf26}后{\kf25}续{\kf26}结{\kf25}果{\kf14}，{\kf26}下{\kf25}一{\kf26}期{\kf25}揭{\kf26}晓{\kf14}。
+Dialogue: 1,0:00:00.00,0:00:04.00,Info,,0,0,0,,{\pos(540,1100)}阶段回顾：两次尝试的记录
+Dialogue: 1,0:00:04.00,0:00:09.60,Info,,0,0,0,,{\pos(540,1100)}离线检查通过，设备未实际点击
+Dialogue: 1,0:00:09.60,0:00:13.00,Info,,0,0,0,,{\pos(540,1100)}第一轮：时间到，尚未开始编译
+Dialogue: 1,0:00:13.00,0:00:18.40,Info,,0,0,0,,{\pos(540,1100)}第二轮：复用部分资料，连接失败
+Dialogue: 1,0:00:18.40,0:00:24.50,Info,,0,0,0,,{\pos(540,1100)}当时：未刷写设备
+Dialogue: 1,0:00:24.50,0:00:29.00,Info,,0,0,0,,{\pos(540,1100)}后续结果，下一期揭晓
