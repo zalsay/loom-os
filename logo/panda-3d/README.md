@@ -2,6 +2,25 @@
 
 独立的 Three.js 三维熊猫原型。以 `../LoomOS-panda-ink-clean.png` / SVG 为正面造型参考，重新建立有真实体积的头、身体、耳朵、四肢和尾巴；**不是 SVG 挤出，也不是正面图片贴在平面上**。
 
+## 新版低多边形站立熊猫资产
+
+Loom Web 屋顶熊猫的**低多边形造型**已同步为独立的站立版资产：
+
+- `assets/panda-faceted-standing.glb`：可独立加载的 GLB 2.0，贴图内嵌，保留腹部原 SVG 标识。角色正向为 +Z、上方为 +Y，脚底对齐 Y=0；模型使用源码单位，未校准真实尺寸。
+- `assets/panda-faceted-standing-preview.png`：重新加载该 GLB 后渲染的预览图。
+- `src/panda-faceted.js`：来自 Loom Web 的低多边形模型代码；仅将基础模型的导入路径改为本目录的 `./model.js`。基础模型、腹部标识和毛发源码与来源版本一致。
+
+来源为 Loom Web 提交 `b7b9418d419fa45186f5e88ec53eaf274b5a8e92`。本资产使用同一造型的基础站立姿态，不使用屋檐攀爬姿态、建筑或外部支撑；它是静态网格，**不包含骨骼或动作动画**。网站侧使用 Three.js r180，本造型室使用 r186；已对头部、躯干、腹部、眼斑、鼻子及部分四肢的几何数据做一致性检查。
+
+原有造型室仍默认显示和导出毛绒吉祥物；本次不覆盖旧的 `evidence/panda.glb`，也没有更改默认预览。需要重新导出时，为避免覆盖已有资产，指定两个不存在的新路径：
+
+```sh
+node scripts/export-faceted-standing.mjs /tmp/panda-standing.glb /tmp/panda-standing-preview.png
+node tests/faceted-glb-browser.mjs
+```
+
+导出工具启动隔离的本地无头浏览器和临时只读服务，禁止外部请求；写入前检查来源文件哈希，避免将旧提交号错误标到修改后的模型上。需要 Chrome 或通过 `PLAYWRIGHT_EXECUTABLE_PATH` 指定兼容的 Chromium 可执行文件。第二条命令会从磁盘重新加载仓库内的 GLB，比较模型部件几何，不改写原造型室的 evidence 文件。
+
 ## 打开预览
 
 需要 Node.js 20+ 和支持 WebGL 2 的现代浏览器。实际验证环境为 Node.js 24、独立 Chrome 测试实例。
