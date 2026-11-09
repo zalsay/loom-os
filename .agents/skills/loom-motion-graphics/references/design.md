@@ -1,4 +1,6 @@
-# 动效设计规范（Code2Video 借鉴版）
+# 二维动效设计参考（历史路线）
+
+> 2026-11-09：后续实机纪录默认使用项目 `tools/loom-video-office/README.md` 中的 Three.js 办公动画框架。下文只供明确要求二维信息图时参考；不再强制上下分区，也不禁止有叙事目的的三维镜头。早期研究对象 showlab/Code2Video 不等于用户参考视频中的 OpenSenseNova/SenseNova-6.8-Code2Video。
 
 ## 一、为什么用代码画，而不是剪辑关键帧
 

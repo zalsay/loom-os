@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "episode": "EP22",
+  "duration": 22,
+  "pixelRatio": 1,
+  "model": "logo/panda-3d/assets/panda-faceted-standing.glb",
+  "outputDir": "copis/宣传计划/05-Mosaico实机纪录/EP22-一千多项测试都过了打包还是失败/剪辑/统一框架-v011",
+  "outputName": "EP22-统一办公框架-v011-待验收.mp4",
+  "cameraVideo": {
+    "path": "copis/宣传计划/05-Mosaico实机纪录/EP22-一千多项测试都过了打包还是失败/素材/285/MAC-camera-preview.mp4",
+    "start": 55,
+    "crop": [77, 68, 1238, 696]
+  },
+  "terminalVideo": {
+    "path": "copis/宣传计划/05-Mosaico实机纪录/EP22-一千多项测试都过了打包还是失败/素材/285/Otty.mp4",
+    "start": 55,
+    "masks": [[60, 230, 48, 220]],
+    "crop": [60, 230, 840, 220]
+  },
+  "audio": {
+    "path": "copis/宣传计划/05-Mosaico实机纪录/EP22-一千多项测试都过了打包还是失败/剪辑/EP22-初稿-v005-待验收.mp4",
+    "start": 0
+  },
+  "header": {
+    "source": {
+      "path": "copis/宣传计划/05-Mosaico实机纪录/EP22-一千多项测试都过了打包还是失败/剪辑/EP22-初稿-v005-待验收.mp4",
+      "start": 0,
+      "crop": [0, 0, 1080, 280]
+    }
+  },
+  "footer": {
+    "kind": "video",
+    "path": "copis/宣传计划/05-Mosaico实机纪录/EP22-一千多项测试都过了打包还是失败/剪辑/EP22-初稿-v005-待验收.mp4",
+    "start": 0,
+    "crop": [0, 1688, 1080, 232]
+  },
+  "camera": {
+    "from": [5, 5.2, 18.5],
+    "to": [3.2, 4.35, 11.8],
+    "lookFrom": [-0.5, 1.7, -0.3],
+    "lookTo": [-0.25, 2.1, 0.45],
+    "holdStart": 0.8,
+    "travelDuration": 20.2,
+    "gaitHz": 0.55,
+    "gaitStrength": 1
+  },
+  "scrollRowsPerSecond": 1.55
+}
