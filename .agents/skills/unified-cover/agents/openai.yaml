@@ -1,0 +1,4 @@
+interface:
+  display_name: "统一封面"
+  short_description: "使用参考图或 API 生成相似配色底图，叠加顶部遮罩与统一标题"
+  default_prompt: "使用 $unified-cover 制作统一封面。按用户要求选择原图合成、参考图 API 生图或提示词配色生图；生图先 dry-run 并确认上传与费用，仅顶部半透明且无模糊，底部保留清晰底图，主标题加副标题结尾，不自动发布。"

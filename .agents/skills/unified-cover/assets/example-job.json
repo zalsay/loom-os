@@ -1,0 +1,11 @@
+{
+  "image": "./reference.jpg",
+  "output": "./cover-v001.png",
+  "title": "从一个问题\n到一次尝试",
+  "accent": "让想法慢慢成形",
+  "series": "探索记录",
+  "subtitle": "",
+  "ratio": "3:4",
+  "fit": "cover",
+  "focus": [0.5, 0.5]
+}

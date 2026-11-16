@@ -1,0 +1,7 @@
+{
+  "mode": "reference",
+  "reference": "./reference.webp",
+  "prompt": "参考图片的自然绿色和暖白配色，生成全新的乡野生活场景。保留草地、山丘与小巴的视觉主题，主体位于中下部，不要复刻原海报上的文字或品牌。",
+  "size": "1024x1536",
+  "output": "./background-v001.png"
+}

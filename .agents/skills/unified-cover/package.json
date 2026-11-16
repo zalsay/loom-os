@@ -1,0 +1,8 @@
+{
+  "name": "unified-cover-skill",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test tests/*.test.mjs" },
+  "dependencies": { "@napi-rs/canvas": "1.1.0" }
+}

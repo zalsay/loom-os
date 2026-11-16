@@ -1,0 +1,9 @@
+{
+  "version": "unified-cover-v2",
+  "font": "../../create-zhi-jie-video/assets/engine/fonts/LXGWWenKai-Regular.ttf",
+  "background": "#111417",
+  "overlay": { "color": "#111417", "opacity": 0, "topOpacity": 0.8, "fadeStart": 0.42, "fadeEnd": 0.46 },
+  "colors": { "title": "#FFFFFF", "accent": "#FAC864", "secondary": "#EEEEEE" },
+  "layout": { "marginX": 0.075, "top": 0.075, "bottom": 0.08, "lineHeight": 1.22, "gap": 0.022 },
+  "type": { "title": 0.092, "titleMin": 0.062, "maxLines": 3, "accent": 0.075, "small": 0.03 }
+}
