@@ -1,0 +1,4 @@
+- insert:
+    - id: loom-sfa-tool
+      name: '@loom-os/dsh-sfa-tool'
+      config: {}
