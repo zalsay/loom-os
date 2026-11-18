@@ -5,7 +5,7 @@ import { mkdtemp } from 'node:fs/promises';
 export const name = 'loom-sfa-tool';
 export const inject = ['tools', 'subprocess', 'sandboxPolicy', 'workingDirectory'];
 
-const actions = ['profiles', 'authorize', 'launch', 'connect', 'state', 'observe', 'navigate', 'click', 'type', 'press', 'release'];
+const actions = ['profiles', 'authorize', 'launch', 'connect', 'state', 'observe', 'navigate', 'click', 'click-target', 'select-file', 'type', 'press', 'release'];
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const properties = {
   action: {type:'string', enum:actions, description:'Operation to perform.'},
@@ -14,17 +14,19 @@ const properties = {
   frame: {type:'string', description:'Frame UUID from observe, required for click, type and press. The agent decides whether the screenshot is still suitable.'},
   x: {type:'integer', description:'Screenshot pixel x coordinate for click.'},
   y: {type:'integer', description:'Screenshot pixel y coordinate for click.'},
+  target: {type:'string', description:'Visible text or a description of the target for JEV click-target. Requires no frame.'},
+  paths: {type:'array', items:{type:'string'}, description:'One to twenty absolute local file paths for the open chooser; requires no frame.'},
   text: {type:'string', description:'Text for type; only enter content explicitly authorized by the user.'},
   key: {type:'string', description:'Key for press, as supported by sfa.'}
 };
 export function argumentsFor(a, connection) {
   if (!a || typeof a !== 'object' || Array.isArray(a) || !actions.includes(a.action)) throw new Error('Invalid action');
-  const allowed = {profiles:[],authorize:[],launch:['profile_id','url'],connect:['profile_id'],state:[],observe:[],navigate:['url'],click:['frame','x','y'],type:['frame','text'],press:['frame','key'],release:[]}[a.action];
+  const allowed = {profiles:[],authorize:[],launch:['profile_id','url'],connect:['profile_id'],state:[],observe:[],navigate:['url'],click:['frame','x','y'],'click-target':['target'],'select-file':['paths'],type:['frame','text'],press:['frame','key'],release:[]}[a.action];
   // Some API clients serialize unused optional fields as empty strings/zero.
   // Tolerate only those inert placeholders; never pass unrelated values to sfa.
   for (const k of Object.keys(a)) {
     if (k === 'action' || allowed.includes(k)) continue;
-    const placeholder = Object.hasOwn(properties, k) && (a[k] === '' || (['x','y'].includes(k) && a[k] === 0));
+    const placeholder = Object.hasOwn(properties, k) && (a[k] === '' || (['x','y'].includes(k) && a[k] === 0) || (k === 'paths' && Array.isArray(a[k]) && a[k].length === 0));
     if (!placeholder) throw new Error(`Unexpected parameter: ${k}`);
   }
   for (const k of allowed) if (a[k] === undefined && !(a.action === 'launch' && k === 'url')) throw new Error(`Missing parameter: ${k}`);
@@ -44,6 +46,20 @@ export function argumentsFor(a, connection) {
   if (a.action === 'navigate') { let u; try { u = new URL(a.url); } catch { throw new Error('Invalid URL'); } if (!['http:','https:'].includes(u.protocol)) throw new Error('URL must use http or https'); out.push('--url',a.url); }
   if (['click','type','press'].includes(a.action)) { if (!UUID.test(a.frame)) throw new Error('Invalid frame UUID'); out.push('--frame',a.frame); }
   if (a.action === 'click') { if (![a.x,a.y].every(n=>Number.isSafeInteger(n)&&n>=0&&n<=65535)) throw new Error('Invalid pixel coordinates'); out.push('--x',String(a.x),'--y',String(a.y),'--count','1'); }
+  if (a.action === 'click-target') {
+    if (typeof a.target !== 'string' || !a.target.trim()) throw new Error('Expected nonempty target text');
+    out.push('--target',a.target);
+  }
+  if (a.action === 'select-file') {
+    if (!Array.isArray(a.paths) || a.paths.length < 1 || a.paths.length > 20) throw new Error('Expected 1–20 file paths');
+    let bytes = 0;
+    for (const file of a.paths) {
+      if (typeof file !== 'string' || !file.startsWith('/') || file.includes('\0') || Buffer.byteLength(file) > 4096) throw new Error('Expected an absolute local file path');
+      bytes += Buffer.byteLength(file);
+      out.push('--path',file);
+    }
+    if (bytes > 16384) throw new Error('File paths are too long');
+  }
   if (a.action === 'type') { if (typeof a.text !== 'string' || a.text.length > 10000) throw new Error('Invalid text'); out.push('--text-stdin'); }
   if (a.action === 'press') { if (typeof a.key !== 'string' || !/^[A-Za-z0-9+_-]{1,32}$/.test(a.key)) throw new Error('Invalid key'); out.push('--key',a.key); }
   return out;
@@ -116,7 +132,7 @@ export function apply(ctx) {
   }
   ctx.effect(() => ctx.tools.register({
     name:'sfa',
-    description:'Execute authorized Safarier browser commands once. Connect before state/observe/input; use observe to inspect page effects and choose a suitable frame. Return CLI results without judging page success. An error does not block later explicit commands; never automatically repeat input. Release control when finished; never close the user browser. Only available under danger-full-access session policy.',
+    description:'Execute authorized Safarier browser commands once. Connect before state/observe/input; use observe to inspect page effects and choose a suitable frame. Use click-target for JEV click by text without a frame; it sends the target and recognized page text to the configured model. Return CLI results without judging page success. An error does not block later explicit commands; never automatically repeat input. Release control when finished; never close the user browser. Only available under danger-full-access session policy.',
     parameters:{type:'object',additionalProperties:false,properties,required:['action']},
     output:{schema:{type:'object',additionalProperties:true},render:(_a,v)=>[{type:'text',text:JSON.stringify(v)}]},
     timeoutMs:120000,
